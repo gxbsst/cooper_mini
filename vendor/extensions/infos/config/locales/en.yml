@@ -1,0 +1,30 @@
+en:
+  refinery:
+    plugins:
+      infos:
+        title: Infos
+    infos:
+      admin:
+        infos:
+          actions:
+            create_new: Add New Info
+            reorder: Reorder Infos
+            reorder_done: Done Reordering Infos
+          records:
+            title: Infos
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Infos yet. Click "Add New Info" to add your first info.
+          info:
+            view_live_html: View this info live <br/><em>(opens in a new window)</em>
+            edit: Edit this info
+            delete: Remove this info forever
+      infos:
+        show:
+          other: Other Infos
+  activerecord:
+    attributes:
+      'refinery/infos/info':
+        title: Title
+        visit_count: Visit Count
+        source: Source
+        content: Content

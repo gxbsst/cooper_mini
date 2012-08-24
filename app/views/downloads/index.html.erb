@@ -1,0 +1,57 @@
+<%= render "share/news_sidebar"%>
+<div id="rightcontent">
+ <div id="site"><a href="news_list.htm">新闻媒体</a><span>&gt;</span>媒体中心</div>
+ <div id="downloadcontent">
+   <dl>
+     <dt>新闻通稿</dt>
+     <dd>
+       <ul class="newslist">
+		<% for file in @files  do %>
+         <li><img src="pic/li01.jpg" alt="" title="" class="pic" /><%= file.name %><%= link_to "下载", file.url %></li>
+		<% end %>
+       </ul>
+     </dd>
+   </dl>
+   <dl>
+     <dt>高清图片</dt>
+     <dd>
+	   
+       <ul class="imagelist foldout">
+		<% for image  in @images_foldout  do %>
+         <li>
+	
+			<%=  link_to image.full_file_url  do %>
+			 <image src="<%= image.thumb_url %>" />
+			<% end %>
+			<p><%= image.name %></p>
+		</li>
+		<% end %>
+       </ul>
+		<div class="clear"></div>
+	<ul class="imagelist">
+		<% for image  in @images_poster  do %>
+         <li>
+			<%=  link_to image.url  do %>
+			 <image src="<%= image.thumb_url %>" />
+			<% end %>
+			<p><%= image.name %></p>
+		</li>
+		<% end %>
+		
+	</ul>
+     </dd>
+   </dl>
+   <dl>
+     <dt>视频</dt>
+     <dd>
+       <ul class="videolist">
+		<% for movie in @movies %>
+         <li><%= movie.name %> <%= link_to "下载", movie.file_url %></li>
+		<% end %>
+       </ul>
+     </dd>
+   </dl>
+ </div>
+ <div class="totop"><a href="#header"><img src="/pic/totop.jpg" alt="回顶部" title="回顶部" /></a></div>
+</div>
+<div class="clear"></div>

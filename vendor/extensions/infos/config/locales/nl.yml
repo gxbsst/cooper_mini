@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      infos:
+        title: Infos
+    infos:
+      admin:
+        infos:
+          actions:
+            create_new: Maak een nieuwe Info
+            reorder: Wijzig de volgorde van de Infos
+            reorder_done: Klaar met het wijzingen van de volgorde van de Infos
+          records:
+            title: Infos
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Infos. Druk op 'Maak een nieuwe Info' om de eerste aan te maken.
+          info:
+            view_live_html: Bekijk deze info op de website <br/><em>(opent een nieuw venster)</em>
+            edit: Bewerk deze info
+            delete: Verwijder deze info voor eeuwig
+      infos:
+        show:
+          other: Andere Infos
+  activerecord:
+    attributes:
+      'refinery/infos/info':
+        title: Title
+        visit_count: Visit Count
+        source: Source
+        content: Content

@@ -1,0 +1,47 @@
+<%= render "share/products_sidebar" %>
+<%= javascript_include_tag "jquery", "jquery-ui","jquery_ujs","underscore", "backbone", "products", "brands"%>
+<div id="rightcontent">
+	<%= render "share/product_position"%>
+	<div id="productsearch">
+		
+		  		
+		<div class="searchtitle">在线选配轮胎</div>
+		<div class="item">
+			<div class="t"></div>
+			<%= form_tag "/searchs" do  -%>
+				<%= render "product_search_form"%>
+			<% end -%>
+			
+			<div class="b"></div>
+		</div>
+		<div class="item">
+			<div class="t"></div>
+			
+			<%= form_tag "/searchs?type=brand" do  -%>
+				<%= render "brand_search_form"%>
+			<% end -%>
+			
+			<div class="b"></div>
+		</div>
+		<div class="item">
+			<div class="t"></div>
+			<%= form_tag "/searchs?type=brand" do  -%>
+			
+			<div class="body">
+				<strong>按花纹牌查找</strong>
+				<%= select_tag 'name', options_for_select(Brand.decorative_collection), :prompt => "选择花纹", :class => "select", :style => "width:180px" %>
+				<input type="submit" class="searchbtn" value="查询轮胎" />
+				<div class="clear"></div>
+			</div>
+			
+			<% end -%>
+			
+			<div class="b"></div>
+		</div>
+		
+		
+		
+	</div>
+	<div class="totop"><a href="#header"><img src="/pic/totop.jpg" alt="回顶部" title="回顶部" /></a></div>
+</div>
+<div class="clear"></div>

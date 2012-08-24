@@ -1,0 +1,34 @@
+AT3_design:
+  file_name: AT3_design.mpg
+  file_url: http://cooper_media.sidways.com/video/AT3_design.mpg
+  media_type: "视频"
+
+DAT:
+  file_name:  DAT.mpg
+  file_url: http://cooper_media.sidways.com/video/DAT.mpg
+  media_type: "视频"
+
+HTS_test:
+  file_name: HTS_test.mpg
+  file_url: http://cooper_media.sidways.com/video/HTS_test.mpg
+  media_type: "视频"
+
+STMaxx_test:
+  file_name: STMaxx_test.mpg
+  file_url: http://cooper_media.sidways.com/video/STMaxx_test.mpg
+  media_type: "视频"
+
+AT3_test:
+  file_name: AT3_test.mpg
+  file_url: http://cooper_media.sidways.com/video/AT3_test.mpg
+  media_type: "视频"
+
+global:
+  file_name: global.mov
+  file_url: http://cooper_media.sidways.com/video/global.mov
+  media_type: "视频"
+
+STMaxx_design:
+  file_name: STMaxx_design.mpg
+  file_url: http://cooper_media.sidways.com/video/STMaxx_design.mpg
+  media_type: "视频"

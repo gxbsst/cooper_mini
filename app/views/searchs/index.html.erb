@@ -1,0 +1,19 @@
+<%= render "share/products_sidebar" %>
+
+<div id="rightcontent">
+	<%= render "share/product_position"%>
+ <div id="searchresult">
+ <div class="searchtitle"><a href="/products/search" class="back">返回重新查找</a>为您找到以下轮胎产品：</div>
+ <% unless @products.first.blank? %>
+ <ul>
+ 	<%= render @products %>
+ </ul>
+ <% else %>
+ 	<p>无返回结果.</p>
+ <% end %>
+ </div>
+ <div class="totop"><a href="#header"><img src="/pic/totop.jpg" alt="回顶部" title="回顶部" /></a></div>
+</div>
+<div class="clear"></div>
+
+

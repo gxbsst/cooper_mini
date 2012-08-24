@@ -1,0 +1,31 @@
+zh-CN:
+  refinery:
+    plugins:
+      jobs:
+        title: 工作机会
+    jobs:
+      admin:
+        jobs:
+          actions:
+            create_new: 添加新工作
+            reorder: 排序
+            reorder_done: 完成排序
+          records:
+            title: 工作机会
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Jobs yet. Click "Add New Job" to add your first job.
+          job:
+            view_live_html: View this job live <br/><em>(opens in a new window)</em>
+            edit: 编辑
+            delete: 删除
+      jobs:
+        show:
+          other: Other Jobs
+  activerecord:
+    attributes:
+      'refinery/jobs/job':
+        title: 职位名称
+        address: 工作地点
+        degree: 学历要求
+        experience: 工作经验
+        description: 岗位描述

@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  rank: MyString
+  sale_dist: MyString
+  provice: MyString
+  city: MyString
+  dist: MyString
+  asr: MyString
+  dsr: MyString
+  retail_code: MyString
+  shop_name: MyString
+  shop_type: MyString
+  longitude: MyString
+  latitude: MyString
+
+two:
+  rank: MyString
+  sale_dist: MyString
+  provice: MyString
+  city: MyString
+  dist: MyString
+  asr: MyString
+  dsr: MyString
+  retail_code: MyString
+  shop_name: MyString
+  shop_type: MyString
+  longitude: MyString
+  latitude: MyString

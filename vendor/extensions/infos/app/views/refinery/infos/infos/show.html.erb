@@ -1,0 +1,15 @@
+
+<%= render "share/news_sidebar"%>
+
+<div id="rightcontent">
+ <div id="site"><a href="/infos">新闻媒体</a><span>&gt;</span>新闻中心<span>&gt;</span><% if params[:q].present? %> 历年新闻 <% else %>公司新闻 <% end %></div>
+ <div id="newsdetail">
+	
+	
+  <h2 class="h2"><%=raw @info.title.html_safe %></h2>
+  <div class="date"><span>发布时间：<%=  @info.created_at.strftime("%Y.%m.%d ") %></span><span>新闻来源：<%= @info.source %></span><span>浏览次数：<%= @info.visit_count %></span></div> 
+  <%= raw @info.content %>
+ </div>
+ <div class="totop"><a href="#header"><img src="/pic/totop.jpg" alt="回顶部" title="回顶部" /></a></div>
+</div>
+<div class="clear"></div>

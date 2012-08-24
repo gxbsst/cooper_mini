@@ -1,0 +1,17 @@
+<% shop_type = {"CPC" => "嘉车坊", "CC" => "店中店", "CTCC" =>  "替换中心", "CSS+" => "店招店", "CSS" => "招牌店", "INDENPENDENT" => "独立授权店", "OTHERS" => "其他" }%>
+<div class="list">
+ <ul>
+   <li>
+    <dl>
+     <dt><%= store.shop_name %></dt>
+     <dd>
+      <p><%= store.address unless store.address == "0" %></p>
+      <p><%= store.telephone  %></p>
+     </dd>
+   </dl>
+   <% unless store.shop_type.blank? %>
+   <div class="tip"><strong><%= shop_type[store.shop_type.upcase] %></strong></div>
+   <% end %>
+   </li>
+ </ul>         
+ </div>

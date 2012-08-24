@@ -1,0 +1,11 @@
+<div class="body">
+	<strong>按厂商/品牌查找</strong>
+	<span id="brand">
+		<%= select_tag 'brand',options_for_select(Brand.brand_collection), :disable_with => '165', :prompt => "选择厂商/品牌", :class => "select", :style => "width:180px" %>
+	</span>
+	<span id="car_type" >
+		<%= select_tag 'car_type', options_for_select([]), :prompt => "车型", :class => "select", :style => "width:140px" %>
+	</span>
+	<input type="submit" class="searchbtn" value="查询轮胎" />
+	<div class="clear"></div>
+</div>

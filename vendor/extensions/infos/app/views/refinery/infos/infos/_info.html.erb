@@ -1,0 +1,10 @@
+<li>
+	<p>
+		<%=  info.created_at.strftime("%Y.%m.%d ") %>
+		<% if info.created_at > 1.day.ago %>
+		<label>NEW！</label>
+		<% end %>
+	</p>
+	<%= link_to truncate( info.title, :length => 28, :omission => '... '), refinery.infos_info_path(info) %>
+</li>
+

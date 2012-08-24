@@ -1,0 +1,17 @@
+<div id="leftcontent">
+ <h3>新闻媒体</h3>
+  <dl <% if params[:controller].split("/").last == 'infos' %>  class="current" <% end %> > 
+    <dt><strong>新闻中心</strong></dt>
+  	<dd>
+  		<ul>
+		
+        <li <% unless params[:q].present? %> class="hover" <% end %> ><a  href="/infos">公司新闻</a></li>
+        <li <% if  params[:q].present? %> class="hover" <% end %> ><a href="/infos?q=history">历年新闻</a></li>
+      </ul>
+  	</dd>
+  </dl>
+  <dl <% if params[:controller] == 'downloads' %> class="current" <% end %>>
+    <dt><%= link_to "媒体中心", '/downloads' %></dt>
+  </dl>
+</div>
+

@@ -1,0 +1,11 @@
+<li>
+  <div class="img">
+	<%= link_to image_tag(brand.image_url), brand.url %>
+ </div>
+  <dl>
+    <dt><%= link_to brand.name, brand.url %></dt>
+    <dd class="dd"><%= brand.description %></dd>
+    <dd><%= link_to "查看详细", brand.url, :class => 'more' %></dd>
+  </dl>
+  <div class="clear"></div>
+</li>

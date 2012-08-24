@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      infos:
+        title: Infos
+    infos:
+      admin:
+        infos:
+          actions:
+            create_new: Lag en ny Info
+            reorder: Endre rekkefølgen på Infos
+            reorder_done: Ferdig å endre rekkefølgen Infos
+          records:
+            title: Infos
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Infos enda. Klikk på "Lag en ny Info" for å legge til din første info.
+          info:
+            view_live_html: Vis hvordan denne info ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne info
+            delete: Fjern denne info permanent
+      infos:
+        show:
+          other: Andre Infos
+  activerecord:
+    attributes:
+      'refinery/infos/info':
+        title: Title
+        visit_count: Visit Count
+        source: Source
+        content: Content

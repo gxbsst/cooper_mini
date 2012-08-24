@@ -1,0 +1,7 @@
+<section id='records'>
+  <%= render 'records' %>
+</section>
+<aside id='actions'>
+  <%= render 'actions' %>
+</aside>
+<%= render '/refinery/admin/make_sortable', :tree => false if !searching? and ::Refinery::Jobs::Admin::JobsController.sortable? and ::Refinery::Jobs::Job.count > 1 %>

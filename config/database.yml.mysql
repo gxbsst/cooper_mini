@@ -1,0 +1,20 @@
+development: &development
+  adapter: mysql2
+  host: localhost
+  username: root
+  password: "123456"
+  database: cooper
+
+test: &test
+  adapter: mysql2
+  host: localhost
+  username: root
+  password: "123456"
+  database: cooper
+
+production: &production
+  adapter: mysql2
+  host: localhost
+  database: cooper
+  username: root
+  password: "123456"

@@ -1,0 +1,25 @@
+
+<%= render "share/news_sidebar"%>
+<div id="rightcontent">
+ <div id="site"><a href="/infos">新闻媒体</a><span>&gt;</span>新闻中心<span>&gt;</span><% if params[:q].present? %> 历年新闻 <% else %>公司新闻 <% end %></div>
+ <div id="newslist">
+	  <ul id="infos">
+		<% @infos.each do |info| %>       
+	      <li>	
+			<span><%=  info.created_at.strftime("%Y.%m.%d ") %></span>
+			<% a_params =  params[:q].present? ? "?q=history" : "" %>
+	        <%= link_to info.title.html_safe, "/infos/#{info.id}#{a_params}" %>
+			<% if info.created_at > 1.day.ago %>
+			<label>NEW！</label>
+			<% end %>
+	      </li>
+	    <% end %>
+	  </ul>
+   <div class="page">
+	<%= will_paginate @infos, previous_label: ('<img src="/pic/prev.jpg" alt="" title="" />'), next_label: ('<img src="/pic/next.jpg" alt="" title="" />')  %> 
+	</div>
+ </div>
+ <div class="totop"><a href="#header"><img src="/pic/totop.jpg" alt="回顶部" title="回顶部" /></a></div>
+</div>
+<div class="clear"></div>
+

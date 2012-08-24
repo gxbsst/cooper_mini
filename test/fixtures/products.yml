@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  url: MyString
+  norm: MyString
+  tyre: MyString
+  aspect_ratio: MyString
+  diameter: MyString
+  brand: MyString
+  car_type: MyString
+  decorative: MyString
+
+two:
+  url: MyString
+  norm: MyString
+  tyre: MyString
+  aspect_ratio: MyString
+  diameter: MyString
+  brand: MyString
+  car_type: MyString
+  decorative: MyString

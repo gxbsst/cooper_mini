@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      infos:
+        title: Infos
+#        article: masculino/femenino
+    infos:
+      admin:
+        infos:
+          actions:
+            create_new: Crear nuevo info
+            reorder: Reordenar infos
+            reorder_done: Reordenación de infos completada
+          records:
+            title: Infos
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay infos todavía. Pulsa en "Crear nuevo Info" para crear tu primer info.
+          info:
+            view_live_html: Ver este info como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este info
+            delete: Borrar este info para siempre
+      infos:
+        show:
+          other: Otros infos
+  activerecord:
+    attributes:
+      'refinery/infos/info':
+        title: Title
+        visit_count: Visit Count
+        source: Source
+        content: Content

@@ -1,0 +1,91 @@
+#downloadcontent{}
+#downloadcontent dt{ font-size:14px; font-family:'微软雅黑'; color:#E04C36; font-weight:bold; height:25px; line-height:25px;}
+#downloadcontent dl{ border-bottom:solid 1px #CBCBCB; padding:20px 0px 20px 20px;}
+#downloadcontent dd{ padding:10px;}
+#downloadcontent .videolist{}
+#downloadcontent .videolist li{ height:25px; padding:0px 0px 5px 28px; line-height:25px; overflow:hidden; background:url(../pic/li03.jpg) no-repeat 0px 3px;}
+#downloadcontent .videolist a{ color:#8B9E79; color:#8B9E79; margin:0px 0px 0px 15px; text-decoration:underline;}
+#downloadcontent .videolist a:hover{ text-decoration:none;}
+#downloadcontent .newslist{ display:inline-block;}
+#downloadcontent .newslist li{ float:left; padding:0px 0px 5px 0px; height:20px; line-height:20px; width:300px;}
+#downloadcontent .newslist .pic{ float:left; margin:2px 7px 0px 0px;}
+#downloadcontent .newslist a{ color:#8B9E79; margin:0px 0px 0px 15px; text-decoration:underline;}
+#downloadcontent .newslist a:hover{ color:#8B9E79; text-decoration:none;}
+#downloadcontent .imagelist{ display:inline-block;}
+#downloadcontent .imagelist li{ padding:0px 35px 0px 0px; float:left; width:120px; text-align:center; height:200px;}
+#downloadcontent .imagelist img{ width:120px; height:160px;}
+#downloadcontent .imagelist p{ padding:5px 0px 0px 0px; height:25px; line-height:25px; overflow:hidden;}
+#downloadcontent .imagelist p a{color:#8B9E79; text-decoration:underline;}
+#downloadcontent .imagelist p a:hover{ text-decoration:none;}
+.totop{ padding:30px 0px 0px 0px; text-align:right;}
+#newslist ul{ padding:20px;}
+#newslist li{ padding:2px 0px; height:25px; line-height:25px; overflow:hidden;}
+#newslist li span{ color:#A0A0A0;  display:inline-block; width:80px;}
+#newslist li label{ color:#CB0201; font-family:Arial; font-size:10px; font-style:italic; padding:0px 0px 0px 5px;}
+#newslist li a{ text-decoration:underline;}
+#newslist li a:hover{ text-decoration:none; color:#484848;}
+#newslist .page{ padding:10px 0px 0px 0px; border-top:solid 1px #DDDDDD; text-align:right;}
+#newslist .page img{ vertical-align:middle;}
+#newslist .page a{ vertical-align:middle; margin:0px 5px;}
+#newslist .page .hover{ font-weight:bold; text-decoration:underline;}
+#newsdetail{ line-height:20px;}
+#newsdetail .date{ margin:0px 0px 10px 0px; padding:5px 0px 20px 0px; border-bottom:solid 1px #DDDDDD; text-align:center;}
+#newsdetail .date span{ color:#A0A0A0; padding:0px 8px;}
+#newsdetail .h2{ padding:20px 0px 0px 0px; text-align:center; font-size:14px;}
+#newsdetail p{ padding:10px 0px; text-indent:2em;}
+#newsdetail h3{ padding:10px 0px;}
+#newsdetail .img{ text-align:center; padding:10px 0px;}
+#searchresult{ padding:20px 10px;}
+#searchresult .searchtitle{ height:32px; font-size:14px; line-height:32px;}
+#searchresult .searchtitle .back{ float:right; width:132px; height:32px; background:url(../pic/searchtitle.jpg) no-repeat 0px 0px; text-align:center; line-height:32px; color:White; font-size:14px; text-decoration:none; font-family:'微软雅黑';}
+#searchresult ul{ padding:10px 0px 0px 0px;}
+#searchresult li{ padding:10px 0px; *padding:1px 0px; border-bottom:dotted 1px #CBCBCB;}
+#searchresult .img{ float:left; width:160px;}
+#searchresult .img img{ width:160px; height:120px;}
+#searchresult dl{ float:right; width:485px; line-height:20px;}
+#searchresult dt{ height:30px; line-height:30px; overflow:hidden;}
+#searchresult dt a{ font-family:Arial; font-size:18px; font-weight:bold; color:#E04C36; background:url(../pic/li05.jpg) no-repeat right 4px; padding:0px 15px 0px 0px;}
+#searchresult .more{ background:url(../pic/more.jpg) no-repeat 0px 2px; color:#839870; padding:0px 0px 0px 20px; display:block; height:20px;}
+#searchresult dd{ padding:5px 0px 0px 0px;}
+#searchresult .dd{ height:60px; overflow:hidden;}
+#productsearch{ padding:20px 0px; width:648px; margin:0px auto;}
+#productsearch .searchtitle{ color:#E04C36; line-height:30px; font-size:16px; font-weight:bold;}
+#productsearch .selectcontent{ float:left;}
+#productsearch .item{ width:648px; margin:10px auto 0px auto;}
+#productsearch .t{ height:4px; overflow:hidden; background:url(../pic/searchitem_t.jpg) no-repeat 0px 0px;}
+#productsearch .b{ height:4px; overflow:hidden; background:url(../pic/searchitem_b.jpg) no-repeat 0px 0px;}
+#productsearch .body{ padding:20px 15px 15px 15px; background-color:#E7F0F7;}
+#productsearch .body strong{  display:block; height:24px; line-height:24px; font-size:14px; float:left; width:120px; color:#044B8C; font-family:'微软雅黑';}
+#productsearch .searchbtn{ float:right; width:132px; height:32px; position:relative; top:-4px; border:0px; cursor:pointer; font-size:12px; color:White; font-weight:bold; background:url(../pic/searchbtn.jpg) no-repeat 0px 0px; vertical-align:middle; margin:0px 10px 0px 10px;}
+#productsearch .select{ width:210px; float:left; margin:0px 8px 0px 0px; height:22px; vertical-align:middle; border:solid 1px #DDDDDD; line-height:22px;}
+.selectcontentinner{ }
+.selectcontent{ margin:0px 10px 0px 0px; z-index:999; position:relative;  background:url(../pic/select02.jpg) no-repeat 0px 0px;}
+.selectcontent .text{ cursor:pointer; line-height:24px; float:left; height:24px; padding:0px 0px 0px 15px;}
+.selectcontent .inner{ cursor:pointer; height:24px;}
+.selectcontent .inners{ display:none; left:0px; z-index:999999999999; top:21px; margin:0px 0px 0px 0px; width:100%; position:absolute;}
+.selectcontent_current{ z-index:99999999;}
+.selectcontent_current .inners{ display:block;}
+.selectcontent .btn{ width:30px; height:24px; float:right;background:url(../pic/select02.jpg) no-repeat right 0px;}
+.selectcontent .none{display:block;  background-color:White; border:solid 1px #B3B3B3; border-top-width:0px; }
+.selectcontent .none li{ padding:0px 0px 0px 15px; height:25px; line-height:25px; overflow:hidden;}
+.selectcontent .none li:hover{ cursor:pointer; color:Black;  background-color:#E7F0F7;}
+#shopsearch{ padding:20px 0px;}
+#shopsearch .tabs{ height:34px; border-bottom:solid 1px #DCDCDC;}
+#shopsearch .tabs li{ height:34px;  width:188px; float:left; padding:0px 2px 0px 0px; line-height:34px;}
+#shopsearch .tabs a{ color:#839870; float:left; display:block; width:188px; height:34px; text-align:center; background:url(../pic/search_tabs.jpg) no-repeat 0px 0px;}
+#shopsearch .tabs .current,#shopsearch .tabs a:hover{ color:Black;  text-decoration:none; background-position:right 0px;}
+#shopsearch .body{ padding:20px 0px 0px 0px;}
+#shopsearch .search{ padding:30px 0px;}
+#shopsearch .searchtxt{ color:#656565; margin:0px 8px; height:24px; line-height:24px; padding:0px 5px; background:url(../pic/text_bg.jpg) repeat-x 0px 0px; vertical-align:middle; border:solid 1px #B9B9B9; width:300px;}
+#shopsearch .searchbtn{ font-family:'微软雅黑'; width:132px; height:32px; line-height:31px; border:0px; cursor:pointer; background:url(../pic/searchbtn2.jpg) no-repeat 0px 0px; color:White;  font-weight:bold; vertical-align:middle;}
+#shopsearch .list{ padding:10px 0px 0px 0px; border-top:solid 2px #CBCBCB; }
+#shopsearch .list li{  *display:inline-block; background:url(../pic/li04.jpg) no-repeat 30px 27px; padding:20px 0px 0px 40px; position:relative;}
+#shopsearch .list dt{ line-height:22px; height:22px; overflow:hidden; color:#E04C36; font-weight:bold;}
+#shopsearch .list dd{ line-height:20px;}
+#shopsearch .list p{ color:#656565;}
+#shopsearch .list .tip{ height:20px; left:300px; top:25px; background:url(../pic/tip.jpg) no-repeat 0px 0px; position:absolute; padding:0px 0px 0px 10px;}
+#shopsearch .list .tip strong{ line-height:20px;color:#E25642; background:url(../pic/tip.jpg) no-repeat right 0px;  display:inline-block; height:20px; padding:0px 10px 0px 0px;}
+#shopsearch .searchtable{ padding:30px 0px;}
+#shopsearch .searchtable td{ padding:5px;}
+#shopsearch .searchtable .td{ text-align:right;}
+#shopsearch .searchtable .select{ width:205px; margin:0px 10px 0px 0px; height:22px; vertical-align:middle; border:solid 1px #DDDDDD; line-height:22px;}

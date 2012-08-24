@@ -1,0 +1,31 @@
+en:
+  refinery:
+    plugins:
+      infos:
+        title: 新闻
+    infos:
+      admin:
+        infos:
+          actions:
+            create_new: 添加新闻
+            reorder: 新闻排序
+            reorder_done: 排序结束
+          records:
+            title: 新闻
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Infos yet. Click "Add New Info" to add your first info.
+          info:
+            view_live_html: View this info live <br/><em>(opens in a new window)</em>
+            edit: 编辑新闻
+            delete: 删除新闻
+      infos:
+        show:
+          other: 其他新闻
+  activerecord:
+    attributes:
+      'refinery/infos/info':
+        title: 标题
+        visit_count: Visit Count
+        source: 新闻来源
+        content: 内容
+        created_at: 创建时间

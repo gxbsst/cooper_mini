@@ -1,0 +1,62 @@
+<div id="leftcontent">
+ <h3>关于固铂</h3>
+  <dl>
+    <dt><a href="about.htm">固铂概况</a></dt>
+    <dd></dd>
+  </dl>
+  <dl>
+    <dt><a href="history.htm">固铂历史</a></dt>
+    <dd></dd>
+  </dl>
+  <dl>
+    <dt><a href="facilities.htm">研发与生产</a></dt>
+    <dd></dd>
+  </dl>
+  <dl>
+    <dt><a href="quality_safety.htm">质量与安全</a></dt>
+    <dd></dd>
+  </dl>
+  <dl class="current">
+    <dt><a href="/jobs">工作机会</a></dt>
+    <dd></dd>
+  </dl>
+  <dl>
+    <dt><a href="contactus.htm">联系我们</a></dt>
+    <dd></dd>
+  </dl>
+</div>
+
+
+<div id="rightcontent">
+ <div id="site"><a href="about.htm">关于固铂</a><span>&gt;</span>工作机会</div>
+ <div id="recruitcontent">
+
+  <div class="title">
+    <span class="s1">职位名称</span><span class="s2">工作地点</span>
+  </div>
+
+ <% @jobs.each do |job| %>
+    <dl>
+      <dt><span><%= job.address %></span><h1><%= job.title %></h1></dt>
+      <dd>
+        <p class="p">学历要求：<%= job.degree %>  |   工作经验：<%= job.experience %></p>
+		<%= raw job.description %>
+      </dd>
+    </dl>
+
+	<% end %>
+
+ </div>
+ <div class="totop"><a href="#header"><img src="pic/totop.jpg" alt="回顶部" title="回顶部" /></a></div>
+</div>
+ <div class="clear"></div>
+<% content_for :jobs_js do %>
+<script language="javascript" type="text/javascript" src="js/global.js"></script>
+
+<script language="javascript" type="text/javascript" src="/js/products_tips.js"></script>
+<% end %>
+
+
+
+
+

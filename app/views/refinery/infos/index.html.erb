@@ -1,0 +1,36 @@
+<div id="leftcontent">
+ <h3>新闻媒体</h3>
+  <dl class="current">
+    <dt><strong>新闻中心</strong></dt>
+    <dd>
+      <ul>
+        <li><a href="news_list.htm">公司新闻</a></li>
+        <li class="hover"><a href="news_list.htm">历年新闻</a></li>
+      </ul>
+    </dd>
+  </dl>
+  <dl>
+    <dt><a href="download.htm">媒体中心</a></dt>
+    <dd></dd>
+  </dl>
+</div>
+<%= render "share/news_sidebar"%>
+<div id="rightcontent">
+ <div id="site"><a href="#">新闻媒体</a><span>&gt;</span>新闻中心<span>&gt;</span>公司新闻</div>
+ <div id="newslist">
+	  <ul id="infos">
+		<% @infos.each do |info| %>       
+	      <li>	
+			<span><%=  info.created_at.strftime("%Y.%m.%d ") %></span>
+	        <%= link_to info.title, refinery.infos_info_path(info) %>
+			<% if info.created_at > 1.day.ago %>
+			<label>NEW！</label>
+			<% end %>
+	      </li>
+	    <% end %>
+	  </ul>
+   <div class="page"><a href="#"><img src="pic/prev.jpg" alt="" title="" /></a><a href="#">1</a><a href="#" class="hover">2</a><a href="#">3</a><a href="#"><img src="pic/next.jpg" alt="" title="" /></a></div>
+ </div>
+ <div class="totop"><a href="#header"><img src="pic/totop.jpg" alt="回顶部" title="回顶部" /></a></div>
+</div>
+<div class="clear"></div>

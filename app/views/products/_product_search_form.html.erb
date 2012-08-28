@@ -1,5 +1,4 @@
-<div class="body">
-	<strong>按尺寸查找</strong>
+<div class="body">	 
 	<span id="tyre">
 		<%= select_tag 'tyre',options_for_select(Product.tyre_all_collection, :disabled => "disable" ), :disable_with => '165', :prompt => "断面宽", :class => "select", :style => "width:100px" %>
 	</span>
@@ -9,6 +8,4 @@
 	<span id="diameter">
 	<%= select_tag 'diameter', options_for_select([]), :prompt => "轮辋直径", :class => "select", :style => "width:115px"%>
 	</span>
-	<input type="submit" class="searchbtn" value="查询轮胎" />
-	<div class="clear"></div>
 </div>

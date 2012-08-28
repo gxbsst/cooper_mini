@@ -2,7 +2,7 @@
 class StaticController < ApplicationController
 
   def index
-    @infos = Refinery::Infos::Info.recent.limit(5).order("created_at DESC, position ASC")
+      @infos = Refinery::Infos::Info.recent.limit(5).order("created_at DESC, position ASC")
   end
 
   ## 更新到最新版本

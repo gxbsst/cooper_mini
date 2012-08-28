@@ -8,8 +8,7 @@ class Product < ActiveRecord::Base
     def tyre_all_collection
       Product.tyre_collection + [["轮胎直径", 'disable']] + Product.tyre_with_x_collection
     end
-
-    # 轮胎
+  # 轮胎
     def tyre_collection
       where(["tyre not like ?", "%X%"]).group(:tyre).collect{|p| [("&nbsp;&nbsp;" + p.tyre).html_safe, p.tyre] unless p.tyre.blank? }.compact
     end
@@ -43,7 +42,6 @@ class Product < ActiveRecord::Base
       group(:decorative).collect{|p| [p.decorative, p.decorative] unless p.decorative.blank?  }.compact
     end
     
-
   end
 
 end

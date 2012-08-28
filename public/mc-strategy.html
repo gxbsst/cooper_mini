@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Mastercraft</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" href="/js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="/js/fancybox/jquery.fancybox.js"></script>
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+    $(".pc1_img").fancybox({
+        'titlePosition' : 'over', 
+        'cyclic'        : true, 
+        'titleFormat'    : function(title, currentArray, currentIndex, currentOpts) { 
+                    return '<span id="fancybox-title-over">' + (currentIndex + 1) + 
+ ' / ' + currentArray.length + (title.length ? '   ' + title : '') + '</span>'; 
+                } 
+  
+        });
+  });
+</script>
+</head>
+
+<body>
+<!--top-->
+<div class="top_bg">
+<div class="top">
+<div class="top_logo">
+
+<div class="logo"><img src="images/logo.gif" width="335" height="66" /></div>
+<div class="search"> 
+  <!-- SiteSearch Google -->
+ 
+<form method="get" action="http://www.google.com/search">
+    <input type="text" name="q" class="input1" value="search" /> 
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="hidden" name="oe" value="UTF-8" />
+    <input type="hidden" name="hl" value="zh-CN" />
+    <div class="dj"><input type="image" src="/images/home_pic5.gif" alt="Submit" /></div>
+    <input type="hidden" name="domains" value="<%= request.url %>" />
+</form>
+<!-- SiteSearch Google -->
+
+</div>
+</div>
+
+<div class="menu">
+<ul class="m_list">
+<li><a href="/">首 页</a></li>
+<li class="line2"></li>
+<li><a href="/brand.html">品牌故事</a></li>
+<li class="line2"></li>
+<li><a href="/aboutmc.html">关于Mastercraft</a></li>
+<li class="line2"></li>
+<li><a href="/product.html">产品与服务</a></li>
+<li class="line2"></li>
+<li><a href="/news.html">新闻动态</a></li>
+<li class="line2"></li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<div class="content_bg">
+<div class="line3"></div>
+<div class="content2">
+<div class="zy_left">
+<div class="zyl_title">产品与服务</div>
+
+  <div id="leftcontent">
+ <dl class="current">
+      <dt><a href="/product.html">产品列表与详细</a></dt>
+      <dd>
+      <ul>
+          <li><a href="/mc-440.html" >• MC-440</a></li>
+          <li><a href="/mc-hp.html">• MC-HP</a></li>
+          <li><a href="/mc-strategy.html"class="hover">• MC-STRATEGY</a></li>
+       
+        </ul>
+      </dd>
+    </dl>
+ 
+ <dl>
+   <dt><a href="/products/search">查找轮胎</a></dt>
+      </dl>
+  
+   <dl>
+   <dt><a href="/commonsense.html">轮胎使用常识（小贴士）</a></dt>     
+  </dl>
+  
+   <dl>
+   <dt><a href="/dealerfind.html">经销商查找</a></dt>
+    </dl>
+
+</div>
+</div>
+
+<div class="zy_right">
+<div class="zyr_title">
+<div class="dq_bt">产品列表与详细</div>
+<div class="dh_list"><span><a href="/">首页</a> > </span><span><a href="product.html">产品列表</a> > </span><span class="red_dq">MC-STRATEGY</span></div>
+</div>
+
+<div class="product_con">
+<div class="prc_con1">
+<a class="pc1_img" rel="group" href="/images/pro_dt3.jpg"><img src="images/product3_pic1.jpg" width="253" height="240" alt=""/></a>
+
+<div class="pc1_text">
+<span><img src="images/product3_pic7.gif" width="144" height="20" /></span>
+<span>产品定位：高档舒适静音型轿车轮胎<br />
+轮辋：15”，16”，17”<br />
+速度：H ， V<br />
+SKU：12个<br />
+适合路况：高速公路，国道，省道，城市街道<br />
+制造地: CKT（中国昆山工厂）<br />
+上市时间: 2012年8月
+</span>
+</div>
+</div>
+
+<div class="prc_con2">
+<div class="pc2_title">产品特性</div>
+<div class="pc2_bottom">
+<dl class="pb_left6">
+<dt class="pbl_bt">舒适静音 – 花纹</dt>
+<dd class="pbl_nr1">加密细槽设计</dd>
+<dd class="pbl_nr8">降低花纹刚性，避免大块花纹直接拍打路面，<br />有效降低拍击噪音；</dd>
+<dd class="pbl_nr1">独特吸音沟壁设计</dd>
+<dd class="pbl_nr2">分散主沟槽的高压气流，释放压力，从而降<br />低轮胎的风噪；</dd>
+<dd class="pbl_nr3"><img src="images/product3_pic2.gif" width="250" height="90" /></dd>
+</dl>
+
+<dl class="pb_right6">
+<dt class="pbl_bt">舒适性 – 缓冲层</dt>
+<dd class="pbl_nr1">缓冲胶加厚</dd>
+<dd class="pbl_nr8">形成更密钢丝网,防止轧胎，日常补胎少；</dd>
+<dd class="pbl_nr1">细密钢丝层</dd>
+<dd class="pbl_nr2">代替粗而稀，柔克刚，避免受到路面的直接冲击</dd>
+<dd class="pbl_nr9"><img src="images/product3_pic3.gif" width="247" height="135" /></dd>
+</dl>
+
+<dl class="pb_left7">
+<dt class="pbl_bt">舒适性实验</dt>
+<dd class="pbl_nr10">步骤1：准备同样宽度Strategy 和竞品<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;断面各1块</dd>
+<dd class="pbl_nr10">步骤2：将断面垂直放在平整桌面上（如图）</dd>
+<dd class="pbl_nr10">步骤3：向下按胎面，感觉两块断面弹<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 性的差异</dd>
+
+<dd class="pbl_nr3"><img src="images/product2_pic5.gif" width="250" height="90" /></dd>
+</dl>
+
+<dl class="pb_right7">
+<dt class="pbl_bt">雨天更可靠</dt>
+<dd class="pbl_nr1">胎面宽＋8％</dd>
+<dd class="pbl_nr8">接地宽增加，抓地力提高;</dd>
+<dd class="pbl_nr1">4条宽花纹沟</dd>
+<dd class="pbl_nr2">排水效率高，避免水飘</dd>
+
+<dd class="pbl_nr4"><img src="images/product3_pic5.gif" width="247" height="138" /></dd>
+</dl>
+
+<dl class="pb_left5">
+<dt class="pbl_bt">高里程</dt>
+<dd class="pbl_nr1">花纹沟深＋10%——可磨耗橡胶增加，磨耗里程+10000km以上</dd>
+<dd class="pbl_nr10">胎肩花纹深＋30%——避免两侧过快磨损，提高使用寿命</dd>
+<dd class="pbl_nr3"><img src="images/product3_pic6.gif" width="578" height="90" /></dd>
+
+
+</dl>
+
+
+</div>
+</div>
+
+
+<div class="prc_con3">
+<div class="pc2_title"> 上市规格</div>
+
+<div class="pc3_top">
+<span class="pt_1">序号</span>
+<span class="pt_2">规格</span>
+<span class="pt_3">负荷指数<br />速度级别</span>
+<span class="pt_4">测量轮辋<br />宽度</span>
+<span class="pt_5">允许使用<br />轮辋宽度</span>
+<span class="pt_6">最大充气压力<br />（KPA）</span>
+<span class="pt_7">最大符合<br />（KG）</span> 
+</div>
+
+
+<ul class="pc3_list">
+
+<li>
+<span class="py_1">1</span>
+<span class="py_2">195/60R15</span>
+<span class="pt_3">88H</span>
+<span class="pt_4">6.0</span>
+<span class="pt_5">5.5-7.0</span>
+<span class="pt_6">300</span>
+<span class="py_7">560</span>
+ </li>
+
+<li class="pcl_ys">
+<span class="py_1">2</span>
+<span class="py_2">205/60R15</span>
+<span class="pt_3">91H</span>
+<span class="pt_4">6.0</span>
+<span class="pt_5">5.5-7.5</span>
+<span class="pt_6">300</span>
+<span class="py_7">615</span>
+</li>
+
+<li>
+<span class="py_1">3</span>
+<span class="py_2">195/65R15</span>
+<span class="pt_3">91H</span>
+<span class="pt_4">6.0</span><span class="pt_5">5.5-7.0</span><span class="pt_6">300</span>
+<span class="py_7">615</span>
+ </li>
+
+<li class="pcl_ys">
+<span class="py_1">4</span>
+<span class="py_2">205/65R15</span>
+<span class="pt_3">94H</span>
+<span class="pt_4">6.0</span>
+<span class="pt_5">5.5-7.5</span>
+<span class="pt_6">300</span>
+<span class="py_7">670</span>
+</li>
+
+<li>
+<span class="py_1">5</span>
+<span class="py_2">215/55R16</span>
+<span class="pt_3">93H</span>
+<span class="pt_4">7.0</span>
+<span class="pt_5">6.0-7.5</span>
+<span class="pt_6">300</span>
+<span class="py_7">650</span>
+ </li>
+
+<li class="pcl_ys">
+<span class="py_1">6</span>
+<span class="py_2">205/55R16</span>
+<span class="pt_3">91H</span>
+<span class="pt_4">6.5</span>
+<span class="pt_5">5.5-7.5</span>
+<span class="pt_6">300</span>
+<span class="py_7">615</span>
+</li>
+
+<li>
+<span class="py_1">7</span>
+<span class="py_2">225/60R16</span>
+<span class="pt_3">98T</span>
+<span class="pt_4">6.5</span>
+<span class="pt_5">6.0-8.0</span>
+<span class="pt_6">300</span>
+<span class="py_7">750</span>
+ </li>
+
+<li class="pcl_ys">
+<span class="py_1">8</span>
+<span class="py_2">225/55R16</span>
+<span class="pt_3">95H</span>
+<span class="pt_4">7.0</span>
+<span class="pt_5">6.0-8.0</span>
+<span class="pt_6">300</span>
+<span class="py_7">690</span>
+</li>
+
+<li>
+<span class="py_1">9</span>
+<span class="py_2">205/60R16</span>
+<span class="pt_3">92V</span>
+<span class="pt_4">6.0</span>
+<span class="pt_5">5.5-7.5</span>
+<span class="pt_6">300</span>
+<span class="py_7">630</span>
+ </li>
+
+<li class="pcl_ys">
+<span class="py_1">10</span>
+<span class="py_2">215/60R16</span>
+<span class="pt_3">95V</span>
+<span class="pt_4">6.5</span>
+<span class="pt_5">6.0-7.5</span>
+<span class="pt_6">340</span>
+<span class="py_7">690</span>
+</li>
+
+<li>
+<span class="py_1">11</span>
+<span class="py_2">215/60R16</span>
+<span class="pt_3">95T</span>
+<span class="pt_4">6.5</span>
+<span class="pt_5">6.0-7.5</span>
+<span class="pt_6">300</span>
+<span class="py_7">690</span>
+ </li>
+
+<li class="pcl_ys">
+<span class="py_1">12</span>
+<span class="py_2">225/60R16</span>
+<span class="pt_3">98H</span>
+<span class="pt_4">6.5</span>
+<span class="pt_5">6.0-8.0</span>
+<span class="pt_6">300</span>
+<span class="py_7">750</span>
+</li>
+
+<li>
+<span class="py_1">13</span>
+<span class="py_2">215/50R17</span>
+<span class="pt_3">95V</span>
+<span class="pt_4">7.0</span>
+<span class="pt_5">6.0-7.5</span>
+<span class="pt_6">300</span>
+<span class="py_7">690</span>
+ </li>
+
+<li class="pcl_ys">
+<span class="py_1">14</span>
+<span class="py_2">215/55R17</span>
+<span class="pt_3">84V</span>
+<span class="pt_4">7.0</span>
+<span class="pt_5">6.0-7.5</span>
+<span class="pt_6">300</span>
+<span class="py_7">670</span>
+</li>
+
+<li>
+<span class="py_1">15</span>
+<span class="py_2">225/50R17</span>
+<span class="pt_3">94V</span>
+<span class="pt_4">7.0</span>
+<span class="pt_5">6.0-8.0</span>
+<span class="pt_6">300</span>
+<span class="py_7">670</span>
+ </li>
+
+
+</ul>
+
+
+</div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+</div>
+ 
+  <div class="footer">
+  <div class="copyright">Copyright © 2012 Cooper Tire & Rubber Company | 沪ICP备12001223号</div>
+
+  <div id="topselectcontent">
+       <div class="text">品牌家族</div>
+       <div class="none">
+         <ul>
+          <li><a href="http://www.mastercrafttires.com" target="_blank" title="Mastercraft">Mastercraft</a></li>
+          <li><a href="http://www.avontyres.com/" target="_blank" title="Avon Tyres">Avon Tyres</a></li>
+          <li><a href="http://www.mickeythompsontires.com/" target="_blank" title="M/T">M/T</a></li>
+          <li><a href="http://www.starfiretire.com.cn/" target="_blank" title="Starfire">Starfire</a></li>
+          <li><a href="http://www.chengshantire.com/" target="_blank" title="Cheng Shan">Cheng Shan</a></li>
+          <li><a href="http://www.dickcepek.com/" title="Dick Cepek" target="_blank">Dick Cepek</a></li>
+          <li><a href="http://www.austonetire.com" target="_blank" title="Austone">Austone</a></li>
+          <li><a href="http://www.fortunetire.com.cn" target="_blank" title="Fortune">Fortune</a></li>
+         </ul>
+       </div>
+    </div>
+  
+  
+       <div class="bt_menu"><a href="contact.html">联系我们 </a>｜ <a href="copyright.html">版权信息</a> ｜ <a href="sitemap.html">公司地图</a></div>
+    
+  
+  </div>
+  
+  
+  
+  
+  <div class="kk">4454</div>
+ 
+ 
+ 
+</div>
+
+<script language="javascript" type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/global.js"></script>
+
+</body>
+</html>

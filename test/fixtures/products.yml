@@ -2,20 +2,20 @@
 
 one:
   url: MyString
-  norm: MyString
   tyre: MyString
   aspect_ratio: MyString
   diameter: MyString
-  brand: MyString
-  car_type: MyString
   decorative: MyString
+  description: MyString
+  image_url: MyString
+  name: MyString
 
 two:
   url: MyString
-  norm: MyString
   tyre: MyString
   aspect_ratio: MyString
   diameter: MyString
-  brand: MyString
-  car_type: MyString
   decorative: MyString
+  description: MyString
+  image_url: MyString
+  name: MyString

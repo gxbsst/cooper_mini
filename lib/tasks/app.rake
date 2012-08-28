@@ -5,8 +5,11 @@ namespace :app do
   desc "TODO"
   task :init_product => :environment do
     name = []
-    file_name = "tires.csv"
-    csv = CSV.read(Rails.root.join('lib', 'tasks', 'data', file_name))
+    file_name = "MC-HP.csv"
+    file = Rails.root.join('lib', 'tasks', 'data', file_name)
+ 
+    csv = CSV.read(file)
+
     csv.each do |i|
       puts i[0]
       product_item = {

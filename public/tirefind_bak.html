@@ -1,0 +1,188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Mastercraft</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<!--top-->
+<div class="top_bg">
+<div class="top">
+<div class="top_logo">
+
+<div class="logo"><img src="images/logo.gif" width="335" height="66" /></div>
+<div class="search"> 
+  <!-- SiteSearch Google -->
+ 
+<form method="get" action="http://www.google.com/search">
+    <input type="text" name="q" class="input1" value="search" /> 
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="hidden" name="oe" value="UTF-8" />
+    <input type="hidden" name="hl" value="zh-CN" />
+    <div class="dj"><input type="image" src="/images/home_pic5.gif" alt="Submit" /></div>
+    <input type="hidden" name="domains" value="<%= request.url %>" />
+</form>
+<!-- SiteSearch Google -->
+
+</div>
+</div>
+
+<div class="menu">
+<ul class="m_list">
+<li><a href="/">首 页</a></li>
+<li class="line2"></li>
+<li><a href="/brand.html">品牌故事</a></li>
+<li class="line2"></li>
+<li><a href="/about mc.html">关于Mastercraft</a></li>
+<li class="line2"></li>
+<li><a href="/product.html" class="current">产品与服务</a></li>
+<li class="line2"></li>
+<li><a href="/news.html">新闻动态</a></li>
+<li class="line2"></li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<div class="content_bg">
+<div class="line3"></div>
+<div class="content2">
+<div class="zy_left">
+<div class="zyl_title">产品与服务</div>
+
+  <div id="leftcontent">
+ <dl>
+      <dt><a href="/product.html">产品列表与详细</a></dt>
+      <dd>
+    <!--  <ul>
+          <li><a href="mc-440.html">• MC-440</a></li>
+          <li><a href="mc-hp.html">• MC-HP</a></li>
+          <li><a href="mc-strategy.html">• MC-STRATEGY</a></li>
+       
+        </ul>-->
+      </dd>
+    </dl>
+ 
+ <dl class="current">
+   <dt><a href="/products/search">查找轮胎</a></dt>
+      </dl>
+  
+   <dl>
+   <dt><a href="/commonsense.html">轮胎使用常识（小贴士）</a></dt>     
+  </dl>
+  
+   <dl>
+   <dt><a href="/dealerfind.html">经销商查找</a></dt>
+    </dl>
+
+</div>
+</div>
+
+<div class="zy_right">
+<div class="zyr_title">
+<div class="dq_bt">查找轮胎</div>
+<div class="dh_list"><span><a href="/">首页</a> > </span><!--<span>产品与服务 > </span>--><span class="red_dq">查找轮胎</span></div>
+</div>
+
+
+
+
+
+
+
+ <script> 
+	<!-- 
+	/*tab切换脚本*/ 
+	function setTab(name,cursel,n){ 
+	/*参数意义:name为标签id标识,即不带数字的,cursel为标签数字,n为一共有几个标签*/
+		for(i=1;i<=n;i++){ 
+			var menu=document.getElementById(name+i); /*循环取得所有标签*/
+			var con=document.getElementById("tab_"+name+"_"+i); /*循环取得所有的内容块*/
+			menu.className=i==cursel?"current":""; /*判断自身的数字是否等于current*/
+			con.style.display=i==cursel?"block":"none"; /*如果是则显示出当前标签所应的内容块,否则隐藏*/
+		} 
+	} 
+	//--> 
+	</script>
+
+<div id="find_con">
+          <div class="fc_title">
+            <h2><a href="#" id="two1" onmouseover="setTab('two',1,3)"class="current">按尺寸查找</a> <a href="#" id="two2" onmouseover="setTab('two',2,3)">按厂商／品牌查找</a> <a href="#" id="two3" onmouseover="setTab('two',3,3)"class="last">按花纹查找</a>
+                <div class="clear"></div>
+            </h2>
+          </div>
+        <div class="fc_con">
+           <div class="home_pro1" id="tab_two_1" >              
+       <div class="xz_pro2">
+      <select class="select4"><option>&nbsp;轮毂直径&nbsp;</option></select>
+      <select class="select4"><option>&nbsp;扁平比&nbsp;</option></select>
+      <select class="select4"><option>&nbsp;胎宽&nbsp;</option></select></div>
+
+               <div class="btn_pro"><input type="button" class="searchbtn2" value="查询轮胎" /></div>   
+               </div>
+               <div class="home_pro1" id="tab_two_2" style="display:none;">
+                   <div class="xz_pro2">
+      <select class="select5"><option>&nbsp;选择厂商/品牌&nbsp;</option></select>
+      <select class="select5"><option>&nbsp;车型&nbsp;</option></select>
+</div>
+
+               <div class="btn_pro"><input type="button" class="searchbtn2" value="查询轮胎" /></div>         
+               
+               </div>
+               
+               <div class="home_pro1" id="tab_two_3" style="display:none;">
+                      <div class="xz_pro2">
+      <select class="select6"><option>&nbsp;选择花纹&nbsp;</option></select>
+     </div>
+
+               <div class="btn_pro"><input type="button" class="searchbtn2" value="查询轮胎" /></div>         
+
+               </div>
+          </div>
+      </div>
+
+</div>
+
+
+
+</div>
+ 
+  <div class="footer">
+  <div class="copyright">Copyright © 2012 Cooper Tire & Rubber Company | 沪ICP备12001223号</div>
+
+  <div id="topselectcontent">
+       <div class="text">品牌家族</div>
+       <div class="none">
+         <ul>
+          <li><a href="http://www.mastercrafttires.com" target="_blank" title="Mastercraft">Mastercraft</a></li>
+          <li><a href="http://www.avontyres.com/" target="_blank" title="Avon Tyres">Avon Tyres</a></li>
+          <li><a href="http://www.mickeythompsontires.com/" target="_blank" title="M/T">M/T</a></li>
+          <li><a href="http://www.starfiretire.com.cn/" target="_blank" title="Starfire">Starfire</a></li>
+          <li><a href="http://www.chengshantire.com/" target="_blank" title="Cheng Shan">Cheng Shan</a></li>
+          <li><a href="http://www.dickcepek.com/" title="Dick Cepek" target="_blank">Dick Cepek</a></li>
+          <li><a href="http://www.austonetire.com" target="_blank" title="Austone">Austone</a></li>
+          <li><a href="http://www.fortunetire.com.cn" target="_blank" title="Fortune">Fortune</a></li>
+         </ul>
+       </div>
+    </div>
+  
+  
+      <div class="bt_menu"><a href="contact.html">联系我们 </a>｜ <a href="copyright.html">版权信息</a> ｜ <a href="sitemap.html">公司地图</a></div>
+    
+  
+  </div>
+  
+  <div class="kk">4454</div>
+ 
+ 
+ 
+</div>
+
+<script language="javascript" type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/global.js"></script>
+
+</body>
+</html>

@@ -1,6 +1,6 @@
 CooperCom::Application.routes.draw do
   root :to => 'static#index'
-  match "/zh-CN", :to => 'static#index'	
+  match "/zh-CN", :to => 'static#index' 
   match "downloads", :to => "downloads#index"
   match "searchs", :to => "searchs#index"
   match "products/search", :to => "products#search"
@@ -8,6 +8,8 @@ CooperCom::Application.routes.draw do
   match "stores/search_2", :to => "stores#search_2"
   match ':controller(/:action(/:id))', :controller => /api\/[^\/]+/
   mount Refinery::Core::Engine, :at => '/'
+
+ 
   # This line mounts Refinery's routes at the root of your application.
   # This means, any requests to the root URL of your application will go to Refinery::PagesController#home.
   # If you would like to change where this extension is mounted, simply change the :at option to something different.
@@ -64,6 +66,7 @@ CooperCom::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
+  
 
   # See how all your routes lay out with "rake routes"
 

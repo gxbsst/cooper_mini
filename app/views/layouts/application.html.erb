@@ -7,7 +7,19 @@
 
 </head>
 
-<body>
+<body>      
+<!-- Put the following javascript before the closing </head> tag. -->
+<script>
+  (function() {
+    var cx = '015201122233355603109:lpakmgjpn4w';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+ 
+ 
   <!--top-->
   <div class="top_bg">
     <div class="top">
@@ -15,7 +27,14 @@
 
         <div class="logo"><img src="/images/logo.gif" width="335" height="66" /></div>
         <div class="search">
-          <%= render "static/search_all.html.erb" %>
+           <!-- SiteSearch Google -->
+ 
+        <form method="get" action="http://www.google.com/search">
+       <!-- Place this tag where you want the search box to render -->
+<gcse:searchbox-only></gcse:searchbox-only>
+        </form>
+<!-- SiteSearch Google -->
+
         </div>
       </div>
 

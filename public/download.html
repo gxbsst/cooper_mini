@@ -7,6 +7,17 @@
 </head>
 
 <body>
+      <!-- Put the following javascript before the closing </head> tag. -->
+<script>
+  (function() {
+    var cx = '015201122233355603109:lpakmgjpn4w';
+    var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+ 
 <!--top-->
 <div class="top_bg">
 <div class="top">
@@ -18,12 +29,8 @@
 <!-- SiteSearch Google -->
  
 <form method="get" action="http://www.google.com/search">
-    <input type="text" name="q" class="input1" value="search" /> 
-    <input type="hidden" name="ie" value="UTF-8" />
-    <input type="hidden" name="oe" value="UTF-8" />
-    <input type="hidden" name="hl" value="zh-CN" />
-    <div class="dj"><input type="image" src="/images/home_pic5.gif" alt="Submit" /></div>
-    <input type="hidden" name="domains" value="<%= request.url %>" />
+<!-- Place this tag where you want the search box to render -->
+<gcse:searchbox-only></gcse:searchbox-only>
 </form>
 <!-- SiteSearch Google -->
 

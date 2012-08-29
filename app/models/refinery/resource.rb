@@ -5,7 +5,7 @@ module Refinery
 
     attr_accessible :id, :file, :media_type, :name, :image_type
 
-    resource_accessor :file
+ #  resource_accessor :file
 
     validates :file, :presence => true
     validates_with FileSizeValidator

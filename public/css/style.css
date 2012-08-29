@@ -52,13 +52,17 @@ ul.m_list li a.current{ color:#fff;  background:url(../images/ml_bg.gif) repeat-
 .find{ float:left; width:488px;}
 
 .home_con2{ overflow:hidden; margin-left:20px; margin-bottom:35px;}
-.h_product1{ float:left; width:266px; height:127px; margin-right:28px; background:url(../images/h_product1.jpg) no-repeat;}
-span.more2{ display:block; padding:95px 0px 0px 45px; background:url(../images/icon2.gif) no-repeat 31px 99px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#ee2e24; }
+.h_product1{ float:left; width:266px; height:127px; margin-right:23px; background: url(../images/home_pro7.gif) no-repeat; overflow:hidden;}
+.hp_left{ float:left; padding-left:22px; padding-top:24px;}
+span.more2{ display:block; padding:53px 0px 0px 17px; background:url(../images/icon2.gif) no-repeat 2px 57px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#ee2e24; }
 span.more2 a{color:#ee2e24; }
-span.more3{ display:block; padding:95px 0px 0px 42px; background:url(../images/icon2.gif) no-repeat 28px 99px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#ee2e24; }
-span.more3 a{color:#ee2e24; }
-.h_product2{ float:left; width:266px; height:127px; margin-right:28px; background:url(../images/h_product2.jpg) no-repeat;}
-.h_product3{ float:left; width:276px; height:127px; margin-right:28px; background:url(../images/h_product3.jpg) no-repeat;}
+.hp_right{ float:right; padding-right:11px; padding-top:9px;}
+
+
+/*span.more3{ display:block; padding:53px 0px 0px 42px; background:url(../images/icon2.gif) no-repeat 28px 99px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#ee2e24; }
+span.more3 a{color:#ee2e24; }*/
+.h_product2{ float:left; width:276px; height:127px; margin-right:23px; background: url(../images/home_pro8.gif) no-repeat;}
+.h_product3{ float:left; width:276px; height:127px; margin-right:28px; background: url(../images/home_pro9.gif) no-repeat;}
 
 .footer{ width:960px; height:38px; background:#000; margin:0px auto; margin-bottom:70px; }
 .copyright{ float:left; line-height:38px; color:#aaa; padding-left:25px;}

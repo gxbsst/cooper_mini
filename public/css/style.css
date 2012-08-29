@@ -94,6 +94,9 @@ span.more3 a{color:#ee2e24; }*/
 	.tabTitle a.current { color:#ffffff; background:url(../images/home_pic2.gif) no-repeat;}
 	.tabTitle a:hover { color:#ffffff; background:url(../images/home_pic2.gif) no-repeat;  text-decoration:none;} 
 
+#focus{ width:915px; height:320px; margin:0px auto;}
+
+
 
 
 /*品牌故事*/

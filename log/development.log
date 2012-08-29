@@ -38461,3 +38461,47 @@ Filter chain halted as :find_page rendered or redirected
   [1m[36mRefinery::User Load (0.3ms)[0m  [1mSELECT `refinery_users`.* FROM `refinery_users` WHERE `refinery_users`.`id` = 1 LIMIT 1[0m
   [1m[35mRefinery::Role Load (0.3ms)[0m  SELECT `refinery_roles`.* FROM `refinery_roles` INNER JOIN `refinery_roles_users` ON `refinery_roles`.`id` = `refinery_roles_users`.`role_id` WHERE `refinery_roles_users`.`user_id` = 1
 Completed 404 Not Found in 12ms (Views: 4.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-29 09:38:07 +0800
+Processing by StaticController#index as HTML
+  [1m[36mRefinery::Role Load (0.4ms)[0m  [1mSELECT `refinery_roles`.* FROM `refinery_roles` WHERE `refinery_roles`.`title` = 'Refinery' LIMIT 1[0m
+  [1m[35mRefinery::User Load (0.7ms)[0m  SELECT `refinery_users`.* FROM `refinery_users` INNER JOIN `refinery_roles_users` ON `refinery_users`.`id` = `refinery_roles_users`.`user_id` WHERE `refinery_roles_users`.`role_id` = 1
+  [1m[36mProduct Load (3.3ms)[0m  [1mSELECT `products`.* FROM `products` WHERE (tyre not like '%X%') GROUP BY tyre[0m
+  [1m[35mProduct Load (1.6ms)[0m  SELECT `products`.* FROM `products` WHERE (tyre like '%X%') GROUP BY tyre
+  Rendered static/_product_search_form.html.erb (82.0ms)
+  [1m[36mBrand Load (16.1ms)[0m  [1mSELECT `brands`.* FROM `brands` GROUP BY brand_name_zh ORDER BY CONVERT( brand_name_zh USING gbk)[0m
+  Rendered static/_brand_search_form.html.erb (52.8ms)
+  [1m[35mBrand Load (1.3ms)[0m  SELECT `brands`.* FROM `brands` GROUP BY name
+  Rendered static/index.html.erb within layouts/application (190.6ms)
+  [1m[36mRefinery::User Load (0.4ms)[0m  [1mSELECT `refinery_users`.* FROM `refinery_users` WHERE `refinery_users`.`id` = 1 LIMIT 1[0m
+  [1m[35mRefinery::Role Load (0.5ms)[0m  SELECT `refinery_roles`.* FROM `refinery_roles` INNER JOIN `refinery_roles_users` ON `refinery_roles`.`id` = `refinery_roles_users`.`role_id` WHERE `refinery_roles_users`.`user_id` = 1
+Completed 200 OK in 768ms (Views: 184.5ms | ActiveRecord: 312.5ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2012-08-29 09:38:08 +0800
+Served asset /jquery.js - 200 OK (365ms)
+
+
+Started GET "/assets/jquery-ui.js" for 127.0.0.1 at 2012-08-29 09:38:09 +0800
+Served asset /jquery-ui.js - 200 OK (83ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2012-08-29 09:38:09 +0800
+Served asset /jquery_ujs.js - 200 OK (39ms)
+
+
+Started GET "/assets/brands.js" for 127.0.0.1 at 2012-08-29 09:38:09 +0800
+Served asset /brands.js - 304 Not Modified (23ms)
+
+
+Started GET "/assets/underscore.js" for 127.0.0.1 at 2012-08-29 09:38:09 +0800
+Served asset /underscore.js - 304 Not Modified (83ms)
+
+
+Started GET "/assets/backbone.js" for 127.0.0.1 at 2012-08-29 09:38:09 +0800
+Served asset /backbone.js - 304 Not Modified (27ms)
+
+
+Started GET "/assets/products.js" for 127.0.0.1 at 2012-08-29 09:38:09 +0800
+Served asset /products.js - 304 Not Modified (74ms)

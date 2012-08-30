@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>Mastercraft</title>
   <link href="css/style.css" rel="stylesheet" type="text/css" />
-
+<script type="text/javascript" src="js/swfobject.js"></script>
 </head>
 
 <body>
@@ -42,7 +42,26 @@
   <div class="content_bg">
     <div class="line1"></div>
     <div class="content">
-     <div class="banner"><img src="images/banner1.jpg" width="915" height="320" /></div>
+     <div class="banner">
+     
+     <div id="focus">
+</div>
+<script type="text/javascript">
+var so = new SWFObject("focus.swf", "focus", "915", "320", "7", "#ffffff");
+so.addParam('wmode','transparent');
+so.addVariable("picurl","images/1.jpg,images/2.jpg,images/3.jpg");
+<!--so.addVariable("pictext","图片一,图片二,图片三");-->
+so.addVariable("piclink","http://www.16sucai.com,http://www.16sucai.com,http://www.16sucai.com");
+so.addVariable("pictime","3");
+so.addVariable("borderwidth","915");
+so.addVariable("borderheight","320");
+so.addVariable("borderw","false");
+so.addVariable("buttondisplay","true");
+so.addVariable("textheight","0");
+so.write("focus");
+</script>     
+    
+     </div>
      
      <div class="home_con">
        <div class="home_news">
@@ -126,9 +145,38 @@
 </div>
 
 <div class="home_con2">
- <div class="h_product1"><span class="more2"><a href="mc-440.html">MORE</a></span></div>
- <div class="h_product2"><span class="more2"><a href="mc-hp.html">MORE</a></span></div>
- <div class="h_product3"><span class="more3"><a href="mc-strategy.html">MORE</a></span></div>
+ <div class="h_product1">
+ <div class="hp_left">
+ <span><a href="mc-440.html"><img src="images/home_pro4.gif" width="77" height="19" border="0" /></a></span>
+ <span class="more2"><a href="mc-440.html">MORE</a></span> 
+ </div>
+  <div class="hp_right"><a href="mc-440.html"><img src="images/home_pro1.jpg" width="84" height="110" border="0" /></a></div>
+ 
+ </div>
+ 
+ 
+ 
+ 
+ <div class="h_product2"> 
+  <div class="hp_left">
+ <span><a href="mc-hp.html"><img src="images/home_pro5.gif" width="136" height="20" border="0" /></a></span>
+<span class="more2"><a href="mc-hp.html">MORE</a></span>
+ </div>
+  <div class="hp_right"><a href="mc-hp.html"><img src="images/home_pro2.jpg" width="89" height="109" border="0" /></a></div> 
+</div>
+ 
+ 
+ 
+ 
+ 
+ <div class="h_product3">
+   <div class="hp_left">
+ <span><a href="mc-strategy.html"><img src="images/home_pro6.gif" width="105" height="20" border="0" /></a></span>
+ <span class="more2"><a href="mc-strategy.html">MORE</a></span>
+ </div>
+  <div class="hp_right"><a href="mc-strategy.html"><img src="images/home_pro3.jpg" width="84" height="113" border="0" /></a></div>
+ 
+  </div>
  
  
 </div>
@@ -142,7 +190,7 @@
    <div class="text">品牌家族</div>
    <div class="none">
      <ul>
-      <li><a href="http://www.mastercrafttires.com" target="_blank" title="Mastercraft">Mastercraft</a></li>
+      <li><a href="http://www.coopertire.com.cn/" target="_blank" title="Coopertires">Coopertires</a></li>
       <li><a href="http://www.avontyres.com/" target="_blank" title="Avon Tyres">Avon Tyres</a></li>
       <li><a href="http://www.mickeythompsontires.com/" target="_blank" title="M/T">M/T</a></li>
       <li><a href="http://www.starfiretire.com.cn/" target="_blank" title="Starfire">Starfire</a></li>
@@ -155,7 +203,7 @@
 </div>
 
 
-<div class="bt_menu"><a href="contact.html">联系我们 </a>｜ <a href="copyright.html">版权信息</a> ｜ <a href="sitemap.html">公司地图</a></div>
+<div class="bt_menu"><a href="contact.html">联系我们 </a>｜ <a href="copyright.html">版权信息</a> ｜ <a href="sitemap.html">网站地图</a></div>
 
 
 </div>

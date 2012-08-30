@@ -18,3 +18,4 @@
 //= require region_china
 //= require gmaps4rails/googlemaps
 //= require fancybox
+//= require swfobject

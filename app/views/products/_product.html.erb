@@ -5,6 +5,10 @@
     </div>
 	<dl class="fl_text">
 		<dt><%= link_to product.name, product.url %></dt>
+		<dd><%= product.position %></dd>
+		<dd><span><%= product.rim %></span><span><%= product.speed %></span><span><%= product.sku %></span></dd>
+        <dd><%= product.road %></dd>
+        <dd><span><%= product.manufacture %></span> <span><%= product.time %></span> </dd>
 		<dd><%= product.description %></dd>
 		<dd><%= link_to "查看详细", product.url, :class => 'more' %></dd>
 	</dl>

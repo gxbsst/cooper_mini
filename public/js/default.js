@@ -21,7 +21,7 @@ function()
     {
       $("#bannerlist ul").css("left",Number($("#bannerlist ul").css("left").replace("px","")) + totalwidth);
     }
-    $("#bannerlist ul").animate({left:'-=980px'},'fast');
+    $("#bannerlist ul").animate({left:'-=915px'},'fast');
   }
   );
   $("#nextbtn").click(
@@ -31,11 +31,11 @@ function()
     {
       $("#bannerlist ul").css("left",Number($("#bannerlist ul").css("left").replace("px","")) - totalwidth);
     }
-    $("#bannerlist ul").animate({left:'+=980px'},'fast');    
+    $("#bannerlist ul").animate({left:'+=915px'},'fast');    
   }
   );
  time = setInterval(function(){$("#nextbtn").click();},5000);
- var totalwidth = Number($("#bannerlist ul li").length) * 980;
+ var totalwidth = Number($("#bannerlist ul li").length) * 915;
  $("#bannerlist ul").html($("#bannerlist ul").html() + $("#bannerlist ul").html() + $("#bannerlist ul").html());
  $("#bannerlist ul").css("width",totalwidth*3);
  $("#bannerlist ul").css("left","-" + totalwidth + "px");

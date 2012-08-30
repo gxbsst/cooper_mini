@@ -16,11 +16,17 @@ namespace :app do
         :decorative => i[0].to_s.force_encoding("UTF-8"), 
         :name => i[1].to_s.force_encoding("UTF-8"),
         :image_url => i[2].to_s.force_encoding("UTF-8"),
-        :description => i[3].to_s.force_encoding("UTF-8"),
-        :url => i[4].to_s.force_encoding("UTF-8"), 
-        :tyre => i[5].to_s.force_encoding("UTF-8"), 
-        :aspect_ratio => i[6].to_s.force_encoding("UTF-8"), 
-        :diameter => i[7].to_s.force_encoding("UTF-8")
+        :position => i[3].to_s.force_encoding("UTF-8"),
+        :rim => i[4].to_s.force_encoding("UTF-8"),
+        :speed =>i[5].to_s.force_encoding("UTF-8"),
+        :sku => i[6].to_s.force_encoding("UTF-8"),
+        :road => i[7].to_s.force_encoding("UTF-8"),
+        :manufacture => i[8].to_s.force_encoding("UTF-8"),
+        :time => i[9].to_s.force_encoding("UTF-8"),
+        :url => i[10].to_s.force_encoding("UTF-8"), 
+        :tyre => i[11].to_s.force_encoding("UTF-8"), 
+        :aspect_ratio => i[12].to_s.force_encoding("UTF-8"), 
+        :diameter => i[13].to_s.force_encoding("UTF-8")
       }
       @product = Product.create(product_item)
     end

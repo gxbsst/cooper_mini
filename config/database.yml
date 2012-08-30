@@ -15,7 +15,7 @@ production:
   encoding: utf8
   collation: utf8_general_ci
   reconnect: false
-  database: cooper_production 
+  database: cooper_development
   pool: 10
   username: root
   password: ""

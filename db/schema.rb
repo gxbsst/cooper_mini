@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120401082632) do
+ActiveRecord::Schema.define(:version => 20120829063431) do
 
   create_table "brands", :force => true do |t|
     t.string   "name"
@@ -40,6 +40,13 @@ ActiveRecord::Schema.define(:version => 20120401082632) do
     t.text     "description"
     t.string   "image_url"
     t.string   "name"
+    t.string   "rim"
+    t.string   "speed"
+    t.string   "sku"
+    t.string   "road"
+    t.string   "manufacture"
+    t.string   "time"
+    t.string   "position"
   end
 
   create_table "refinery_images", :force => true do |t|

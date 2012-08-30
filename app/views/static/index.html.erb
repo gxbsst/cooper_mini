@@ -1,7 +1,34 @@
- <div class="line1"></div>
- <div class="content">
-   <div class="banner"><img src="images/banner1.jpg" width="915" height="320" /></div>  
-   <div class="home_con">
+
+  <div class="content_bg">
+   <div class="line1"></div>
+
+
+
+   <div id="content">   
+    <div id="banner">
+
+      <div id="focus"></div>
+      <script type="text/javascript" src="/js/swfobject.js"></script>
+      <script src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        <script type="text/javascript">
+        var so = new SWFObject("focus.swf", "focus", "915", "320", "7", "#ffffff");
+        so.addParam('wmode','transparent');
+        so.addVariable("picurl","images/banner1.jpg,images/banner2.jpg,images/banner3.jpg");
+        <!--so.addVariable("pictext","图片一,图片二,图片三");-->
+        so.addVariable("piclink","http://www.16sucai.com,http://www.16sucai.com,http://www.16sucai.com");
+        so.addVariable("pictime","3");
+        so.addVariable("borderwidth","915");
+        so.addVariable("borderheight","320");
+        so.addVariable("borderw","false");
+        so.addVariable("buttondisplay","true");
+        so.addVariable("textheight","0");
+        so.write("focus");
+        </script> 
+      
+
+
+    </div>
+    <div class="home_con">
      <div class="home_news">
        <div class="hn_title">
          <div class="nt_bt">新闻动态</div>
@@ -9,14 +36,14 @@
        </div>
        <div class="hn_con">
          <div class="hc_img"><img src="images/hn_img.gif" width="95" height="60" /></div>
-         <div class="hc_text"><span><a href="news.html">固铂轮胎可持续发展再添新动力 -- 获美国农业部690万美元专款⋯⋯</a></span>
+         <div class="hc_text"><span><a href="news.html">固铂轮胎可持续发展再添新动力 -- 获美国农业部690万美元专款⋯</a></span>
            <span class="date">2012-07-17</span>
          </div> 
        </div>
 
-       <div class="hn_con1"><span class="hnc_con"><a href="news.html">中原英雄风云再起 固铂轮胎越野激情⋯⋯</a></span><span class="date2">2012/07/17</span></div>
+       <div class="hn_con1"><span class="hnc_con"><a href="news.html">中原英雄风云再起 固铂轮胎越野激情⋯</a></span><span class="date2">2012/07/17</span></div>
 
-       <div class="hn_con1"><span class="hnc_con"><a href="news.html">挑战雪域高原之巅 固铂轮胎协力车手⋯⋯</a></span><span class="date2">2012/07/17</span></div>
+       <div class="hn_con1"><span class="hnc_con"><a href="news.html">挑战雪域高原之巅 固铂轮胎协力车手⋯</a></span><span class="date2">2012/07/17</span></div>
 
      </div> 
 
@@ -51,30 +78,30 @@
       <%= form_tag "/searchs" do  -%>             
       <div class="xz_pro">
         <%= render "product_search_form" %>
-          </div>
-        <div class="btn_pro"><input type="submit" class="searchbtn" value="查询轮胎" /></div> 
+      </div>
+      <div class="btn_pro"><input type="submit" class="searchbtn" value="查询轮胎" /></div> 
       <% end %>   
-      </div>
+    </div>
 
 
-      <div class="home_pro1" id="tab_one_2" style="display:none;">
-       <%= form_tag "/searchs?type=brand" do  -%>  
-        <div class="xz_pro">
-        <%= render "brand_search_form" %>       
-      </div>
-       <div class="btn_pro"><input type="submit" class="searchbtn" value="查询轮胎" /></div>  
-       <% end %>       
-     </div>
-
-     <div class="home_pro1" id="tab_one_3" style="display:none;">
-      <%= form_tag "/searchs?type=brand" do  -%>     
-       <div class="xz_pro">
-       <%= select_tag 'name', options_for_select(Brand.decorative_collection), :prompt => "选择花纹", :class => "select", :style => "width:200px" %>
-     </div>
-      <div class="btn_pro"><input type="submit" class="searchbtn" value="查询轮胎" /></div>  
-      <% end %>       
-    </div>               
+    <div class="home_pro1" id="tab_one_2" style="display:none;">
+     <%= form_tag "/searchs?type=brand" do  -%>  
+     <div class="xz_pro">
+      <%= render "brand_search_form" %>       
+    </div>
+    <div class="btn_pro"><input type="submit" class="searchbtn" value="查询轮胎" /></div>  
+    <% end %>       
   </div>
+
+  <div class="home_pro1" id="tab_one_3" style="display:none;">
+    <%= form_tag "/searchs?type=brand" do  -%>     
+    <div class="xz_pro">
+     <%= select_tag 'name', options_for_select(Brand.decorative_collection), :prompt => "选择花纹", :class => "select", :style => "width:200px" %>
+   </div>
+   <div class="btn_pro"><input type="submit" class="searchbtn" value="查询轮胎" /></div>  
+   <% end %>       
+ </div>               
+</div>
 
 </div>
 
@@ -87,15 +114,16 @@
  <div class="h_product2"><span class="more2"><a href="mc-hp.html">MORE</a></span></div>
  <div class="h_product3"><span class="more3"><a href="mc-strategy.html">MORE</a></span></div>
  
- 
 </div>
- 
-  <%= javascript_include_tag "jquery", "jquery-ui","jquery_ujs","underscore", "backbone", "products", "brands"%>
-  <script type="text/javascript" src="/js/jquery.tools.min.js"></script>
-  <script type="text/javascript" src="/js/jquery.hoverIntent.minified.js"></script>
+</div>
+
+<%= javascript_include_tag "jquery", "jquery-ui","jquery_ujs","underscore", "backbone", "products", "brands"%>
+<script type="text/javascript" src="/js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="/js/jquery.hoverIntent.minified.js"></script>
+
   <!--[if IE 6]>
     <script type="text/javascript" src="/js/png.js"></script>
-  <!--<![endif]-->
-  <script language="javascript" type="text/javascript" src="/js/default.js"></script>
-  
+    <!--<![endif]-->
+<script language="javascript" type="text/javascript" src="/js/default.js"></script>
+
 

@@ -49464,3 +49464,47 @@ Served asset /products.js - 304 Not Modified (0ms)
 
 Started GET "/assets/brands.js" for 127.0.0.1 at 2012-08-30 10:48:42 +0800
 Served asset /brands.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-30 11:01:53 +0800
+Processing by StaticController#index as HTML
+  [1m[35mRefinery::Role Load (0.6ms)[0m  SELECT `refinery_roles`.* FROM `refinery_roles` WHERE `refinery_roles`.`title` = 'Refinery' LIMIT 1
+  [1m[36mRefinery::User Load (0.3ms)[0m  [1mSELECT `refinery_users`.* FROM `refinery_users` INNER JOIN `refinery_roles_users` ON `refinery_users`.`id` = `refinery_roles_users`.`user_id` WHERE `refinery_roles_users`.`role_id` = 1[0m
+  [1m[35mProduct Load (2.7ms)[0m  SELECT `products`.* FROM `products` WHERE (tyre not like '%X%') GROUP BY tyre
+  [1m[36mProduct Load (1.0ms)[0m  [1mSELECT `products`.* FROM `products` WHERE (tyre like '%X%') GROUP BY tyre[0m
+  Rendered static/_product_search_form.html.erb (6.6ms)
+  [1m[35mBrand Load (0.8ms)[0m  SELECT `brands`.* FROM `brands` GROUP BY brand_name_zh ORDER BY CONVERT( brand_name_zh USING gbk)
+  Rendered static/_brand_search_form.html.erb (1.5ms)
+  [1m[36mBrand Load (1.7ms)[0m  [1mSELECT `brands`.* FROM `brands` GROUP BY name[0m
+  Rendered static/index.html.erb within layouts/application (14.9ms)
+  [1m[35mRefinery::User Load (0.3ms)[0m  SELECT `refinery_users`.* FROM `refinery_users` WHERE `refinery_users`.`id` = 1 LIMIT 1
+  [1m[36mRefinery::Role Load (0.4ms)[0m  [1mSELECT `refinery_roles`.* FROM `refinery_roles` INNER JOIN `refinery_roles_users` ON `refinery_roles`.`id` = `refinery_roles_users`.`role_id` WHERE `refinery_roles_users`.`user_id` = 1[0m
+Completed 200 OK in 24ms (Views: 12.7ms | ActiveRecord: 7.8ms)
+
+
+Started GET "/assets/jquery-ui.js" for 127.0.0.1 at 2012-08-30 11:01:54 +0800
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/underscore.js" for 127.0.0.1 at 2012-08-30 11:01:54 +0800
+Served asset /underscore.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js" for 127.0.0.1 at 2012-08-30 11:01:54 +0800
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js" for 127.0.0.1 at 2012-08-30 11:01:54 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/backbone.js" for 127.0.0.1 at 2012-08-30 11:01:54 +0800
+Served asset /backbone.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/products.js" for 127.0.0.1 at 2012-08-30 11:01:54 +0800
+Served asset /products.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/brands.js" for 127.0.0.1 at 2012-08-30 11:01:54 +0800
+Served asset /brands.js - 304 Not Modified (0ms)

@@ -33,9 +33,14 @@ ul.m_list li a.current{ color:#fff;  background:url(../images/ml_bg.gif) repeat-
 .line1{ height:9px; width:984px; background: url(../images/con_bg2.gif) no-repeat; margin:0px auto;}
 
 
-#focus{ width:915px; height:320px; margin:0px auto;}
-#content{ width:915px; height:100%;position:relative; background:#fff; border:1px solid #b7b7b7; border-top:none; padding:15px 21px 0px 22px; margin:0px auto;}
-#banner{ margin-bottom:30px;}
+#bannercontent{ width:915px; height:100%;position:relative; background:#fff; border:1px solid #b7b7b7; border-top:none; padding:15px 21px 0px 22px; margin:0px auto;}
+#bannerlist{ margin-bottom:30px;}
+#bannerlist{ height:320px;  position:relative; width:915px;overflow:hidden;}
+#bannerlist img{ width:915px; height:320px;}
+#bannerlist ul{ width:3920px; position:absolute; left:0px; top:0px;}
+#bannerlist li{ width:915px; float:left; height:320px; overflow:hidden;}
+#bannerlist .prev{ width:32px; height:38px; background:url(../images/prev.png) no-repeat 0px 0px; cursor:pointer; position:absolute; left:20px; top:140px;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='pic/prev.png',sizingMethod='image');}
+#bannerlist .next{ width:32px; height:38px; background:url(../images/next.png) no-repeat 0px 0px; cursor:pointer; position:absolute; right:20px; top:140px;_background-image:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='pic/next.png',sizingMethod='image');}
 
 .home_con{ margin-bottom:30px; overflow:hidden;}
 .home_news{ float:left; margin-right:45px; margin-left:15px; width:350px;}

@@ -18,16 +18,25 @@
 
   <div class="content_bg">
    <div class="line1"></div>
-  <div id="bannercontent">   
-    <div id="bannerlist">
-      <ul>
-      <li><img src="images/1.jpg" alt="" title=""/></li>
-      <li><img src="images/2.jpg" alt="" title=""/></li>
-      <li><img src="images/3.jpg" alt="" title=""/></li>
-    </ul>
-    <div class="prev" id="prevbtn"></div>
-    <div class="next" id="nextbtn"></div> 
-    </div>
+  <div class="content">
+     <div class="banner">    
+     <div id="focus"></div>
+     <script type="text/javascript" src="/js/swfobject.js"></script>
+        <script type="text/javascript">
+        var so = new SWFObject("focus.swf", "focus", "915", "320", "7", "#ffffff");
+        so.addParam('wmode','transparent');
+        so.addVariable("picurl","images/1.jpg,images/2.jpg,images/3.jpg");
+        <!--so.addVariable("pictext","图片一,图片二,图片三");-->
+        so.addVariable("piclink","http://www.16sucai.com,http://www.16sucai.com,http://www.16sucai.com");
+        so.addVariable("pictime","3");
+        so.addVariable("borderwidth","915");
+        so.addVariable("borderheight","320");
+        so.addVariable("borderw","false");
+        so.addVariable("buttondisplay","true");
+        so.addVariable("textheight","0");
+        so.write("focus");
+        </script>            
+     </div>
     <div class="home_con">
      <div class="home_news">
        <div class="hn_title">

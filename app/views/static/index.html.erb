@@ -1,14 +1,14 @@
       <div class="menu">
-        <ul class="m_list">
+       <ul class="m_list">
           <li><a href="/" class="current">首 页</a></li>
           <li class="line2"></li>
-          <li><a href="/brand.html">品牌故事</a></li>
+          <li><a href="brand.html">百年历史</a></li>
           <li class="line2"></li>
-          <li><a href="/aboutmc.html">关于Mastercraft</a></li>
+          <li><a href="aboutmc.html">关于Mastercraft</a></li>
           <li class="line2"></li>
-          <li><a href="/product.html">产品与服务</a></li>
+          <li><a href="product.html">产品与服务</a></li>
           <li class="line2"></li>
-          <li><a href="/news.html">新闻动态</a></li>
+          <li><a href="news.html">新闻动态</a></li>
           <li class="line2"></li>
         </ul>
       </div>
@@ -17,27 +17,67 @@
   </div>
 
   <div class="content_bg">
-   <div class="line1"></div>
-  <div class="content">
-     <div class="banner">    
-     <div id="focus"></div>
-     <script type="text/javascript" src="/js/swfobject.js"></script>
-        <script type="text/javascript">
-        var so = new SWFObject("focus.swf", "focus", "915", "320", "7", "#ffffff");
-        so.addParam('wmode','transparent');
-        so.addVariable("picurl","images/banner1.jpg,images/banner2.jpg,images/banner3.jpg");
-        <!--so.addVariable("pictext","图片一,图片二,图片三");-->
-        so.addVariable("piclink","/mc-440.html,/mc-hp.html,/mc-strategy.html");
-        so.addVariable("pictime","3");
-        so.addVariable("borderwidth","915");
-        so.addVariable("borderheight","320");
-        so.addVariable("borderw","false");
-        so.addVariable("buttondisplay","true");
-        so.addVariable("textheight","0");
-        so.write("focus");
-        </script>            
-     </div>
+   <div class="content">
+     <div class="banner">
+   
+    <script type="text/javascript" src="js/jquery-1.2.6.pack.js"></script> 
+    <script type="text/javascript"> 
+    var t = n = 0, count; 
+    $(document).ready(function(){ 
+      count=$("#banner_list a").length; 
+      $("#banner_list a:not(:first-child)").hide(); 
+      $("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt')); 
+      $("#banner_info").click(function(){window.open($("#banner_list a:first-child").attr('href'), "_blank")}); 
+      $("#banner li").click(function() { 
+      var i = $(this).text() - 1;//获取Li元素内的值，即1，2，3，4 
+      n = i; 
+      if (i >= count) return; 
+      $("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt')); 
+      $("#banner_info").unbind().click(function(){window.open($("#banner_list a").eq(i).attr('href'), "_blank")}) 
+      $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000); 
+      $(this).css({"background":"#be2424",'color':'#000'}).siblings().css({"background":"#6f4f67",'color':'#fff'}); 
+      }); 
+      t = setInterval("showAuto()", 4000); 
+      $("#banner").hover(function(){clearInterval(t)}, function(){t = setInterval("showAuto()", 4000);});
+      }) 
+      function showAuto() 
+      { 
+      n = n >=(count - 1) ? 0 : ++n; 
+      $("#banner li").eq(n).trigger('click'); 
+      } 
+      </script> 
+        <div id="banner"> 
+        <div id="banner_bg"></div> 
+        <!--标题背景--> 
+        <div id="banner_info"></div> 
+        <!--标题--> 
+
+        <ul> 
+        <li class="nob">1</li> 
+        <li class="nob">2</li> 
+        <li class="nob">3</li> 
+        </ul> 
+        <div id="banner_list"> 
+        <a href="/mc-strategy.html" target="_self"><img src="images/slide1.jpg"   /></a> 
+        <a href="/mc-hp.html" target="_self"><img src="images/slide2.jpg"   /></a> 
+        <a href="/mc-440.html" target="_self"><img src="images/slide3.jpg"   /></a> 
+        </div> 
+        </div>  
+         
+ 
+ 
+  
+       </div>
+
+
     <div class="home_con">
+     
+     <div class="video">
+     <div class="video_title">品牌宣传片 </div>
+      <div class="video_con"><img src="images/video_pic1.gif" width="230" height="130" /></div> 
+
+     </div>
+    
      <div class="home_news">
        <div class="hn_title">
          <div class="nt_bt">新闻动态</div>
@@ -45,14 +85,14 @@
        </div>
        <div class="hn_con">
          <div class="hc_img"><img src="images/hn_img.gif" width="95" height="60" /></div>
-         <div class="hc_text"><span><a href="news.html">固铂轮胎可持续发展再添新动力 -- 获美国农业部690万美元专款⋯</a></span>
+         <div class="hc_text"><span><a href="news.html">固铂轮胎可持续发展再添新动力 -- 获美国⋯⋯</a></span>
            <span class="date">2012-07-17</span>
          </div> 
        </div>
 
-       <div class="hn_con1"><span class="hnc_con"><a href="news.html">中原英雄风云再起 固铂轮胎越野激情⋯</a></span><span class="date2">2012/07/17</span></div>
+       <div class="hn_con1"><span class="hnc_con"><a href="news.html">中原英雄风云再起 固铂⋯⋯</a></span><span class="date2">2012/07/17</span></div>
 
-       <div class="hn_con1"><span class="hnc_con"><a href="news.html">挑战雪域高原之巅 固铂轮胎协力车手⋯</a></span><span class="date2">2012/07/17</span></div>
+       <div class="hn_con1"><span class="hnc_con"><a href="news.html">挑战雪域高原之巅 固铂⋯⋯</a></span><span class="date2">2012/07/17</span></div>
 
      </div> 
 
@@ -153,9 +193,6 @@
   </div>
  
  
-</div>
-
-</div>
 <%= javascript_include_tag "jquery", "jquery-ui","jquery_ujs","underscore", "backbone", "products", "brands"%>
 <script type="text/javascript" src="/js/jquery.tools.min.js"></script>
 <script type="text/javascript" src="/js/jquery.hoverIntent.minified.js"></script>

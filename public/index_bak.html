@@ -4,28 +4,24 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>Mastercraft</title>
   <link href="css/style.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/swfobject.js"></script>
+ 
 </head>
 
 <body>
   <!--top-->
   <div class="top_bg">
-    <div class="top">
+    <div id="top">
       <div class="top_logo">
 
         <div class="logo"><img src="images/logo.gif" width="335" height="66" /></div>
-        <div class="search">
-          <div class="sr"><input type="text" class="input1" value=" search" /></div>
-          <div class="dj"><a href="#"><img src="images/home_pic5.gif" width="27" height="27" border="0" /></a></div>
-
-        </div>
+        <div class="mc_icon"><img src="images/mc_icon.gif" width="106" height="55" /></div>
       </div>
 
       <div class="menu">
         <ul class="m_list">
           <li><a href="/">首 页</a></li>
           <li class="line2"></li>
-          <li><a href="brand.html">品牌故事</a></li>
+          <li><a href="brand.html">百年历史</a></li>
           <li class="line2"></li>
           <li><a href="aboutmc.html">关于Mastercraft</a></li>
           <li class="line2"></li>
@@ -40,45 +36,55 @@
   </div>
 
   <div class="content_bg">
-    <div class="line1"></div>
+    <!--<div class="line1"></div>-->
     <div class="content">
      <div class="banner">
-     
-     <div id="focus">
+<div id="doc">
+  <div id="content">
+
+<!-- blueberry -->
+
+    <div class="blueberry">
+      <ul class="slides">
+          <li><a href="#"><img src="images/slide1.jpg"  width="230" height="130" /></a></li>
+        <li><a href="#"><img src="images/slide2.jpg"  width="230" height="130" /></a></li>
+        <li><a href="#"><img src="images/slide3.jpg" width="230" height="130"  /></a></li>
+<!--        <li><img src="images/slide4.jpg" width="230" height="130"  /></li>-->
+      </ul>
+    </div>
+<!-- blueberry -->
+  </div>
 </div>
-<script type="text/javascript">
-var so = new SWFObject("focus.swf", "focus", "915", "320", "7", "#ffffff");
-so.addParam('wmode','transparent');
-so.addVariable("picurl","images/1.jpg,images/2.jpg,images/3.jpg");
-<!--so.addVariable("pictext","图片一,图片二,图片三");-->
-so.addVariable("piclink","http://www.16sucai.com,http://www.16sucai.com,http://www.16sucai.com");
-so.addVariable("pictime","3");
-so.addVariable("borderwidth","915");
-so.addVariable("borderheight","320");
-so.addVariable("borderw","false");
-so.addVariable("buttondisplay","true");
-so.addVariable("textheight","0");
-so.write("focus");
-</script>     
-    
-     </div>
+  
+       </div>
      
      <div class="home_con">
+     
+     <div class="video">
+     <div class="video_title">品牌宣传片 </div>
+      <div class="video_con"><img src="images/video_pic1.gif" width="230" height="130" /></div>    
+          
+          
+     </div>
+     
+     
+     
+     
        <div class="home_news">
          <div class="hn_title">
            <div class="nt_bt">新闻动态</div>
            <div class="more"><a href="news.html">MORE</a></div>
          </div>
          <div class="hn_con">
-           <div class="hc_img"><img src="images/hn_img.gif" width="95" height="60" /></div>
-           <div class="hc_text"><span><a href="news.html">固铂轮胎可持续发展再添新动力 -- 获美国农业部690万美元专款⋯⋯</a></span>
+           <div class="hc_img"><img src="images/hn_img.gif" width="90" height="60" /></div>
+           <div class="hc_text"><span><a href="news.html">固铂轮胎可持续发展再添新动力 -- 获美国⋯⋯</a></span>
              <span class="date">2012-07-17</span>
            </div> 
          </div>
          
-         <div class="hn_con1"><span class="hnc_con"><a href="news.html">中原英雄风云再起 固铂轮胎越野激情⋯⋯</a></span><span class="date2">2012/07/17</span></div>
+         <div class="hn_con1"><span class="hnc_con"><a href="news.html">中原英雄风云再起 固铂⋯⋯</a></span><span class="date2">2012/07/17</span></div>
          
-         <div class="hn_con1"><span class="hnc_con"><a href="news.html">挑战雪域高原之巅 固铂轮胎协力车手⋯⋯</a></span><span class="date2">2012/07/17</span></div>
+         <div class="hn_con1"><span class="hnc_con"><a href="news.html">挑战雪域高原之巅 固铂⋯⋯</a></span><span class="date2">2012/07/17</span></div>
          
        </div> 
        
@@ -111,9 +117,9 @@ so.write("focus");
  <div class="pro_con">
   <div class="home_pro1" id="tab_one_1" >              
    <div class="xz_pro">
-    <select class="select1"><option>&nbsp;轮毂直径&nbsp;</option></select>
-    <select class="select1"><option>&nbsp;扁平比&nbsp;</option></select>
-    <select class="select1"><option>&nbsp;胎宽&nbsp;</option></select></div>
+    <select class="select7"><option>轮毂直径&nbsp;</option></select>
+    <select class="select1"><option>扁平比&nbsp;</option></select>
+    <select class="select1"><option>胎宽&nbsp;</option></select></div>
 
     <div class="btn_pro"><input type="button" class="searchbtn" value="查询轮胎" /></div>   
   </div>
@@ -121,8 +127,8 @@ so.write("focus");
   
   <div class="home_pro1" id="tab_one_2" style="display:none;">
    <div class="xz_pro">
-    <select class="select2"><option>&nbsp;选择厂商/品牌&nbsp;</option></select>
-    <select class="select2"><option>&nbsp;车型&nbsp;</option></select>
+    <select class="select2"><option>选择厂商/品牌&nbsp;</option></select>
+    <select class="select2"><option>车型&nbsp;</option></select>
   </div>
 
   <div class="btn_pro"><input type="button" class="searchbtn" value="查询轮胎" /></div>         
@@ -131,7 +137,7 @@ so.write("focus");
 
 <div class="home_pro1" id="tab_one_3" style="display:none;">
   <div class="xz_pro">
-    <select class="select3"><option>&nbsp;选择花纹&nbsp;</option></select>
+    <select class="select3"><option>选择花纹&nbsp;</option></select>
   </div>
 
   <div class="btn_pro"><input type="button" class="searchbtn" value="查询轮胎" /></div>         
@@ -150,7 +156,7 @@ so.write("focus");
  <span><a href="mc-440.html"><img src="images/home_pro4.gif" width="77" height="19" border="0" /></a></span>
  <span class="more2"><a href="mc-440.html">MORE</a></span> 
  </div>
-  <div class="hp_right"><a href="mc-440.html"><img src="images/home_pro1.jpg" width="84" height="110" border="0" /></a></div>
+  <div class="hp_right"><a href="mc-440.html"><img src="images/home_pro1.jpg" width="86" height="115" border="0" /></a></div>
  
  </div>
  
@@ -162,7 +168,7 @@ so.write("focus");
  <span><a href="mc-hp.html"><img src="images/home_pro5.gif" width="136" height="20" border="0" /></a></span>
 <span class="more2"><a href="mc-hp.html">MORE</a></span>
  </div>
-  <div class="hp_right"><a href="mc-hp.html"><img src="images/home_pro2.jpg" width="89" height="109" border="0" /></a></div> 
+  <div class="hp_right"><a href="mc-hp.html"><img src="images/home_pro2.jpg" width="89" height="114" border="0" /></a></div> 
 </div>
  
  
@@ -174,17 +180,20 @@ so.write("focus");
  <span><a href="mc-strategy.html"><img src="images/home_pro6.gif" width="105" height="20" border="0" /></a></span>
  <span class="more2"><a href="mc-strategy.html">MORE</a></span>
  </div>
-  <div class="hp_right"><a href="mc-strategy.html"><img src="images/home_pro3.jpg" width="84" height="113" border="0" /></a></div>
+  <div class="hp_right"><a href="mc-strategy.html"><img src="images/home_pro3.jpg" width="85" height="112" border="0" /></a></div>
  
   </div>
  
  
 </div>
 
+
+
+
 </div>
 
 <div class="footer">
-  <div class="copyright">Copyright © 2012 Cooper Tire & Rubber Company | 沪ICP备12001223号</div>
+  <div class="copyright">Copyright © 2012 Cooper Tire & Rubber Company | 沪ICP备12011981号-12</div>
 
   <div id="topselectcontent">
    <div class="text">品牌家族</div>
@@ -205,10 +214,15 @@ so.write("focus");
 
 <div class="bt_menu"><a href="contact.html">联系我们 </a>｜ <a href="copyright.html">版权信息</a> ｜ <a href="sitemap.html">网站地图</a></div>
 
-
+<div class="back_top"><a href="#top"><img src="images/back_top.png" width="24" height="65" border="0" /></a></div>
 </div>
+
+
 <div class="kk">4454</div>
 </div>
+
+
+
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script language="javascript" type="text/javascript" src="js/global.js"></script>
 

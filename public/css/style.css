@@ -44,7 +44,7 @@ ul.m_list li a.current{ color:#fff;  background:url(../images/ml_bg.gif) repeat-
 
 #banner {position:relative; width:915px; height:300px;  overflow:hidden; font-size:16px} 
 #banner_list img {border:0px;} 
-#banner_bg {position:absolute; bottom:0;background-color:#000;height:30px;filter: Alpha(Opacity=30);opacity:0.3;z-index:1000;cursor:pointer; width:478px; } 
+/*#banner_bg {position:absolute; bottom:0;background-color:#000;height:30px;filter: Alpha(Opacity=30);opacity:0.3;z-index:1000;cursor:pointer; width:478px; } */
 #banner_info{position:absolute; bottom:4px; left:5px;height:22px;color:#fff;z-index:1001;cursor:pointer} 
 #banner_text {position:absolute;width:120px;z-index:1002; right:3px; bottom:3px;} 
 #banner ul {

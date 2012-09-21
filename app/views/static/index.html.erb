@@ -1,24 +1,50 @@
-      <div class="menu">
-       <ul class="m_list">
-          <li><a href="/" class="current">首 页</a></li>
-          <li class="line2"></li>
-          <li><a href="brand.html">百年历史</a></li>
-          <li class="line2"></li>
-          <li><a href="aboutmc.html">关于Mastercraft</a></li>
-          <li class="line2"></li>
-          <li><a href="product.html">产品与服务</a></li>
-          <li class="line2"></li>
-          <li><a href="news.html">新闻动态</a></li>
-          <li class="line2"></li>
-        </ul>
-      </div>
+  <div id="nav">
+    <ul class="ul">
+        <li class="li"><a class="a current" href="/">首页</a></li>
+        <li class="li line2"></li>
+        <li class="li"><a class="a" href="brand.html">百年历史</a></li>
+        <li class="li line2"></li>
+        <li class="li"><a class="a" href="aboutmc.html">关于Mastercraft</a>
+          <div class="none1">
+            <ul class="menu1">
+              <li><a href="aboutmc.html">选择MC的五大理由</a></li>
+              <li><a href="contact.html">联系我们</a></li>
+              <li><a href="copyright.html">版权信息</a></li>          
+            </ul>
+          </div>
+        </li>
+        <li class="li line2"></li>
+        <li class="li"><a class="a" href="product.html">产品和服务</a>
+        <div class="none1">
+            <ul class="menu1">
+              <li><a href="product.html">PCR产品</a></li>
+              <li><a href="product_suv.html">SUV产品</a></li>
+              <li><a href="/product/search">查找轮胎</a></li>
+              <li><a href="commonsense.html">轮胎使用常识</a></li>
+              </ul>
+          </div>
+        </li>
+        <li class="li line2"></li>
+        <li class="li"><a class="a" href="news.html">新闻媒体</a>
+        <div class="none1">
+            <ul class="menu1">
+              <li><a href="news.html">新闻</a></li>
+              <li><a href="download.html">下载</a></li> 
+             </ul> 
+          </div>
+        </li>
+        
+      </ul>
+    </div>
 
     </div>
   </div>
-
+  
   <div class="content_bg">
+  <div class="line1"></div>
    <div class="content">
     <div class="banner">
+
     <script type="text/javascript" src="js/jquery-1.2.6.pack.js"></script> 
     <script type="text/javascript"> 
     var t = n = 0, count; 
@@ -27,14 +53,14 @@
       $("#banner_list a:not(:first-child)").hide(); 
       $("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt')); 
       $("#banner_info").click(function(){window.open($("#banner_list a:first-child").attr('href'), "_blank")}); 
-      $("#banner li").click(function() { 
+      $("#banner li.nob").click(function() { 
       var i = $(this).text() - 1;//获取Li元素内的值，即1，2，3，4 
       n = i; 
       if (i >= count) return; 
       $("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt')); 
-      $("#banner_info").unbind().click(function(){window.open($("#banner_list a").eq(i).attr('href'), "_blank")}) 
-      $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000); 
-      $(this).css({"background":"#be2424",'color':'#000'}).siblings().css({"background":"#6f4f67",'color':'#fff'}); 
+      $("#banner_info").unbind().click(function(){window.open($("#banner_list a").eq(i).attr('href'), "_blank")});
+      $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+      $(this).css({"background":"#fff",'color':'#000'}).siblings().css({"background":"#000",'color':'#fff'}); 
       }); 
       t = setInterval("showAuto()", 8000); 
       $("#banner").hover(function(){clearInterval(t)}, function(){t = setInterval("showAuto()", 8000);});
@@ -42,14 +68,14 @@
       function showAuto() 
       { 
       n = n >=(count - 1) ? 0 : ++n; 
-      $("#banner li").eq(n).trigger('click'); 
+      $("#banner li.nob").eq(n).trigger('click'); 
       } 
       </script> 
         <div id="banner"> 
+          <div id="banner_bg"></div> 
         <!--标题背景--> 
         <div id="banner_info"></div> 
         <!--标题--> 
-
         <ul> 
         <li class="nob">1</li> 
         <li class="nob">2</li> 
@@ -61,6 +87,7 @@
         <a href="/mc-strategy.html" target="_self"><img src="images/slide3.jpg"   /></a> 
         </div> 
         </div>  
+       
           
        </div>
 
@@ -70,6 +97,7 @@
      <div class="video">
      <div class="video_title">品牌宣传片 </div>
       <div class="video_con"><img src="images/video_pic1.gif" width="230" height="130" /></div> 
+       
 
      </div>
     
@@ -140,7 +168,7 @@
   <div class="home_pro1" id="tab_one_3" style="display:none;">
     <%= form_tag "/searchs?type=brand" do  -%>     
     <div class="xz_pro">
-     <%= select_tag 'name', options_for_select(Brand.decorative_collection), :prompt => "选择花纹", :class => "select", :style => "width:200px" %>
+     <%= render "name_search_form" %> 
    </div>
    <div class="btn_pro"><input type="submit" class="searchbtn" value="查询轮胎" /></div>  
    <% end %>       

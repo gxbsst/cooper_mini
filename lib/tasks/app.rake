@@ -5,7 +5,7 @@ namespace :app do
   desc "TODO"
   task :init_product => :environment do
     name = []
-    file_name = "MC-HP.csv"
+    file_name = "Mc-440.csv"
     file = Rails.root.join('lib', 'tasks', 'data', file_name)
  
     csv = CSV.read(file)
@@ -30,6 +30,8 @@ namespace :app do
       }
       @product = Product.create(product_item)
     end
+
+
     # (1..18).each do |v|
     #   file_name = "#{v}.csv"
     #   csv = CSV.read(Rails.root.join('lib', 'tasks', 'data', 'product', file_name))
@@ -62,6 +64,31 @@ namespace :app do
     #   puts "====== #{file_name} END ========"
     # end
   end # end init_products
+
+
+    ## init_brand
+  task :init_mcbrand => :environment do 
+    file_name = "mc.csv"
+    csv = CSV.read(Rails.root.join('lib', 'tasks', 'data', file_name))
+    csv.each do |item|
+      puts item[4]
+      Brand.create({
+        name: item[2],
+        url: item[11],
+        image_url: item[3],
+        brand_name_zh: item[0],
+        car_type_zh: item[1],
+        position: item[4],
+        rim: item[5],
+        speed: item[6],
+        sku: item[7],
+        road: item[8],
+        manufacture: item[9],
+        time: item[10]
+        })
+      end
+    end
+    
   
   ## 更新描述和图片
   task :init_store => :environment do

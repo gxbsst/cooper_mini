@@ -32,29 +32,54 @@
 <div id="top">
       <div class="top_logo">
 
-        <div class="logo"><a href="/"><img src="images/logo.gif" width="335" height="66" /></a></div>
-        <div class="mc_icon"><img src="images/mc_icon.gif" width="106" height="55" /></div>
+        <div class="logo"><img src="images/logo.gif" width="335" height="66" /></div>
+        <div class="mc_icon"><img src="images/mc_icon.gif" width="138" height="70" /></div>
       </div>
 
-      <div class="menu">
-        <ul class="m_list">
-          <li><a href="/">首 页</a></li>
-          <li class="line2"></li>
-          <li><a href="brand.html">百年历史</a></li>
-          <li class="line2"></li>
-          <li><a href="aboutmc.html">关于Mastercraft</a></li>
-          <li class="line2"></li>
-          <li><a href="product.html" class="current">产品与服务</a></li>
-          <li class="line2"></li>
-          <li><a href="news.html">新闻动态</a></li>
-          <li class="line2"></li>
-        </ul>
-      </div>
+      <div id="nav">
+    <ul class="ul">
+        <li class="li"><a class="a" href="/">首页</a></li>
+        <li class="li line2"></li>
+        <li class="li"><a class="a" href="brand.html">百年历史</a></li>
+        <li class="li line2"></li>
+        <li class="li"><a class="a" href="aboutmc.html">关于Mastercraft</a>
+          <div class="none1">
+            <ul class="menu1">
+              <li><a href="aboutmc.html">选择MC的五大理由</a></li>
+              <li><a href="contact.html">联系我们</a></li>
+              <li><a href="copyright.html">版权信息</a></li>          
+            </ul>
+          </div>
+        </li>
+        <li class="li line2"></li>
+        <li class="li"><a class="a current" href="product.html">产品和服务</a>
+        <div class="none1">
+            <ul class="menu1">
+              <li><a href="product.html">PCR产品</a></li>
+              <li><a href="product_suv.html">SUV产品</a></li>
+              <li><a href="/product/search">查找轮胎</a></li>
+              <li><a href="commonsense.html">轮胎使用常识</a></li>
+              </ul>
+          </div>
+        </li>
+        <li class="li line2"></li>
+        <li class="li"><a class="a" href="news.html">新闻媒体</a>
+        <div class="none1">
+            <ul class="menu1">
+              <li><a href="news.html">新闻</a></li>
+              <li><a href="download.html">下载</a></li> 
+             </ul> 
+          </div>
+        </li>
+        
+      </ul>
+    </div>
 
   </div>
 </div>
 
 <div class="content_bg">
+<div class="line1"></div>
   <div class="content2">
   <div class="zy_left">
 <div class="zyl_title">产品与服务</div>
@@ -95,47 +120,89 @@
 <div class="dh_list"><span><a href="/">首页</a> ><a href="product.html">PCR产品</a></span><span> > </span><span class="red_dq">MC-440</span></div>
 </div>
 
-<div class="product_con">
+<div class="product_con2">
 <div class="prc_con1">
 
 
-<a class="pc1_img" rel="group" href="images/pro_dt1.jpg"><img src="images/product_pic1.jpg" width="253" height="240" alt="" border="0"/></a>
+<a class="pc1_img" rel="group" href="images/pro_dt1.jpg"><img src="images/product_pic1.jpg" width="260" height="275" alt="" border="0"/></a>
 
 
 <div class="pc1_text">
-<span><img src="images/product_pic2.gif" width="86" height="23" /></span>
-<span>产品定位：高档均衡型轿车轮胎<br />
+<div class="pct_1"><img src="images/product_pic2.gif" width="86" height="23" /></div>
+<div class="pct_2">产品定位：高档均衡型轿车轮胎<br />
 轮辋：14”，15”，16”，17”<br />
 速度：H ， V<br />
 SKU：22个<br />
 适合路况：高速公路，国道，省道，城市街道<br />
- 上市时间： 2012年8月
-</span>
+ 上市时间：2012年8月</div>
+ 
+<div class="pct_3">适配车型：<img src="images/product_pic10.gif" width="49" height="15" /> 中高档轿车</div>
+
+<ul class="pct_4">
+<li><span class="p4_left">湿地性能</span><span class="p4_right"><img src="images/product_pic8.gif" width="95" height="20" /></span></li>
+<li class="x_right"><span class="p4_left">舒适性</span><span class="p4_right"><img src="images/product_pic8.gif" width="95" height="20" /></span></li>
+<li><span class="p4_left">里程数</span><span class="p4_right"><img src="images/product_pic9.gif" width="95" height="20" /></span></li>
+<li class="x_right"><span class="p4_left">操控性能</span><span class="p4_right"><img src="images/product_pic9.gif" width="95" height="20" /></span></li>
+</ul>
+
+
 </div>
 </div>
 
-<div class="prc_con2">
-<div class="pc2_title">产品特性</div>
+ <script> 
+	<!-- 	/*tab切换脚本*/ 
+	function setTab(name,cursel,n){ 
+	
+		for(i=1;i<=n;i++){ 
+			var menu=document.getElementById(name+i); 
+			var con=document.getElementById("tab_"+name+"_"+i); 
+			menu.className=i==cursel?"current":""; 
+			con.style.display=i==cursel?"block":"none"; 
+			} 
+	} 
+	//--> 
+	</script>
+
+
+<div id="tab2">
+    
+    <!--切换标题begin-->
+    <div class="tabTitle2">
+    
+      	<a href="#" id="one1" onmouseover="setTab('one',1,3)" class="current">产品特性</a>
+        <a href="#" id="one2" onmouseover="setTab('one',2,3)">上市规格</a>
+        <a href="#" id="one3" onmouseover="setTab('one',3,3)">适配车型</a>
+        <div class="clear"></div>
+
+    </div>
+    <!--切换标题end-->
+    <div class="contentBox2">
+      <!--第一个标签内容-->
+      <ul class="tabContentList2" id="tab_one_1">
+        <li>
+        
+        <div class="prc_con2">
+<!--<div class="pc2_title">产品特性</div>-->
 <div class="pc2_bottom">
 <dl class="pb_left">
-<dt class="pbl_bt">胎面防轧 – 钢丝加宽</dt>
-<dd class="pbl_nr1">钢丝层加宽5％</dd>
+<dt class="pbl_bt">胎面防轧 – 钢丝层加宽</dt>
+<dd class="pbl_nr1">钢丝层加宽</dd>
 <dd class="pbl_nr2">车辆高速驾驶更稳定；防止胎肩鼓包；</dd>
-<dd class="pbl_nr3"><img src="images/product_pic4.gif" width="210" height="107" /></dd>
+<dd class="pbl_nr3"><img src="images/product_pic4.gif" width="250" height="107" /></dd>
 </dl>
 
 <dl class="pb_right">
 <dt class="pbl_bt">胎面防轧 – 钢丝加密</dt>
-<dd class="pbl_nr1">钢丝加密15％</dd>
+<dd class="pbl_nr1">钢丝加密</dd>
 <dd class="pbl_nr2">形成更密钢丝网,防止轧胎，日常补胎少；</dd>
-<dd class="pbl_nr3"><img src="images/product_pic5.gif" width="252" height="90" /></dd>
+<dd class="pbl_nr3"><img src="images/product_pic5.gif" width="250" height="90" /></dd>
 </dl>
 
 <dl class="pb_left2">
 <dt class="pbl_bt">胎侧防鼓包, 保护轮辋</dt>
 <dd class="pbl_nr1">加厚胎侧</dd>
 <dd class="pbl_nr2">胎侧防鼓包；</dd>
-<dd class="pbl_nr5">  轮辋保护(65系列以下)</dd>
+<dd class="pbl_nr5">  超强子口胶</dd>
 <dd class="pbl_nr2">保护轮毂免受撞击；</dd>
 <dd class="pbl_nr2">&nbsp;<br />&nbsp;<br /></dd>
 <dd class="pbl_nr3"><img src="images/product_pic6.gif" width="243" height="97" /></dd>
@@ -146,285 +213,456 @@ SKU：22个<br />
 <dd class="pbl_nr1">4条宽花纹沟</dd>
 <dd class="pbl_nr2">吃水更快，排水效率高，避免水飘；</dd>
 <dd class="pbl_nr5">更深横花纹槽</dd>
-<dd class="pbl_nr2"><span class="pbl_nr5">侧向排水效率高；</span></dd>
-<dd class="pbl_nr5">胎面宽＋8％</dd>
-<dd class="pbl_nr2"><span class="pbl_nr5">接地宽增加，抓地力提高；</span></dd>
-<dd class="pbl_nr3"><img src="images/product_pic7.gif" width="246" height="95" /></dd>
+<dd class="pbl_nr2">侧向排水效率高；</dd>
+<dd class="pbl_nr5">胎面加宽</dd>
+<dd class="pbl_nr2">接地宽增加，抓地力提高；</dd>
+<dd class="pbl_nr3"><img src="images/product_pic7.gif" width="250" height="95" /></dd>
 </dl>
+
+<div class="pb_bottom"><img src="images/product_pic11.gif" width="626" height="33" /></div>
+
 </div>
 </div>
-
-
-<div class="prc_con3">
-<div class="pc2_title"> 上市规格</div>
+        
+        
+        
+         </li>
+      
+      </ul>
+      <!--第二个标签内容-->
+      <ul class="tabContentList" id="tab_one_2" style="display:none">
+        <li><div class="prc_con3">
+<!--<div class="pc2_title"> 上市规格</div>-->
 
 <div class="pc3_top">
-<span class="pt_1">序号</span>
-<span class="pt_2">规格</span>
+<span class="pt_2">规 &nbsp;&nbsp;格</span>
 <span class="pt_3">负荷指数<br />速度级别</span>
 <span class="pt_4">测量轮辋<br />宽度</span>
-<span class="pt_5">允许使用<br />轮辋宽度</span>
-<span class="pt_6">最大充气压力<br />（KPA）</span>
-<span class="pt_7">最大符合<br />（KG）</span> 
-</div>
+<span class="pt_5">轮辋宽度<br />允许范围</span>
+<span class="pt_6">断面宽度</span>
+<span class="pt_7">外直径</span> 
+</div> 
 
 <ul class="pc3_list">
+<li class="pl_sz">50</li>
 
 <li>
-<span class="py_1">1</span>
-<span class="py_2">195 /55 R15</span>
-<span class="pt_3">85V</span>
-<span class="pt_4">6.0</span>
+<span class="py_2">205/50R16  </span>
+<span class="pt_3">87V</span>
+<span class="pt_4">6.5</span>
 <span class="pt_5">5.5-7.0</span>
-<span class="pt_6">300</span>
-<span class="py_7">515</span>
+<span class="pt_6">214</span>
+<span class="py_7">612</span>
  </li>
 
 <li class="pcl_ys">
-<span class="py_1">2</span>
-<span class="py_2">205 /60 R16</span>
-<span class="pt_3">92V</span>
-<span class="pt_4">6.0</span>
-<span class="pt_5">5.5-7.5</span>
-<span class="pt_6">300</span>
-<span class="py_7">630</span>
-</li>
-
-<li>
-<span class="py_1">3</span>
-<span class="py_2">215 /60 R16</span>
+<span class="py_2">215/50R17 XL</span>
 <span class="pt_3">95V</span>
-<span class="pt_4">6.5</span>
+<span class="pt_4">7.0</span>
 <span class="pt_5">6.0-7.5</span>
-<span class="pt_6">300</span>
-<span class="py_7">690</span>
- </li>
-
-<li class="pcl_ys">
-<span class="py_1">4</span>
-<span class="py_2">225 /60 R16</span>
-<span class="pt_3">98V</span>
-<span class="pt_4">6.5</span>
-<span class="pt_5">6.0-8.0</span>
-<span class="pt_6">300</span>
-<span class="py_7">750</span>
+<span class="pt_6">226</span>
+<span class="py_7">648</span>
 </li>
 
 <li>
-<span class="py_1">5</span>
-<span class="py_2">205 /55 R16</span>
-<span class="pt_3">91H</span>
+<span class="py_2">225/50R16</span>
+<span class="pt_3">92V</span>
+<span class="pt_4">7.0</span>
+<span class="pt_5">6.0-8.0</span>
+<span class="pt_6">233</span>
+<span class="py_7">632</span>
+ </li>
+
+<li class="pcl_ys">
+<span class="py_2">225/50R17</span>
+<span class="pt_3">94V</span>
+<span class="pt_4">7.0</span>
+<span class="pt_5">6.0-8.0</span>
+<span class="pt_6">233</span>
+<span class="py_7">658</span>
+</li>
+
+<li class="pl_sz">55</li>
+
+<li>
+<span class="py_2">195/55R15</span>
+<span class="pt_3">85V</span>
 <span class="pt_4">6.5</span>
-<span class="pt_5">5.5-7.5</span>
-<span class="pt_6">300</span>
+<span class="pt_5">5.5-7.0</span>
+<span class="pt_6">201</span>
 <span class="py_7">615</span>
  </li>
 
 <li class="pcl_ys">
-<span class="py_1">6</span>
-<span class="py_2">225 /55 R16</span>
-<span class="pt_3">95V</span>
-<span class="pt_4">7.0</span>
-<span class="pt_5">6.0-8.0</span>
-<span class="pt_6">300</span>
+<span class="py_2">205/55R16</span>
+<span class="pt_3">91H</span>
+<span class="pt_4">7.0</span><span class="pt_5">5.5-7.5</span><span class="pt_6">214</span>
 <span class="py_7">690</span>
 </li>
 
 <li>
-<span class="py_1">7</span>
-<span class="py_2">205 /50 R16</span>
-<span class="pt_3">87V</span>
+<span class="py_2">205/55R16</span>
+<span class="pt_3">91V</span>
 <span class="pt_4">6.5</span>
 <span class="pt_5">5.5-7.5</span>
-<span class="pt_6">300</span>
+<span class="pt_6">214</span>
 <span class="py_7">545</span>
  </li>
 
 <li class="pcl_ys">
-<span class="py_1">8</span>
-<span class="py_2">225 /50 R16</span>
-<span class="pt_3">92V</span>
-<span class="pt_4">7.0</span>
-<span class="pt_5">6.0-8.0</span>
-<span class="pt_6">300</span>
-<span class="py_7">630</span>
-</li>
-
-<li>
-<span class="py_1">9</span>
-<span class="py_2">215 /55 R17</span>
-<span class="pt_3">94V</span>
-<span class="pt_4">7.0</span>
-<span class="pt_5">6.0-7.5</span>
-<span class="pt_6">300</span>
-<span class="py_7">670</span>
- </li>
-
-<li class="pcl_ys">
-<span class="py_1">10</span>
-<span class="py_2">215 /50 R17XL</span>
-<span class="pt_3">95V</span>
-<span class="pt_4">7.0</span>
-<span class="pt_5">6.0-7.5</span>
-<span class="pt_6">340</span>
-<span class="py_7">690</span>
-</li>
-
-<li>
-<span class="py_1">11</span>
-<span class="py_2">225 /50 R17</span>
-<span class="pt_3">94V</span>
-<span class="pt_4">7.0</span>
-<span class="pt_5">6.0-8.0</span>
-<span class="pt_6">300</span>
-<span class="py_7">670</span>
- </li>
-
-<li class="pcl_ys">
-<span class="py_1">12</span>
-<span class="py_2">185 /65 R14</span>
-<span class="pt_3">86H</span>
-<span class="pt_4">5.5</span>
-<span class="pt_5">5.0-6.5</span>
-<span class="pt_6">340</span>
-<span class="py_7">530</span>
-</li>
-
-<li>
-<span class="py_1">13</span>
-<span class="py_2">185 /60 R14</span>
-<span class="pt_3">92H</span>
-<span class="pt_4">5.5</span>
-<span class="pt_5">5.0-6.5</span>
-<span class="pt_6">300</span>
-<span class="py_7">475</span>
- </li>
-
-<li class="pcl_ys">
-<span class="py_1">14</span>
-<span class="py_2">195 /60 R14</span>
-<span class="pt_3">86H</span>
-<span class="pt_4">6.0</span>
-<span class="pt_5">5.5-7.0</span>
-<span class="pt_6">300</span>
-<span class="py_7">530</span>
-</li>
-
-<li>
-<span class="py_1">15</span>
-<span class="py_2">185 /65 R15</span>
-<span class="pt_3">88H</span>
-<span class="pt_4">5.5</span>
-<span class="pt_5">5.0-6.5</span>
-<span class="pt_6">300</span>
-<span class="py_7">560</span>
- </li>
-
-<li class="pcl_ys">
-<span class="py_1">16</span>
-<span class="py_2">195 /65 R15</span>
-<span class="pt_3">91H</span>
-<span class="pt_4">6.0</span>
-<span class="pt_5">5.5-7.0</span>
-<span class="pt_6">300</span>
-<span class="py_7">615</span>
-</li>
-
-<li>
-<span class="py_1">17</span>
-<span class="py_2">205 /65 R15</span>
-<span class="pt_3">94H</span>
-<span class="pt_4">6.0</span>
-<span class="pt_5">5.5-7.5</span>
-<span class="pt_6">300</span>
-<span class="py_7">670</span>
- </li>
-
-<li class="pcl_ys">
-<span class="py_1">18</span>
-<span class="py_2">195 /60 R15</span>
-<span class="pt_3">88H</span>
-<span class="pt_4">6.0</span>
-<span class="pt_5">5.5-7.0</span>
-<span class="pt_6">300</span>
-<span class="py_7">560</span>
-</li>
-
-<li>
-<span class="py_1">19</span>
-<span class="py_2">205 /60 R15</span>
-<span class="pt_3">91H</span>
-<span class="pt_4">6.0</span>
-<span class="pt_5">5.5-7.5</span>
-<span class="pt_6">300</span>
-<span class="py_7">615</span>
- </li>
-
-<li class="pcl_ys">
-<span class="py_1">20</span>
-<span class="py_2">215 /60 R15</span>
-<span class="pt_3">94H</span>
-<span class="pt_4">6.5</span>
-<span class="pt_5">6.0-7.5</span>
-<span class="pt_6">300</span>
-<span class="py_7">670</span>
-</li>
-
-<li>
-<span class="py_1">21</span>
-<span class="py_2">205 /60 R16</span>
-<span class="pt_3">92H</span>
-<span class="pt_4">6.0</span>
-<span class="pt_5">5.5-7.5</span>
-<span class="pt_6">300</span>
-<span class="py_7">630</span>
- </li>
-
-<li class="pcl_ys">
-<span class="py_1">22</span>
-<span class="py_2">225 /60 R16</span>
-<span class="pt_3">98H</span>
-<span class="pt_4">6.5</span>
-<span class="pt_5">6.0-7.5</span>
-<span class="pt_6">300</span>
-<span class="py_7">750</span>
-</li>
-
-<li class="pcl_ys">
-<span class="py_1">23</span>
-<span class="py_2">205 /55 R16</span>
-<span class="pt_3">91H</span>
-<span class="pt_4">6.5</span>
-<span class="pt_5">5.5-7.5</span>
-<span class="pt_6">300</span>
-<span class="py_7">615</span>
-</li>
-
-<li>
-<span class="py_1">24</span>
-<span class="py_2">215 /55 R16</span>
+<span class="py_2">215/55R16</span>
 <span class="pt_3">93H</span>
 <span class="pt_4">7.0</span>
-<span class="pt_5">5.5-7.5</span>
-<span class="pt_6">300</span>
-<span class="py_7">650</span>
+<span class="pt_5">6.0-7.5</span>
+<span class="pt_6">226</span>
+<span class="py_7">630</span>
+</li>
+
+<li>
+<span class="py_2">215/55R17</span>
+<span class="pt_3">94V</span>
+<span class="pt_4">7.0</span>
+<span class="pt_5">6.0-7.5</span>
+<span class="pt_6">226</span>
+<span class="py_7">670</span>
  </li>
 
 <li class="pcl_ys">
-<span class="py_1">25</span>
-<span class="py_2">225 /55 R16</span>
+<span class="py_2">225/55R16</span>
+<span class="pt_3">95V</span>
+<span class="pt_4">7.0</span>
+<span class="pt_5">6.0-8.0</span>
+<span class="pt_6">233</span>
+<span class="py_7">690</span>
+</li>
+
+<li>
+<span class="py_2">225/55R16</span>
 <span class="pt_3">95H</span>
 <span class="pt_4">7.0</span>
+<span class="pt_5">6.0-8.0</span>
+<span class="pt_6">233</span>
+<span class="py_7">670</span>
+ </li>
+
+<li class="pl_sz">60</li>
+
+<li class="pcl_ys">
+<span class="py_2">185/60R14</span>
+<span class="pt_3">82H</span>
+<span class="pt_4">5.5</span>
+<span class="pt_5">5.0-6.5</span>
+<span class="pt_6">189</span>
+<span class="py_7">578</span>
+</li>
+
+<li>
+<span class="py_2">195/60R14</span>
+<span class="pt_3">86H</span>
+<span class="pt_4">6.0</span>
+<span class="pt_5">5.5- 7.0</span>
+<span class="pt_6">201</span>
+<span class="py_7">590</span>
+ </li>
+
+<li class="pcl_ys">
+<span class="py_2">195/60R15</span>
+<span class="pt_3">88H</span>
+<span class="pt_4">6.0</span>
+<span class="pt_5">5.5-7.0</span>
+<span class="pt_6">201</span>
+<span class="py_7">615</span>
+</li>
+
+<li>
+<span class="py_2">205/60R15</span>
+<span class="pt_3">91H</span>
+<span class="pt_4">6.0</span>
 <span class="pt_5">5.5-7.5</span>
-<span class="pt_6">300</span>
-<span class="py_7">690</span>
+<span class="pt_6">209</span>
+<span class="py_7">627</span>
+ </li>
+
+<li class="pcl_ys">
+<span class="py_2">205/60R16</span>
+<span class="pt_3">92H</span>
+<span class="pt_4">6.0</span>
+<span class="pt_5">5.5-7.5</span>
+<span class="pt_6">209</span>
+<span class="py_7">652</span>
+</li>
+
+<li>
+<span class="py_2">205/60R16</span>
+<span class="pt_3">92V</span>
+<span class="pt_4">6.0</span>
+<span class="pt_5">5.5-7.5</span>
+<span class="pt_6">209</span>
+<span class="py_7">652</span>
+ </li>
+
+<li class="pcl_ys">
+<span class="py_2">215/60R16</span>
+<span class="pt_3">94H</span>
+<span class="pt_4">6.5</span>
+<span class="pt_5">6.0-7.5</span>
+<span class="pt_6">221</span>
+<span class="py_7">639</span>
+</li>
+
+<li>
+<span class="py_2">215/60R16</span>
+<span class="pt_3">95V</span>
+<span class="pt_4">6.5</span>
+<span class="pt_5">6.0-7.5</span>
+<span class="pt_6">221</span>
+<span class="py_7">664</span>
+ </li>
+
+<li class="pcl_ys">
+<span class="py_2">225/60R16</span>
+<span class="pt_3">98H</span>
+<span class="pt_4">6.5</span>
+<span class="pt_5">6.0-8.0</span>
+<span class="pt_6">228</span>
+<span class="py_7">676</span>
+</li>
+
+<li>
+<span class="py_2">225/60R16</span>
+<span class="pt_3">98V</span>
+<span class="pt_4">6.5</span>
+<span class="pt_5">6.0-8.0</span>
+<span class="pt_6">228</span>
+<span class="py_7">676</span>
+ </li>
+
+<li class="pl_sz">65</li>
+
+<li class="pcl_ys">
+<span class="py_2">185/65R14</span>
+<span class="pt_3">86H</span>
+<span class="pt_4">5.5</span>
+<span class="pt_5">5.0-6.5</span>
+<span class="pt_6">189</span>
+<span class="py_7">596</span>
+</li>
+
+<li>
+<span class="py_2">185/65R15</span>
+<span class="pt_3">88H</span>
+<span class="pt_4">5.5</span><span class="pt_5">5.0-6.5</span><span class="pt_6">189</span>
+<span class="py_7">621</span>
+</li>
+
+<li class="pcl_ys">
+<span class="py_2">195/65R15</span>
+<span class="pt_3">91H</span>
+<span class="pt_4">6.0</span>
+<span class="pt_5">5.5-7.0</span>
+<span class="pt_6">201</span>
+<span class="py_7">635</span>
+ </li>
+
+<li>
+<span class="py_2">205/65R15</span>
+<span class="pt_3">94H</span>
+<span class="pt_4">6.0</span>
+<span class="pt_5">5.5-7.5</span>
+<span class="pt_6">209</span>
+<span class="py_7">647</span>
 </li>
 
 
 </ul>
 
 
+</div></li>
+        
+      </ul>
+      <!--第三个标签内容-->
+      <ul class="tabContentList" id="tab_one_3" style="display:none">
+        <li>
+        <div class="prc_con3">
+<!--<div class="pc2_title"> 上市规格</div>-->
+
+<div class="pc4_top">
+<span class="pt_8">规 &nbsp;&nbsp;格</span>
+
+<span class="pt_9">负荷指数</span>
+<span class="pt_10">速度级</span>
+<span class="pt_11">适配车型</span> 
+</div> 
+
+<ul class="pc4_list">
+  <li>
+  <span class="py_2">185/65R14</span>
+  <span class="py_3">86</span>
+  <span class="py_4">H</span>
+  <span class="py_5">标致207、长城哈弗M、三菱蓝瑟、东南菱悦、起亚锐欧 </span>
+  </li>
+  
+    <li class="pcl_ys">
+  <span class="py_2">195/60R14</span>
+  <span class="py_3">86</span>
+  <span class="py_4">H</span>
+  <span class="py_5">大众桑塔纳、大众桑塔纳3000、大众桑塔纳旅行车、大众桑塔纳志俊 </span>
+  </li>
+  
+  <li>
+  <span class="py_2">185/65R15</span>
+  <span class="py_3">88</span>
+  <span class="py_4">H</span>
+  <span class="py_5">现代伊兰特、现代悦动、日产骐达、雪铁龙毕加索
+</span>
+  </li>
+  
+  <li class="pcl_ys">
+  <span class="py_2">185/65R15</span>
+  <span class="py_3">85</span>
+  <span class="py_4">V</span>
+  <span class="py_5">大众POLO、海马3、奇瑞A520、别克凯越、斯柯达晶锐</span>
+  </li>
+  
+  <li class="pcl_jg">
+  <span class="py_2 py_jg">195/60R15</span>
+  <span class="py_3 py_jg">88</span>
+  <span class="py_4 py_jg">H</span>
+  <span class="py_5 py_jg2">丰田花冠、起亚赛拉图、莲花L3、众泰梦迪博朗、比亚迪F3、吉利远景、力帆620、风神S30 </span>
+  </li>
+  
+  
+  <li class="pcl_ys pcl_jg">
+  <span class="py_2 py_jg">195/65R15</span>
+  <span class="py_3 py_jg">91</span>
+  <span class="py_4 py_jg">H</span>
+  <span class="py_5 py_jg2">马自达3、大众帕萨特领驭、大众宝来、福特福克斯、标致307、大众高尔夫、大众朗逸、斯柯达明锐、大众途安
+</span>
+  </li>
+  
+   <li>
+  <span class="py_2">205/60R15</span>
+  <span class="py_3">91</span>
+  <span class="py_4">H</span>
+  <span class="py_5">日产蓝鸟、起亚远舰、红旗世纪星、红旗明仕</span>
+  </li>
+  
+  <li class="pcl_ys pcl_jg">
+  <span class="py_2 py_jg">205/65R15</span>
+  <span class="py_3 py_jg">94</span>
+  <span class="py_4 py_jg">H</span>
+  <span class="py_5 py_jg2">现代君爵、现代索纳塔 、丰田CAMRY、本田雅阁、雪佛兰新景程、雪佛兰科鲁兹
+</span>
+  </li>
+  
+    <li>
+  <span class="py_2">215/60R15</span>
+  <span class="py_3">94</span>
+  <span class="py_4">H</span>
+  <span class="py_5">保时捷CARERA GT3</span>
+  </li>
+  
+  <li class="pcl_ys pcl_jg">
+  <span class="py_2 py_jg">205/50R16</span>
+  <span class="py_3 py_jg">87</span>
+  <span class="py_4 py_jg">V</span>
+  <span class="py_5 py_jg2">雷诺风景2.0、马自达MX-5 2.0、明爵31.8L 、伊兰特1.8L、赛拉图1.6 1.8L、海马欢动 1.6/1.8L</span>
+  </li>
+  
+  <li class="pcl_jg">
+  <span class="py_2 py_jg">205/55R16</span>
+  <span class="py_3 py_jg">91</span>
+  <span class="py_4 py_jg">V</span>
+  <span class="py_5 py_jg2">福特福克斯、大众宝来、大众高尔夫、大众帕萨特、奥迪A6 、宝马3系、大众朗逸、马自达6、斯柯达明锐</span>
+  </li>
+  
+  <li class="pcl_ys pcl_jg">
+  <span class="py_2 py_jg">205/60R16</span>
+  <span class="py_3 py_jg">92</span>
+  <span class="py_4 py_jg">H</span>
+  <span class="py_5 py_jg2">雪佛兰科鲁兹 1.8、现代索纳塔2.0GLS/2.7、铃木 天语SX4、本田雅阁3.0、马自达6睿翼 2.5L4、三菱翼神1.8L</span>
+  </li>
+  
+    <li>
+  <span class="py_2">205/60R16</span>
+  <span class="py_3">92</span>
+  <span class="py_4">V</span>
+  <span class="py_5">雷诺拉古娜、本田雅阁、现代索纳塔 </span>
+  </li>
+  
+  <li class="pcl_ys pcl_jg">
+  <span class="py_2 py_jg">215/55R16</span>
+  <span class="py_3 py_jg">93</span>
+  <span class="py_4 py_jg">H</span>
+  <span class="py_5 py_jg2">现代御翔2.4、福特蒙迪欧-致胜2.0、帝豪EC718 1.8L、雪铁龙C4毕加索2.0、 大众帕萨特B6 2.0T </span>
+  </li>
+  
+    <li>
+  <span class="py_2">215/60R16</span>
+  <span class="py_3">95</span>
+  <span class="py_4">V</span>
+  <span class="py_5">雷克萨斯ES300、三菱欧兰德、丰田凯美瑞、现代御翔、现代领翔</span>
+  </li>
+  
+    <li class="pcl_ys">
+  <span class="py_2">225/50R16</span>
+  <span class="py_3">92</span>
+  <span class="py_4">V</span>
+  <span class="py_5">奔驰SLK200/230/CLK240、宝马Z3 V6 2.2I</span>
+  </li>
+  
+    <li>
+  <span class="py_2">225/55R16</span>
+  <span class="py_3">95</span>
+  <span class="py_4">V</span>
+  <span class="py_5">雷克萨斯GS300/GS430、奔驰C240/E200/E240/E280/E320/E350</span>
+  </li>
+  
+    <li class="pcl_ys">
+  <span class="py_2">225/60R16</span>
+  <span class="py_3">98</span>
+  <span class="py_4">V</span>
+  <span class="py_5">雪铁龙C5、起亚嘉华、别克GL8</span>
+  </li>
+  
+    <li>
+  <span class="py_2">215/50R17XL</span>
+  <span class="py_3">95</span>
+  <span class="py_4">V</span>
+  <span class="py_5">2012款福特福克斯2.0、荣威750、别克英朗1.8T、欧宝威达</span>
+  </li>
+  
+    <li class="pcl_ys">
+  <span class="py_2">215/55R17</span>
+  <span class="py_3">94</span>
+  <span class="py_4">V</span>
+  <span class="py_5">丰田皇冠、丰田锐志、日产天籁、标致407</span>
+  </li>
+  
+    <li>
+  <span class="py_2">225/50R17</span>
+  <span class="py_3">94</span>
+  <span class="py_4">V</span>
+  <span class="py_5">迪A6、奥迪A4L/A5、宝马5系、雷克萨斯GS</span>
+  </li>
+  
+    
+</ul>
+
+
 </div>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+
+
 
 
 

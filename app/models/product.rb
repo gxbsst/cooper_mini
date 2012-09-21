@@ -8,9 +8,19 @@ class Product < ActiveRecord::Base
     def tyre_all_collection
       Product.tyre_collection + [["轮胎直径", 'disable']] + Product.tyre_with_x_collection
     end
+    def name_all_collection
+      Product.name_collection + [["花纹", 'disable']] + Product.name_with_x_collection
+    end
   # 轮胎
+    def name_collection
+      where(["name not like ?", "%x%"]).group(:name).collect{|p| [("&nbsp;&nbsp;" + p.name).html_safe, p.name]unless p.name.blank? }.compact
+    end
     def tyre_collection
       where(["tyre not like ?", "%X%"]).group(:tyre).collect{|p| [("&nbsp;&nbsp;" + p.tyre).html_safe, p.tyre] unless p.tyre.blank? }.compact
+    end
+
+    def name_with_x_collection
+      where(["name like ?", "%X%"]).group(:name).collect{|p| [("&nbsp;&nbsp;" + p.name).html_safe, p.name] unless p.name.blank? }.compact
     end
     
     def tyre_with_x_collection

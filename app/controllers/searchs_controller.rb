@@ -5,7 +5,7 @@ class SearchsController < ApplicationController
     if params[:type] == "brand"
       @products ||= find_brands
     else
-      @products ||= find_products  
+      @products ||= find_products
     end
   end
   
@@ -35,10 +35,14 @@ class SearchsController < ApplicationController
     brand = params[:brand]
     car_type = params[:car_type]
     name = params[:name]
-    @products = Brand.order(:brand_name_en).group(:name)
-    @products = @products.where(brand_name_en: brand).group(:name) if brand.present?
-    @products = @products.where(car_type_en: car_type).group(:name) if car_type.present?
+    @products = Brand.order(:name).group(:name)
+    p @products
+    @products = @products.where(brand_name_zh: brand).group(:name) if brand.present?
+    p @products
+    @products = @products.where(car_type_zh: car_type).group(:name) if car_type.present?
+    p 3333333
     @products = @products.where(name: name).group(:name) if name.present?
+    p 4444444
     @products
   end
 

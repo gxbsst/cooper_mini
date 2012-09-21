@@ -14,4 +14,4 @@ public/._index.htm_bak
 .bundle/config
 saved_items
 db/schema.rb
- 
+*.log

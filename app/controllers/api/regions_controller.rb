@@ -33,7 +33,7 @@ class Api::RegionsController < ApplicationController
   
   def car_type
     brand = params[:parent_id]
-    brands = Brand.where(:brand_name_en => brand).group(:car_type_en).order("CONVERT( car_type_zh USING gbk)")
+    brands = Brand.where(:brand_name_zh => brand).group(:car_type_zh).order("CONVERT( car_type_zh USING gbk)")
     render :json => brands
   end
   

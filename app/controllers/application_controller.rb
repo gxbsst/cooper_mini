@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   end
 
   def set_locale
-   params[:locale] = "zh-CN"
+    params[:locale] = "zh-CN"
     I18n.locale = params[:locale] || I18n.default_locale
   end
   

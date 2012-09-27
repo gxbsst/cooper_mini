@@ -86,14 +86,14 @@ img{ border:none;}
 .more{ float:right; color:#ee2e24; background:url(../images/icon2.gif) no-repeat 2px 14px; padding-left:20px; line-height:34px; margin-right:10px; font-size:14px; }
 .more a{color:#ee2e24; }
 
-.hn_con{ overflow:hidden; padding-left:8px; margin-bottom:14px;}
+/*.hn_con{ overflow:hidden; padding-left:8px; margin-bottom:14px;}
 .hc_img{ float:left; margin-right:14px;}
 .hc_text{ float:left; width:132px;}
 .hc_text span{ display:block; line-height:18px;}
 .hc_text span.date{ color:#777; padding-top:5px;}
 .hn_con1{ overflow:hidden; margin-left:9px;}
 .hn_con1 span.hnc_con{ display:block; float:left; background:url(../images/icon3.gif) no-repeat 0px 11px;  padding-left:8px; line-height:28px; width:162px;}
-.hn_con1 span.date2{ display:block; float:left; line-height:28px; color:#777;}
+.hn_con1 span.date2{ display:block; float:left; line-height:28px; color:#777;}*/
 
 .find{ float:left; width:355px;}
 

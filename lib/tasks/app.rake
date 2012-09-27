@@ -5,7 +5,7 @@ namespace :app do
   desc "TODO"
   task :init_product => :environment do
     name = []
-    file_name = "Mc-440.csv"
+    file_name = "Mastercraft_Strategy.csv"
     file = Rails.root.join('lib', 'tasks', 'data', file_name)
  
     csv = CSV.read(file)

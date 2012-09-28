@@ -8,11 +8,11 @@
 
  
   <div class="field">
-	标题： <%= f.text_field :name %>
+  标题： <%= f.text_field :name %>
   </div>
   <div class="field">
-	类型： <%= f.select :media_type, [["新闻通稿","新闻通稿"],['高清图片','高清图片'],['视频','视频'],['其他','其他']], :include_blank => false %> 
-	图片类型: <%= f.select :image_type, [["海报","海报"], ["折页","折页"]], {}, {:class => "hidden"} %>
+  类型： <%= f.select :media_type, [["新闻通稿","新闻通稿"],['高清图片','高清图片'],['视频','视频'],['其他','其他']], :include_blank => false %> 
+  图片类型: <%= f.select :image_type, [["海报","海报"], ["折页","折页"]], {}, {:class => "hidden"} %>
   </div>
   <div class='field'>
     <% if action_name =~ /(edit)|(update)/ %>
@@ -55,24 +55,24 @@
     $(document).ready(function(){
       link_dialog.init();
 
-	$("#resource_media_type").change(function(){
-		if($(this).val() == '高清图片') 
-		{
-		  $("#resource_image_type").show();
-		}
-		else
-		{
-		  $("#resource_image_type").hide();	
-		}
-		
-	});
-	  
+  $("#resource_media_type").change(function(){
+    if($(this).val() == '高清图片') 
+    {
+      $("#resource_image_type").show();
+    }
+    else
+    {
+      $("#resource_image_type").hide(); 
+    }
+    
+  });
+    
     });
   </script>
 <% end if from_dialog? %>
 
 <style type="text/css" media="screen">
-	#resource_image_type {
-		display: none;
-	}
+  #resource_image_type {
+    display: none;
+  }
 </style>

@@ -1,57 +1,75 @@
-<%= render "share/news_sidebar"%>
-<div id="rightcontent">
- <div id="site"><a href="news_list.htm">新闻媒体</a><span>&gt;</span>媒体中心</div>
- <div id="downloadcontent">
-   <dl>
-     <dt>新闻通稿</dt>
-     <dd>
-       <ul class="newslist">
-		<% for file in @files  do %>
-         <li><img src="pic/li01.jpg" alt="" title="" class="pic" /><%= file.name %><%= link_to "下载", file.url %></li>
-		<% end %>
-       </ul>
-     </dd>
-   </dl>
-   <dl>
-     <dt>高清图片</dt>
-     <dd>
-	   
-       <ul class="imagelist foldout">
-		<% for image  in @images_foldout  do %>
-         <li>
-	
-			<%=  link_to image.full_file_url  do %>
-			 <image src="<%= image.thumb_url %>" />
-			<% end %>
-			<p><%= image.name %></p>
-		</li>
-		<% end %>
-       </ul>
-		<div class="clear"></div>
-	<ul class="imagelist">
-		<% for image  in @images_poster  do %>
-         <li>
-			<%=  link_to image.url  do %>
-			 <image src="<%= image.thumb_url %>" />
-			<% end %>
-			<p><%= image.name %></p>
-		</li>
-		<% end %>
-		
-	</ul>
-     </dd>
-   </dl>
-   <dl>
-     <dt>视频</dt>
-     <dd>
-       <ul class="videolist">
-		<% for movie in @movies %>
-         <li><%= movie.name %> <%= link_to "下载", movie.file_url %></li>
-		<% end %>
-       </ul>
-     </dd>
-   </dl>
- </div>
- <div class="totop"><a href="#header"><img src="/pic/totop.jpg" alt="回顶部" title="回顶部" /></a></div>
+ <div id="nav">
+    <ul class="ul">
+        <li class="li"><a class="a" href="/">首页</a></li>
+        <li class="li line2"></li>
+        <li class="li"><a class="a" href="brand.html">百年历史</a></li>
+        <li class="li line2"></li>
+        <li class="li"><a class="a" href="aboutmc.html">关于Mastercraft</a>
+          <div class="none1">
+            <ul class="menu1">
+              <li><a href="aboutmc.html">选择MC的五大理由</a></li>
+              <li><a href="contact.html">联系我们</a></li>
+              <li><a href="copyright.html">版权信息</a></li>          
+            </ul>
+          </div>
+        </li>
+        <li class="li line2"></li>
+        <li class="li"><a class="a" href="product.html">产品和服务</a>
+        <div class="none1">
+            <ul class="menu1">
+              <li><a href="product.html">PCR产品</a></li>
+              <li><a href="product_suv.html">SUV产品</a></li>
+              <li><a href="/products/search">查找轮胎</a></li>
+              <li><a href="commonsense.html">轮胎使用常识</a></li>
+              </ul>
+          </div>
+        </li>
+        <li class="li line2"></li>
+        <li class="li"><a class="a current" href="news.html">媒体新闻</a>
+        <div class="none1">
+            <ul class="menu1">
+              <li><a href="news.html">公司新闻</a></li>
+              <li><a href="/downloads">高清图下载</a></li> 
+             </ul> 
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+
+  </div>
 </div>
-<div class="clear"></div>
+
+<div class="content_bg">
+<div class="line1"></div>
+  <div class="content2">
+  <%= render "share/news_sidebar" %>
+<div class="zy_right">
+  <%= render "share/news_position" %>
+
+<div class="download_con">
+  <% 
+  posters = [
+    ['STRATEGY高清海报', 'kv1.jpg', 'download_pic1.jpg'],
+    ['AVENGER-HP海报', 'kv2.jpg', 'download_pic2.jpg'],
+    ['MC-440海报', 'kv3.jpg', 'download_pic3.jpg']
+  ] 
+  %>
+  <% posters.each_with_index do |poster, index| %>
+    <div class="dlc_con<%= "2" if index == 2 %>">
+      <div class="dc_img">
+        <img src="images/<%= "#{poster[2]}"%>" width="191" height="285" />
+      </div>
+      <div class="dc_text"><%= "#{poster[0]}" %></div>
+      <div class="dc_btn"><%= button_to "点击下载", downloads_path(:file => poster[1]), :class =>"download1" %></div>
+    </div>
+  <% end %>
+</div>
+
+
+
+</div>
+
+
+
+

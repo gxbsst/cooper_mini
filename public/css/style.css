@@ -32,6 +32,14 @@ img{ border:none;}
 #nav .li li a{color:#555; padding-left:30px;}
 #nav .li li a:hover{ color:#e92d23;}
 
+#nav .li1{ width:90px;}
+#nav .li2{ width:125px;}
+#nav .li3{ width:175px;}
+#nav .li4{ width:135px;}
+#nav .li5{ width:125px;/*border-right:1px solid #cbcbcb;*/}
+
+
+
 
 .content_bg{ width:100%; height:100%; background:url(../images/con_bg.gif);}
 
@@ -395,6 +403,7 @@ ul.pc4_list li span.py_jg2{ height:38px; line-height:18px; padding-top:7px;}
 .fc_title h2 a { display:block; float:left; width:216px; height:36px; line-height:36px; margin:0px; border-right:1px solid #d5d5d5;  font-size:14px;font-weight:bold; color:#444; text-align:center;}
 .fc_title h2 a.current { color:#fff; background:url(../images/find_pic1.gif) no-repeat center; text-decoration:none;}
 .fc_title h2 a:hover { color:#fff; background:url(../images/find_pic1.gif) no-repeat center;text-decoration:none; }
+.fc_title h2 a.last{ border-right:none; width:214px; }
 /*内容框*/
 .fc_con{ border:1px solid #dddddd; height:260px; margin-bottom:350px;  }  
 .home_pro1{  overflow:hidden; }
@@ -450,7 +459,7 @@ dl.fl_text dd  span{ display:block; float:left; margin-right:30px;}
 /*网站地图*/
 .sitemap_con{ margin-top:25px;}
 .smp_list{ padding:10px 30px  400px 25px; }
-dl.sc_con{ display:block; border-bottom:1px dashed #ddd; margin-bottom:20px; overflow:hidden;}
+dl.sc_con{ display:block; border-bottom:1px dashed #ddd; margin-bottom:20px; width:850px;  overflow:hidden;}
 dl.sc_con dt{ display:block; float:left; width:130px; height:30px; background:#181818; font-size:14px; font-weight:bold; text-align:center; color:#fff; line-height:30px; margin-right:45px;}
 dl.sc_con dd{ display:block; float:left; width:160px; line-height:26px; font-size:14px; margin:0px;}
 dl.sc_con dd.tc{ padding-right:20px;}

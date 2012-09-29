@@ -400,10 +400,10 @@ ul.pc4_list li span.py_jg2{ height:38px; line-height:18px; padding-top:7px;}
 #find_con { width:651px; }
 .fc_title{ height:36px; background:#e8e8e8;}
 .fc_title h2{ padding:0px; margin:0px;}
-.fc_title h2 a { display:block; float:left; width:216px; height:36px; line-height:36px; margin:0px; border-right:1px solid #d5d5d5;  font-size:14px;font-weight:bold; color:#444; text-align:center;}
+.fc_title h2 a { display:block; float:left; width:215px; height:36px; line-height:36px; margin:0px; border-left:1px solid #d5d5d5;  font-size:14px;font-weight:bold; color:#444; text-align:center;}
 .fc_title h2 a.current { color:#fff; background:url(../images/find_pic1.gif) no-repeat center; text-decoration:none;}
 .fc_title h2 a:hover { color:#fff; background:url(../images/find_pic1.gif) no-repeat center;text-decoration:none; }
-.fc_title h2 a.last{ border-right:none; width:214px; }
+
 /*内容框*/
 .fc_con{ border:1px solid #dddddd; height:260px; margin-bottom:350px;  }  
 .home_pro1{  overflow:hidden; }
@@ -417,7 +417,7 @@ ul.pc4_list li span.py_jg2{ height:38px; line-height:18px; padding-top:7px;}
 /*查找轮胎__查找到的内容*/
 .fdc_con{ padding-bottom:40px; padding:0px 5px 40px 5px;  overflow:hidden;}
 .fd_top{ font-size:15px; color:#ea2d23; padding-left:8px; }
-.fd_list{ border-bottom:1px solid #ddd; padding:30px 0px 30px 8px; overflow:hidden;}
+.fd_list{ width:665px; border-bottom:1px solid #ddd; padding:30px 0px 30px 8px; overflow:hidden;}
 .fl_img{ float:left; width:165px; height:165px; border:1px solid #ddd; margin-right:30px;}
 dl.fl_text{ display:block; float:left; width:450px;}
 dl.fl_text dt{ display:block; font-size:20px; color:#ea2d23; font-weight:bold; margin-bottom:10px;}

@@ -462,7 +462,8 @@ dl.fl_text dd  span{ display:block; float:left; margin-right:30px;}
 .smp_list{ padding:10px 30px  400px 25px; }
 dl.sc_con{ display:block; border-bottom:1px dashed #ddd; margin-bottom:20px; width:850px;  overflow:hidden;}
 dl.sc_con dt{ display:block; float:left; width:130px; height:30px; background:#181818; font-size:14px; font-weight:bold; text-align:center; color:#fff; line-height:30px; margin-right:45px;}
-dl.sc_con dd{ display:block; float:left; width:160px; line-height:26px; font-size:14px; margin:0px;}
-dl.sc_con dd.tc{ padding-right:20px;}
+dl.sc_con dd{ display:block; float:left; width:175px; line-height:26px; font-size:14px; margin:0px;}
+dl.sc_con dd.tc{ padding-right:25px;}
+dl.sc_con dd.cs{ width:100px;}
 .line4{ height:9px; width:984px; background: url(../images/sm_pic1.gif) no-repeat; margin:0px auto;}
 

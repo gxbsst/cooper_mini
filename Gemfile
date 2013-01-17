@@ -2,7 +2,7 @@
 source 'http://ruby.taobao.org'
 
 
-gem 'rails', '3.2.1'
+gem 'rails', '3.2.11'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -28,8 +28,8 @@ gem 'jquery-rails'
 gem 'backbone-on-rails'
 
 # 处理Google地图
-gem "geocoder"
-gem 'gmaps4rails'
+#gem "geocoder"
+#gem 'gmaps4rails'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -58,6 +58,7 @@ gem 'refinerycms-i18n',   '~> 2.0.0'
 
 
 gem 'capistrano'
+gem 'rvm-capistrano'
 
 gem 'refinerycms-infos', :path => 'vendor/extensions'
 
@@ -69,3 +70,4 @@ group :development, :test do
   gem 'pry'  # "binding.pry" in action
 end
 gem 'refinerycms-jobs', :path => 'vendor/extensions'
+

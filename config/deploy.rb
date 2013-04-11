@@ -1,10 +1,11 @@
 require "bundler/capistrano"                                                    
+
+## !!!! DON'T FORGET SET TMP PERMISSION
                                                                                 
 # Add RVM's lib directory to the load path.                                     
 #$:.unshift(File.expand_path('./lib', ENV['rvm_path']))                         
 #set :bundle_cmd, 'source $HOME/.bash_profile && bundle'                        
 # Load RVM's capistrano plugin.....                                             
-require "rvm/capistrano"     
 
 
 # #set :bundle_cmd, '
@@ -24,6 +25,7 @@ set :application, "Mctires"
 #}
 
 if ENV['RAILS_ENV'] =='production'
+  require "rvm/capistrano"     
   #server "www.coopertire.com.cn", :web, :app, :db, primary: true
   server "jh_web3", :web, :app, :db, primary: true
   set :repository,  "git://github.com/gxbsst/cooper_mini.git"
@@ -94,6 +96,11 @@ ssh_options[:forward_agent] = true
  task :migration do 
    run("cd #{deploy_to}/current; rake db:migrate ")
  end
+
+ task :change_tmp do
+    run("chmod -R 777 #{current_path}/tmp")
+  end
+  after "deploy:finalize_update", "deploy:change_tmp"
 
  end
  

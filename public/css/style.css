@@ -181,7 +181,7 @@ span.more3 a{color:#ee2e24; }*/
 span.red_dq{ color:#d6281f;}
 
 .brand_con{ padding:0px 15px 10px 6px;overflow: hidden; margin-top: -20px;}
-.brc_c1{ color:#ca261c; font-size:22px; margin-bottom:25px;}
+.brc_c1{ color:#ca261c; font-size:22px; margin-bottom:20px; font-weight: bold; margin-top: 15px;}
 .brc_c2{ overflow:hidden;}
 .bc2_left{ float:left; margin-right:22px; width:202px; }
 .bc2_left span{ display:block; }

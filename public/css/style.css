@@ -180,7 +180,7 @@ span.more3 a{color:#ee2e24; }*/
 .dh_list a:hover{ color:#d6281f;}
 span.red_dq{ color:#d6281f;}
 
-.brand_con{ padding:0px 15px 10px 6px;overflow: hidden;}
+.brand_con{ padding:0px 15px 10px 6px;overflow: hidden; margin-top: -20px;}
 .brc_c1{ color:#ca261c; font-size:22px; margin-bottom:25px;}
 .brc_c2{ overflow:hidden;}
 .bc2_left{ float:left; margin-right:22px; width:202px; }
@@ -196,7 +196,7 @@ span.bl_con{ color:#888; line-height:18px; padding-bottom:15px; margin:0px;}
 .bc2_right{ float:left; width:435px;}
 .bc2_right p{ display:block; margin:0px 0px 18px 0px; font-size:12px; line-height:24px; text-indent:28px; }
 
-.bc2_left2{ float:left; margin-right:28px; width:435px; }
+.bc2_left2{ float:right; margin-right:0; width:435px; }
 .bc2_left2 span{ display:block; }
 .bc2_right2{ float:left; width:195px; margin-top:20px;}
 .bc2_right2 span{ display:block; }

@@ -265,6 +265,8 @@ ul.tips li { list-style: disc; line-height:24px;}
 .pk_2{ padding:10px 0px 20px 0px; font-size:13px; line-height:18px;}
 .pk_4{ font-size:13px; line-height:18px;}
 .pro_ks2{ float:left; width:175px; height:390px; border:1px solid #ccc; padding:18px 15px 0px 24px; margin-bottom:30px; }
+.pro_ks3{ float:left; display:block; width:175px; height:405px; border:1px solid #ccc; margin-right:14px; padding:18px 15px 0px 24px; margin-bottom:30px;}
+.pro_ks4{ float:left; width:175px; height:405px; border:1px solid #ccc; padding:18px 15px 0px 24px; margin-bottom:30px; }
 
 
 /*产品详细*/
@@ -327,6 +329,9 @@ dl.pb_left6{ width:297px; height:310px; border: 1px dashed #dfdfdf; border-top:n
 dl.pb_right6{  width:295px; height:310px; border-bottom: 1px dashed #dfdfdf; padding:8px 0px 0px 45px;}
 dl.pb_left7{width:297px; height:255px; border-right: 1px dashed #dfdfdf;  padding:35px 0px 0px 20px; margin-bottom:30px;}
 dl.pb_right7{ width:295px; height:255px; padding:35px 0px 0px 45px; margin-bottom:30px;}
+dl.pb_left8{width:297px; height:325px; border-right: 1px dashed #dfdfdf; padding:35px 0px 0px 20px; margin-bottom:20px;}
+dl.pb_right8{ width:295px; height:325px;  padding:35px 0px 0px 45px; margin-bottom:20px;}
+
 
 .pb_bottom{ float:left; width:630px; height:33px; margin-top:30px; margin-left:5px;}
 
@@ -396,6 +401,12 @@ ul.pc4_list li span.py_4{width:36px; }
 ul.pc4_list li span.py_5{width:366px; border-right:none; padding-left:14px; padding-right:7px; overflow:hidden; text-align:left; }
 ul.pc4_list li span.py_jg{ height:48px; line-height:48px;}
 ul.pc4_list li span.py_jg2{ height:38px; line-height:18px; padding-top:7px;}
+
+
+/*axt*/
+.ca_tby{ font-size:14px; margin-bottom:15px;}
+.ca_tsm{ line-height:20px;}
+
 
 
 /*查找轮胎*/
@@ -472,3 +483,41 @@ dl.sc_con dd.cs{ width:100px;}
 .bl_1 {
   margin: 0 0 90px 0;
   }
+
+
+.st_con{ padding-bottom:50px;}  
+
+/*查找店铺*/
+.ft_con{ padding-left:20px;}
+#shopsearch{ padding:20px 0px;}
+#shopsearch .tabs{ height:37px; border-bottom:1px solid #ddd; margin-bottom:20px;}
+#shopsearch .tabs li{ display:block; height:37px;  width:144px; float:left; margin:0px 0px 0px 7px; line-height:37px;}
+#shopsearch .tabs a{ color:#444; font-size:14px; float:left; display:block; width:144px; height:37px; text-align:center; background:url(../images/fs_pic2.gif) no-repeat;}
+#shopsearch .tabs .current,#shopsearch .tabs a:hover{ color:#fff;  text-decoration:none; background-position:right 0px;background:url(../images/fs_pic1.gif) no-repeat;}
+#shopsearch .body{ padding:20px 0px 0px 0px;}
+#shopsearch .search{ padding:30px 0px;}
+#shopsearch .searchtxt{ color:#656565; margin:0px 8px; height:24px; line-height:24px; padding:0px 5px; background:url(../pic/text_bg.jpg) repeat-x 0px 0px; vertical-align:middle; border:solid 1px #B9B9B9; width:300px;}
+#shopsearch .searchbtn3{  width:106px; height:34px; line-height:31px; border:none; cursor:pointer; background:url(../images/fs_pic3.gif) no-repeat; color:White;  font-weight:bold; vertical-align:middle; padding:0px;}
+#shopsearch .list{ padding:10px 0px 0px 0px; /*border-top:solid 2px #CBCBCB;*/ }
+#shopsearch .list li{  *display:inline-block; background:url(../images/fs_pic4.gif) no-repeat 3px 8px; padding:0px 0px 20px 20px; position:relative;}
+#shopsearch .list dt{ line-height:22px; height:22px; overflow:hidden; color:#ee2e24; font-weight:bold;}
+#shopsearch .list dd{ line-height:20px;  margin:0px;}
+#shopsearch .list p{ color:#656565;}
+#shopsearch .list .tip{ height:20px; left:300px; top:20px;  position:absolute; padding:0px 0px 0px 10px;}
+#shopsearch .list .tip strong{ line-height:20px;color:#ffffff; display:inline-block; height:20px; padding:0px 10px 0px 0px;}
+#shopsearch .searchtable{ padding:30px 0px;}
+#shopsearch .searchtable td{ padding:5px;}
+#shopsearch .searchtable .td{ text-align:right;}
+
+
+
+
+
+
+
+
+
+
+
+
+

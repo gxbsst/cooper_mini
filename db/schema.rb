@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120918073044) do
+ActiveRecord::Schema.define(:version => 20130422034409) do
 
   create_table "brands", :force => true do |t|
     t.string   "name"
@@ -222,6 +222,30 @@ ActiveRecord::Schema.define(:version => 20120918073044) do
 
   add_index "seo_meta", ["id"], :name => "index_seo_meta_on_id"
   add_index "seo_meta", ["seo_meta_id", "seo_meta_type"], :name => "index_seo_meta_on_seo_meta_id_and_seo_meta_type"
+
+  create_table "shops", :force => true do |t|
+    t.string   "provice"
+    t.string   "city"
+    t.string   "dist"
+    t.string   "shop_name"
+    t.string   "shop_type"
+    t.float    "longitude"
+    t.float    "latitude"
+    t.string   "address"
+    t.string   "full_address"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  add_index "shops", ["address"], :name => "index_shops_on_address"
+  add_index "shops", ["city"], :name => "index_shops_on_city"
+  add_index "shops", ["dist"], :name => "index_shops_on_dist"
+  add_index "shops", ["full_address"], :name => "index_shops_on_full_address"
+  add_index "shops", ["latitude"], :name => "index_shops_on_latitude"
+  add_index "shops", ["longitude"], :name => "index_shops_on_longitude"
+  add_index "shops", ["provice"], :name => "index_shops_on_provice"
+  add_index "shops", ["shop_name"], :name => "index_shops_on_shop_name"
+  add_index "shops", ["shop_type"], :name => "index_shops_on_shop_type"
 
   create_table "stores", :force => true do |t|
     t.string   "rank"

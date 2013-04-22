@@ -1,16 +1,8 @@
 # encoding: utf-8
 class Store < ActiveRecord::Base
+  set_table_name :shops
 
-  #acts_as_gmappable
-
-  # serialize :
-
-  # def gmaps4rails_address
-  #    #describe how to retrieve the address from your model, if you use directly a db column, you can dry your code, see wiki
-  #    # "#{self.city}, #{self.provice}" 
-  #    # "江桥, 上海, 中国"
-  #  end
-
+  attr_accessible :address, :city, :dist, :full_address, :latitude, :longitude, :provice, :shop_name, :shop_type
   class << self
     # 省
     def province_collection
@@ -25,6 +17,12 @@ class Store < ActiveRecord::Base
     # shop_type
     def shop_type_collection
       group(:shop_type).collect{|s| [s.shop_type, s.shop_type] unless s.shop_type.blank? }.compact
+    end
+
+
+    def city_collection_by_parent_id(parent_id)
+      where("city IS  NOT NULL ").where(:provice => parent_id).group(:city)
+      #.collect{|c| [c.city, c.city] unless s.city.blank?}.compact
     end
 
   end

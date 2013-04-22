@@ -4,14 +4,14 @@
       <td class="td">省份</td>
       <td>
 		<span id="province">
-			<%= select_tag "region[province]", options_for_select(Store.province_collection), :prompt => '-请选择-', :class => "select" %>	
+    <%= select_tag "region[province]", options_for_select(Store.province_collection), :prompt => '-请选择-', :class => "select" %>	
 		</span>
       </td>
       <td class="td"></td>
       <td>
 	
 		<span id="district" style="display: none">
-		<%= select_tag "region[district]", options_for_select([]), :prompt => '-请选择-', :class => "select" %>		
+    <%= select_tag "region[district]", options_for_select([], :selected => params[:region] ? params[:region][:district] : nil), :prompt => '-请选择-', :class => "select" %>		
 		</span>
 		
       </td>
@@ -23,10 +23,6 @@
 		<span id="city">
 			<%= select_tag "region[city]", options_for_select([]), :prompt => '-请选择-', :class => "select" %>	
 		</span>
-      </td>
-      <td class="td">店铺类型</td>
-      <td>
-		<%= select_tag "region[shop_type]", options_for_select([["嘉车坊", "CPC"],["店中店", "CC"],["替换中心", "CTCC"],["店招店", "CSS+"],["招牌店", "CSS"],["独立授权店", "INDENPENDENT"],["其他", "OTHERS"]]), :prompt => '-请选择-', :class => "select" %>	
       </td>
     </tr>
   </table>

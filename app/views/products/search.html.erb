@@ -1,67 +1,20 @@
-  <div id="nav">
-    <ul class="ul">
-        <li class="li li1"><a class="a" href="/">首页</a></li>
-        <li class="li line2"></li>
-        <li class="li li2"><a class="a" href="/brand.html">百年历史</a></li>
-        <li class="li line2"></li>
-        <li class="li li3"><a class="a" href="/aboutmc.html">关于马斯特轮胎(Mastercraft)</a>
-          <div class="none1">
-            <ul class="menu1">
-              <li><a href="/aboutmc.html">选择马斯特(MC)的五大理由</a></li>
-              <li><a href="/contact.html">联系我们</a></li>         
-            </ul>
-          </div>
-        </li>
-        <li class="li line2"></li>
-        <li class="li li4"><a class="a current" href="/product.html">产品和服务</a>
-        <div class="none1">
-            <ul class="menu1">
-              <li><a href="/product.html">PCR产品</a></li>
-              <li><a href="/product_suv.html">SUV产品</a></li>
-              <li><a href="/products/search">查找轮胎</a></li>
-              <li><a href="/commonsense.html">轮胎使用常识</a></li>
-              </ul>
-          </div>
-        </li>
-        <li class="li line2"></li>
-        <li class="li li5"><a class="a" href="/news.html">媒体新闻</a>
-        <div class="none1">
-            <ul class="menu1">
-              <li><a href="/news.html">公司新闻</a></li>
-              <li><a href="/downloads">高清图下载</a></li> 
-             </ul> 
-          </div>
-        </li>
-        
-      </ul>
-    </div>
-
-    </div>
-  </div>
-  
-<div class="content_bg">
-<div class="line1"></div>
-<div class="content2">
 <%= render "share/products_sidebar" %>
 <%= javascript_include_tag "jquery", "jquery-ui","jquery_ujs","underscore", "backbone", "products", "brands"%>
 <div class="zy_right">
-
   <%= render "share/product_position"%>
-
-  
-  <script> 
-  <!-- 
-  /*tab切换脚本*/ 
-  function setTab(name,cursel,n){ 
-    /*参数意义:name为标签id标识,即不带数字的,cursel为标签数字,n为一共有几个标签*/
-    for(i=1;i<=n;i++){ 
-      var menu=document.getElementById(name+i); /*循环取得所有标签*/
-      var con=document.getElementById("tab_"+name+"_"+i); /*循环取得所有的内容块*/
-      menu.className=i==cursel?"current":""; /*判断自身的数字是否等于current*/
-      con.style.display=i==cursel?"block":"none"; /*如果是则显示出当前标签所应的内容块,否则隐藏*/
-    } 
-  } 
-  //--> 
+  <script>
+      <!--
+      /*tab切换脚本*/
+      function setTab(name,cursel,n){
+          /*参数意义:name为标签id标识,即不带数字的,cursel为标签数字,n为一共有几个标签*/
+          for(i=1;i<=n;i++){
+              var menu=document.getElementById(name+i); /*循环取得所有标签*/
+              var con=document.getElementById("tab_"+name+"_"+i); /*循环取得所有的内容块*/
+              menu.className=i==cursel?"current":""; /*判断自身的数字是否等于current*/
+              con.style.display=i==cursel?"block":"none"; /*如果是则显示出当前标签所应的内容块,否则隐藏*/
+          }
+      }
+      //-->
   </script>
 
   <div id="find_con">
@@ -71,36 +24,37 @@
       </h2>
     </div>
     <div class="fc_con">
-      <div class="home_pro1" id="tab_two_1" > 
-        <%= form_tag "/searchs" do  -%>             
-        <div class="xz_pro2">
-          <%= render "product_search_form" %> 
-        </div>
-        <div class="btn_pro"><input type="submit" class="searchbtn2" value="查询轮胎" /></div> 
-        <% end -%>    
+      <div class="home_pro1" id="tab_two_1" >
+        <%= form_tag "/searchs" do  -%>
+            <div class="xz_pro2">
+              <%= render "product_search_form" %>
+            </div>
+            <div class="btn_pro"><input type="submit" class="searchbtn2" value="查询轮胎" /></div>
+        <% end -%>
       </div>
 
       <div class="home_pro1" id="tab_two_2" style="display:none;">
         <%= form_tag "/searchs?type=brand" do  -%>
-        <div class="xz_pro2">
-          <%= render "brand_search_form" %>
-        </div>
-        <div class="btn_pro"><input type="submit" class="searchbtn2" value="查询轮胎" /></div>
-        <% end -%>          
+            <div class="xz_pro2">
+              <%= render "brand_search_form" %>
+            </div>
+            <div class="btn_pro"><input type="submit" class="searchbtn2" value="查询轮胎" /></div>
+        <% end -%>
       </div>
 
-      <div class="home_pro1" id="tab_two_3" style="display:none;"> 
+      <div class="home_pro1" id="tab_two_3" style="display:none;">
         <%= form_tag "/searchs?type=brand" do  -%>
-        <div class="xz_pro2">
-            <%= render "name_search_form" %>        
-        </div>
-        <div class="btn_pro"><input type="submit" class="searchbtn2" value="查询轮胎" /></div>   
-        <% end -%>  
+            <div class="xz_pro2">
+              <%= render "name_search_form" %>
+            </div>
+            <div class="btn_pro"><input type="submit" class="searchbtn2" value="查询轮胎" /></div>
+        <% end -%>
       </div>
-      
+
     </div>
   </div>
- 
+
+</div>
 
 
 

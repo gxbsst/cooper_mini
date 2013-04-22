@@ -1,13 +1,12 @@
-<%= render "share/store_sidebar" %>
+<% content_for :title, @title%>
+<% content_for :title_image do %>
+  <%= image_tag "fs_pic1.jpg" %>
+<% end %>
 
 <%= javascript_include_tag "jquery", "jquery-ui","jquery_ujs","underscore", "backbone", "region_china"%>
 <%#= javascript_include_tag "application"%>
 
-<div class="zy_right">
-  <div class="zyr_title">
-    <div class="dq_bt">查找店铺</div>
-    <div class="dh_list"><span><a href="/">首页</a> &gt; </span><!--<span>产品与服务 > </span>--><span class="red_dq">查找店铺</span></div>
-  </div>
+<div class="cb_left">
   <div id="shopsearch">
     <div class="tabs">
       <ul>
@@ -44,3 +43,4 @@
 </div>
 
 <div class="clear"></div>
+<%= render "share/store_sidebar" %>

@@ -4,20 +4,18 @@
       <td class="td">省份</td>
       <td>
 		<span id="province">
-    <%= select_tag "region[province]", options_for_select(Store.province_collection), :prompt => '-请选择-', :class => "select" %>	
+			<%= select_tag "region[province]", options_from_collection_for_select(Store.province_collection, 'id', 'provice', params[:region][:province]), :prompt => '-请选择-', :class => "select" %>	
 		</span>
       </td>
       <td class="td"></td>
       <td>
 	
 		<span id="district" style="display: none">
-    <%= select_tag "region[district]", options_for_select([], :selected => params[:region] ? params[:region][:district] : nil), :prompt => '-请选择-', :class => "select" %>		
+		<%= select_tag "region[district]", options_from_collection_for_select([], 'id', 'city'), :prompt => '-请选择-', :class => "select" %>		
 		</span>
 		
       </td>
-      <td rowspan="2">
-         <input type="submit" class="searchbtn3" value="">
-      </td>
+      <td rowspan="2"><input type="submit" class="searchbtn" value="查询" /></td>
     </tr>
     <tr>
       <td class="td">城市</td>

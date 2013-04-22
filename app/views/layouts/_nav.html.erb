@@ -1,0 +1,57 @@
+<div id="nav">
+  <ul class="ul">
+    <li class="li li1">
+      <% if controller_name == 'static' && action_name == 'index' %>
+          <a class="a current" href="/">首页</a>
+      <% else %>
+          <a href="/">首页</a>
+      <% end %>
+    </li>
+    <li class="li line2"></li>
+    <li class="li li2"><a class="a" href="brand.html">百年历史</a></li>
+    <li class="li line2"></li>
+    <li class="li li3"><a class="a" href="aboutmc.html">关于马斯特轮胎(Mastercraft)</a>
+      <div class="none1">
+        <ul class="menu1">
+          <li><a href="aboutmc.html">选择马斯特(MC)的五大理由</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="li line2"></li>
+    <li class="li li4"><a class="a" href="product.html">产品和服务</a>
+      <div class="none1">
+        <ul class="menu1">
+          <li><a href="product.html">PCR产品</a></li>
+          <li><a href="product_suv.html">SUV产品</a></li>
+          <li><a href="/products/search">查找轮胎</a></li>
+          <li><a href="commonsense.html">轮胎使用常识</a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="li line2"></li>
+    <li class="li li5"><a class="a" href="news.html">媒体新闻</a>
+      <div class="none1">
+        <ul class="menu1">
+          <li><a href="news.html">公司新闻</a></li>
+          <li><a href="/downloads">高清图下载</a></li>
+        </ul>
+      </div>
+    </li>
+
+    <li class="li li5">
+      <% if controller_name == 'stores' %>
+          <a class="a current" href="javascript:void(0)">营销网络</a>
+      <% else %>
+          <a href="javascript:void(0)">营销网络</a>
+      <% end %>
+      <div class="none1">
+        <ul class="menu1">
+          <li><a href="/stores1.html">马斯特零售店</a></li>
+          <li><a href="/stores/search">查找店铺</a></li>
+        </ul>
+      </div>
+    </li>
+
+  </ul>
+</div>

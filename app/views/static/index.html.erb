@@ -1,215 +1,147 @@
-  <div id="nav">
-    <ul class="ul">
-        <li class="li li1"><a class="a current" href="/">首页</a></li>
-        <li class="li line2"></li>
-        <li class="li li2"><a class="a" href="brand.html">百年历史</a></li>
-        <li class="li line2"></li>
-        <li class="li li3"><a class="a" href="aboutmc.html">关于马斯特轮胎(Mastercraft)</a>
-          <div class="none1">
-            <ul class="menu1">
-              <li><a href="aboutmc.html">选择马斯特(MC)的五大理由</a></li>
-              <li><a href="contact.html">联系我们</a></li>         
-            </ul>
-          </div>
-        </li>
-        <li class="li line2"></li>
-        <li class="li li4"><a class="a" href="product.html">产品和服务</a>
-        <div class="none1">
-            <ul class="menu1">
-              <li><a href="product.html">PCR产品</a></li>
-              <li><a href="product_suv.html">SUV产品</a></li>
-              <li><a href="/products/search">查找轮胎</a></li>
-              <li><a href="commonsense.html">轮胎使用常识</a></li>
-              </ul>
-          </div>
-        </li>
-        <li class="li line2"></li>
-        <li class="li li5"><a class="a" href="news.html">媒体新闻</a>
-        <div class="none1">
-            <ul class="menu1">
-              <li><a href="news.html">公司新闻</a></li>
-              <li><a href="/downloads">高清图下载</a></li> 
-             </ul> 
-          </div>
-        </li>
-        
-      </ul>
-    </div>
-
+<div class="banner">
+  <div id="banner">
+    <div id="banner_bg"></div>
+    <!--标题背景-->
+    <div id="banner_info"></div>
+    <!--标题-->
+    <ul>
+      <li class="nob">1</li>
+      <li class="nob">2</li>
+      <li class="nob">3</li>
+    </ul>
+    <div id="banner_list">
+      <a href="/mc-440.html" target="_self"><img src="images/slide1.jpg"   /></a>
+      <a href="/mc-hp.html" target="_self"><img src="images/slide2.jpg"   /></a>
+      <a href="/mc-strategy.html" target="_self"><img src="images/slide3.jpg"   /></a>
     </div>
   </div>
-  
-  <div class="content_bg">
-  <div class="line1"></div>
-   <div class="content">
-    <div class="banner">
+</div>
+<div class="home_con">
+  <div class="video">
+    <div class="video_title">品牌宣传片 </div>
+    <div class="video_con"><img src="images/video_pic1.gif" width="230" height="130" /></div>
+  </div>
+  <div class="home_news">
+    <div class="video_title">新闻动态</div>
+    <div class="inc_con"><a href="news.html"><img src="images/home_news_img.jpg" width="255" height="138" /></a></div>
+  </div>
+  <div class="find">
+    <div class="hn_title">
+      <div class="nt_bt">查找轮胎</div>
+      <div class="more"><a href="product.html">查看所有轮胎</a></div>
+    </div>
+    <div class="ph_short">
+      <script>
+          <!--
+          /*tab切换脚本*/
+          function setTab(name,cursel,n){
+              /*参数意义:name为标签id标识,即不带数字的,cursel为标签数字,n为一共有几个标签*/
+              for(i=1;i<=n;i++){
+                  var menu=document.getElementById(name+i); /*循环取得所有标签*/
+                  var con=document.getElementById("tab_"+name+"_"+i); /*循环取得所有的内容块*/
+                  menu.className=i==cursel?"current":""; /*判断自身的数字是否等于current*/
+                  con.style.display=i==cursel?"block":"none"; /*如果是则显示出当前标签所应的内容块,否则隐藏*/
+              }
+          }
+          //-->
+      </script>
 
-    <script type="text/javascript" src="js/jquery-1.2.6.pack.js"></script> 
-    <script type="text/javascript"> 
-    var t = n = 0, count; 
-    $(document).ready(function(){ 
-      count=$("#banner_list a").length; 
-      $("#banner_list a:not(:first-child)").hide(); 
-      $("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt')); 
-      $("#banner_info").click(function(){window.open($("#banner_list a:first-child").attr('href'), "_blank")}); 
-      $("#banner li.nob").click(function() { 
-      var i = $(this).text() - 1;//获取Li元素内的值，即1，2，3，4 
-      n = i; 
-      if (i >= count) return; 
-      $("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt')); 
-      $("#banner_info").unbind().click(function(){window.open($("#banner_list a").eq(i).attr('href'), "_blank")});
-      $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
-      $(this).css({"background":"#fff",'color':'#000'}).siblings().css({"background":"#000",'color':'#fff'}); 
-      }); 
-      t = setInterval("showAuto()", 8000); 
-      $("#banner").hover(function(){clearInterval(t)}, function(){t = setInterval("showAuto()", 8000);});
-      }) 
-      function showAuto() 
-      { 
-      n = n >=(count - 1) ? 0 : ++n; 
-      $("#banner li.nob").eq(n).trigger('click'); 
-      } 
-      </script> 
-        <div id="banner"> 
-          <div id="banner_bg"></div> 
-        <!--标题背景--> 
-        <div id="banner_info"></div> 
-        <!--标题--> 
-        <ul> 
-        <li class="nob">1</li> 
-        <li class="nob">2</li> 
-        <li class="nob">3</li> 
-        </ul> 
-        <div id="banner_list"> 
-        <a href="/mc-440.html" target="_self"><img src="images/slide1.jpg"   /></a> 
-        <a href="/mc-hp.html" target="_self"><img src="images/slide2.jpg"   /></a> 
-        <a href="/mc-strategy.html" target="_self"><img src="images/slide3.jpg"   /></a> 
-        </div> 
-        </div>  
-       
-          
-       </div>
+      <div class="tabTitle"> <a href="javascript:void(0)" id="one1" onmouseover="setTab('one',1,3)" class="current">按尺寸查找</a> <a href="javascript:void(0)" id="one2" onmouseover="setTab('one',2,3)">按车辆查找</a> <a href="javascript:void(0)" id="one3" onmouseover="setTab('one',3,3)">按花纹查找</a> </div>
+
+      <div class="pro_con">
+
+        <div class="home_pro1" id="tab_one_1" >
+          <%= form_tag "/searchs" do  -%>
+              <div class="xz_pro">
+                <%= render "product_search_form" %>
+              </div>
+              <div class="btn_pro"><input type="submit" class="searchbtn" value="查询轮胎" /></div>
+          <% end %>
+        </div>
 
 
-    <div class="home_con">
-     
-     <div class="video">
-     <div class="video_title">品牌宣传片 </div>
-      <div class="video_con"><img src="images/video_pic1.gif" width="230" height="130" /></div> 
-       
+        <div class="home_pro1" id="tab_one_2" style="display:none;">
+          <%= form_tag "/searchs?type=brand" do  -%>
+              <div class="xz_pro">
+                <%= render "brand_search_form" %>
+              </div>
+              <div class="btn_pro"><input type="submit" class="searchbtn" value="查询轮胎" /></div>
+          <% end %>
+        </div>
 
-     </div>
-    
-       <div class="home_news">
-         <div class="video_title">新闻动态</div>
-         <div class="inc_con"><a href="news.html"><img src="images/home_news_img.jpg" width="255" height="138" /></a></div>        
-       </div> 
-       
- 
-     <div class="find">
-      <div class="hn_title">
-       <div class="nt_bt">查找轮胎</div>
-       <div class="more"><a href="product.html">查看所有轮胎</a></div>
-     </div>
+        <div class="home_pro1" id="tab_one_3" style="display:none;">
+          <%= form_tag "/searchs?type=brand" do  -%>
+              <div class="xz_pro">
+                <%= render "name_search_form" %>
+              </div>
+              <div class="btn_pro"><input type="submit" class="searchbtn" value="查询轮胎" /></div>
+          <% end %>
+        </div>
+      </div>
 
+    </div>
 
-     <div class="ph_short">
-       <script> 
-       <!-- 
-       /*tab切换脚本*/ 
-       function setTab(name,cursel,n){ 
-        /*参数意义:name为标签id标识,即不带数字的,cursel为标签数字,n为一共有几个标签*/
-        for(i=1;i<=n;i++){ 
-          var menu=document.getElementById(name+i); /*循环取得所有标签*/
-          var con=document.getElementById("tab_"+name+"_"+i); /*循环取得所有的内容块*/
-          menu.className=i==cursel?"current":""; /*判断自身的数字是否等于current*/
-          con.style.display=i==cursel?"block":"none"; /*如果是则显示出当前标签所应的内容块,否则隐藏*/
-        } 
-      } 
-  //--> 
+  </div>
+</div>
+<div class="home_con2">
+  <div class="h_product1">
+    <div class="hp_left">
+      <span><a href="mc-440.html"><img src="images/home_pro4.gif" width="77" height="19" border="0" /></a></span>
+      <span class="more2"><a href="mc-440.html">查看详情</a></span>
+    </div>
+    <div class="hp_right"><a href="mc-440.html"><img src="images/home_pro1.jpg" width="84" height="110" border="0" /></a></div>
+  </div>
+  <div class="h_product2">
+    <div class="hp_left">
+      <span><a href="mc-hp.html"><img src="images/home_pro5.gif" width="136" height="20" border="0" /></a></span>
+      <span class="more2"><a href="mc-hp.html">查看详情</a></span>
+    </div>
+    <div class="hp_right"><a href="mc-hp.html"><img src="images/home_pro2.jpg" width="89" height="109" border="0" /></a></div>
+  </div>
+  <div class="h_product3">
+    <div class="hp_left">
+      <span><a href="mc-strategy.html"><img src="images/home_pro6.gif" width="105" height="20" border="0" /></a></span>
+      <span class="more2"><a href="mc-strategy.html">查看详情</a></span>
+    </div>
+    <div class="hp_right">
+      <a href="mc-strategy.html"><img src="images/home_pro3.jpg" width="84" height="113" border="0" /></a>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript" src="js/jquery-1.2.6.pack.js"></script>
+  <script type="text/javascript">
+      var t = n = 0, count;
+      $(document).ready(function(){
+          count=$("#banner_list a").length;
+          $("#banner_list a:not(:first-child)").hide();
+          $("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
+          $("#banner_info").click(function(){window.open($("#banner_list a:first-child").attr('href'), "_blank")});
+          $("#banner li.nob").click(function() {
+              var i = $(this).text() - 1;//获取Li元素内的值，即1，2，3，4
+              n = i;
+              if (i >= count) return;
+              $("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
+              $("#banner_info").unbind().click(function(){window.open($("#banner_list a").eq(i).attr('href'), "_blank")});
+              $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+              $(this).css({"background":"#fff",'color':'#000'}).siblings().css({"background":"#000",'color':'#fff'});
+          });
+          t = setInterval("showAuto()", 8000);
+          $("#banner").hover(function(){clearInterval(t)}, function(){t = setInterval("showAuto()", 8000);});
+      })
+      function showAuto()
+      {
+          n = n >=(count - 1) ? 0 : ++n;
+          $("#banner li.nob").eq(n).trigger('click');
+      }
   </script>
 
-  <div class="tabTitle"> <a href="javascript:void(0)" id="one1" onmouseover="setTab('one',1,3)" class="current">按尺寸查找</a> <a href="javascript:void(0)" id="one2" onmouseover="setTab('one',2,3)">按车辆查找</a> <a href="javascript:void(0)" id="one3" onmouseover="setTab('one',3,3)">按花纹查找</a> </div>
-
-  <div class="pro_con">
-
-    <div class="home_pro1" id="tab_one_1" > 
-      <%= form_tag "/searchs" do  -%>             
-      <div class="xz_pro">
-        <%= render "product_search_form" %>
-      </div>
-      <div class="btn_pro"><input type="submit" class="searchbtn" value="查询轮胎" /></div> 
-      <% end %>   
-    </div>
-
-
-    <div class="home_pro1" id="tab_one_2" style="display:none;">
-     <%= form_tag "/searchs?type=brand" do  -%>  
-     <div class="xz_pro">
-      <%= render "brand_search_form" %>       
-    </div>
-    <div class="btn_pro"><input type="submit" class="searchbtn" value="查询轮胎" /></div>  
-    <% end %>       
-  </div>
-
-  <div class="home_pro1" id="tab_one_3" style="display:none;">
-    <%= form_tag "/searchs?type=brand" do  -%>     
-    <div class="xz_pro">
-     <%= render "name_search_form" %> 
-   </div>
-   <div class="btn_pro"><input type="submit" class="searchbtn" value="查询轮胎" /></div>  
-   <% end %>       
- </div>               
-</div>
-
-</div>
-
-</div>  
-</div>
-
-
-<div class="home_con2">
- <div class="h_product1">
- <div class="hp_left">
- <span><a href="mc-440.html"><img src="images/home_pro4.gif" width="77" height="19" border="0" /></a></span>
- <span class="more2"><a href="mc-440.html">查看详情</a></span> 
- </div>
-  <div class="hp_right"><a href="mc-440.html"><img src="images/home_pro1.jpg" width="84" height="110" border="0" /></a></div>
- 
- </div>
- 
- 
- 
- 
- <div class="h_product2"> 
-  <div class="hp_left">
- <span><a href="mc-hp.html"><img src="images/home_pro5.gif" width="136" height="20" border="0" /></a></span>
-<span class="more2"><a href="mc-hp.html">查看详情</a></span>
- </div>
-  <div class="hp_right"><a href="mc-hp.html"><img src="images/home_pro2.jpg" width="89" height="109" border="0" /></a></div> 
-</div>
- 
- 
- 
- 
- 
- <div class="h_product3">
-   <div class="hp_left">
- <span><a href="mc-strategy.html"><img src="images/home_pro6.gif" width="105" height="20" border="0" /></a></span>
- <span class="more2"><a href="mc-strategy.html">查看详情</a></span>
- </div>
-  <div class="hp_right"><a href="mc-strategy.html"><img src="images/home_pro3.jpg" width="84" height="113" border="0" /></a></div>
- 
-  </div>
- 
- 
-<%= javascript_include_tag "jquery", "jquery-ui","jquery_ujs","underscore", "backbone", "products", "brands"%>
-<script type="text/javascript" src="/js/jquery.tools.min.js"></script>
-<script type="text/javascript" src="/js/jquery.hoverIntent.minified.js"></script>
+  <%= javascript_include_tag "jquery", "jquery-ui","jquery_ujs","underscore", "backbone", "products", "brands"%>
+  <script type="text/javascript" src="/js/jquery.tools.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.hoverIntent.minified.js"></script>
 
   <!--[if IE 6]>
-    <script type="text/javascript" src="/js/png.js"></script>
-    <!--<![endif]-->
-<script language="javascript" type="text/javascript" src="/js/default.js"></script>
+  <script type="text/javascript" src="/js/png.js"></script>
+  <!--<![endif]-->
+  <script language="javascript" type="text/javascript" src="/js/default.js"></script>
 
 

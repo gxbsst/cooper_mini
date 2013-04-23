@@ -83,65 +83,141 @@
 
   </div>
 </div>
+
 <div class="home_con2">
-  <div class="h_product1">
-    <div class="hp_left">
-      <span><a href="mc-440.html"><img src="images/home_pro4.gif" width="77" height="19" border="0" /></a></span>
-      <span class="more2"><a href="mc-440.html">查看详情</a></span>
-    </div>
-    <div class="hp_right"><a href="mc-440.html"><img src="images/home_pro1.jpg" width="84" height="110" border="0" /></a></div>
-  </div>
-  <div class="h_product2">
-    <div class="hp_left">
-      <span><a href="mc-hp.html"><img src="images/home_pro5.gif" width="136" height="20" border="0" /></a></span>
-      <span class="more2"><a href="mc-hp.html">查看详情</a></span>
-    </div>
-    <div class="hp_right"><a href="mc-hp.html"><img src="images/home_pro2.jpg" width="89" height="109" border="0" /></a></div>
-  </div>
-  <div class="h_product3">
-    <div class="hp_left">
-      <span><a href="mc-strategy.html"><img src="images/home_pro6.gif" width="105" height="20" border="0" /></a></span>
-      <span class="more2"><a href="mc-strategy.html">查看详情</a></span>
-    </div>
-    <div class="hp_right">
-      <a href="mc-strategy.html"><img src="images/home_pro3.jpg" width="84" height="113" border="0" /></a>
-    </div>
-  </div>
+	<!-- <div class="examples_body"> -->
+		<!-- <div class="bx_wrap"> -->
+			<!-- <div class="bx_container"> -->
+				<ul id="carousel">
+					<li>
+						<div class="h_product2">
+							<div class="hp_left">
+								<span><a href="mc-440.html"><img src="images/home_pro4.gif" width="77" height="19" border="0" /></a></span>
+								<span class="more2"><a href="mc-440.html">查看详情</a></span>
+							</div>
+							<div class="hp_right"><a href="mc-440.html"><img src="images/home_pro1.jpg" width="84" height="110" border="0" /></a></div>
+						</div>
+					</li>
+					<li>
+						<div class="h_product2">
+							<div class="hp_left">
+								<span><a href="mc-hp.html"><img src="images/home_pro5.gif" width="136" height="20" border="0" /></a></span>
+								<span class="more2"><a href="mc-hp.html">查看详情</a></span>
+							</div>
+							<div class="hp_right"><a href="mc-hp.html"><img src="images/home_pro2.jpg" width="89" height="109" border="0" /></a></div>
+						</div>
+					</li>
+					<li>
+						<div class="h_product2">
+							<div class="hp_left">
+								<span><a href="mc-strategy.html"><img src="images/home_pro6.gif" width="105" height="20" border="0" /></a></span>
+								<span class="more2"><a href="mc-strategy.html">查看详情</a></span>
+							</div>
+							<div class="hp_right">
+								<a href="mc-strategy.html"><img src="images/home_pro3.jpg" width="84" height="113" border="0" /></a>
+							</div>
+						</div>
+					</li>
+					
+						<li>
+							<div class="h_product2">
+								<div class="hp_left">
+									<span><a href="mc-strategy.html"><img src="images/home_pro6.gif" width="105" height="20" border="0" /></a></span>
+									<span class="more2"><a href="mc-strategy.html">查看详情</a></span>
+								</div>
+								<div class="hp_right">
+									<a href="mc-strategy.html"><img src="images/home_pro3.jpg" width="84" height="113" border="0" /></a>
+								</div>
+							</div>
+						</li>
+						
+							<li>
+								<div class="h_product2">
+									<div class="hp_left">
+										<span><a href="mc-strategy.html"><img src="images/home_pro6.gif" width="105" height="20" border="0" /></a></span>
+										<span class="more2"><a href="mc-strategy.html">查看详情</a></span>
+									</div>
+									<div class="hp_right">
+										<a href="mc-strategy.html"><img src="images/home_pro3.jpg" width="84" height="113" border="0" /></a>
+									</div>
+								</div>
+							</li>
+				</ul>
+			<!-- </div> -->
+			<!-- end bx_container -->
+		<!-- </div>		 -->
+		<!-- end bx_wrap -->
+	<!-- </div> -->
+	<!-- end examples_body -->
 </div>
-  <script type="text/javascript" src="js/jquery-1.2.6.pack.js"></script>
-  <script type="text/javascript">
-      var t = n = 0, count;
-      $(document).ready(function(){
-          count=$("#banner_list a").length;
-          $("#banner_list a:not(:first-child)").hide();
-          $("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
-          $("#banner_info").click(function(){window.open($("#banner_list a:first-child").attr('href'), "_blank")});
-          $("#banner li.nob").click(function() {
-              var i = $(this).text() - 1;//获取Li元素内的值，即1，2，3，4
-              n = i;
-              if (i >= count) return;
-              $("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
-              $("#banner_info").unbind().click(function(){window.open($("#banner_list a").eq(i).attr('href'), "_blank")});
-              $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
-              $(this).css({"background":"#fff",'color':'#000'}).siblings().css({"background":"#000",'color':'#fff'});
-          });
-          t = setInterval("showAuto()", 8000);
-          $("#banner").hover(function(){clearInterval(t)}, function(){t = setInterval("showAuto()", 8000);});
-      })
-      function showAuto()
-      {
-          n = n >=(count - 1) ? 0 : ++n;
-          $("#banner li.nob").eq(n).trigger('click');
-      }
-  </script>
 
   <%= javascript_include_tag "jquery", "jquery-ui","jquery_ujs","underscore", "backbone", "products", "brands"%>
-  <script type="text/javascript" src="/js/jquery.tools.min.js"></script>
-  <script type="text/javascript" src="/js/jquery.hoverIntent.minified.js"></script>
+
+ 
 
   <!--[if IE 6]>
   <script type="text/javascript" src="/js/png.js"></script>
   <!--<![endif]-->
-  <script language="javascript" type="text/javascript" src="/js/default.js"></script>
 
+	<script language="javascript" type="text/javascript" src="/js/carousel.js"></script>
+	<script type="text/javascript">
+	  $(document).ready(function(){
+		
+			var t = n = 0,
+			count;
+			count = $("#banner_list a").length;
+			$("#banner_list a:not(:first-child)").hide();
+			$("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
+			$("#banner_info").click(function() {
+			    window.open($("#banner_list a:first-child").attr('href'), "_blank")
+			});
+			$("#banner li.nob").click(function() {
+			    var i = $(this).text() - 1; //获取Li元素内的值，即1，2，3，4
+			    n = i;
+			    if (i >= count) return;
+			    $("#banner_info").html($("#banner_list a").eq(i).find("img").attr('alt'));
+			    $("#banner_info").unbind().click(function() {
+			        window.open($("#banner_list a").eq(i).attr('href'), "_blank")
+			    });
+			    $("#banner_list a").filter(":visible").fadeOut(500).parent().children().eq(i).fadeIn(1000);
+			    $(this).css({
+			        "background": "#fff",
+			        'color': '#000'
+			    }).siblings().css({
+			        "background": "#000",
+			        'color': '#fff'
+			    });
+			});
+			t = setInterval("showAuto()", 8000);
+			$("#banner").hover(function() {
+			    clearInterval(t)
+			}, function() {
+			    t = setInterval("showAuto()", 8000);
+			});
+
+			function showAuto() {
+			    n = n >= (count - 1) ? 0 : ++n;
+			    $("#banner li.nob").eq(n).trigger('click');
+			}
+			
+		
+	    $('#carousel').bxCarousel({
+	      move: 1,
+	      display_num: 3,
+	      speed: 2000,
+	      margin: 0,
+	      auto:  true,
+	      auto_interval: 4000,
+	      auto_dir: 'next',
+	      auto_hover: false,
+	      next_text: '',
+	      next_image: 'images/hp_pic2.png',
+	      prev_text: 'prev',
+	      prev_image: 'images/hp_pic1.png',
+	      controls: true
+
+	    });
+	  });
+
+	</script>
 

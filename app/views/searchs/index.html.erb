@@ -1,61 +1,16 @@
-  <div id="nav">
-    <ul class="ul">
-        <li class="li li1"><a class="a" href="/">首页</a></li>
-        <li class="li line2"></li>
-        <li class="li li2"><a class="a" href="brand.html">百年历史</a></li>
-        <li class="li line2"></li>
-        <li class="li li3"><a class="a" href="aboutmc.html">关于马斯特轮胎(Mastercraft)</a>
-          <div class="none1">
-            <ul class="menu1">
-              <li><a href="aboutmc.html">选择马斯特(MC)的五大理由</a></li>
-              <li><a href="contact.html">联系我们</a></li>          
-            </ul>
-          </div>
-        </li>
-        <li class="li line2"></li>
-        <li class="li li4"><a class="a current" href="product.html">产品和服务</a>
-        <div class="none1">
-            <ul class="menu1">
-              <li><a href="product.html">PCR产品</a></li>
-              <li><a href="product_suv.html">SUV产品</a></li>
-              <li><a href="/products/search">查找轮胎</a></li>
-              <li><a href="commonsense.html">轮胎使用常识</a></li>
-              </ul>
-          </div>
-        </li>
-        <li class="li line2"></li>
-        <li class="li li5"><a class="a" href="news.html">媒体新闻</a>
-        <div class="none1">
-            <ul class="menu1">
-              <li><a href="news.html">公司新闻</a></li>
-              <li><a href="/downloads">高清图下载</a></li> 
-             </ul> 
-          </div>
-        </li>
-        
-      </ul>
-    </div>
-
-    </div>
-  </div>
-  
-<div class="content_bg">
-<div class="line1"></div>
-<div class="content2">
 <%= render "share/products_sidebar" %>
 <div class="zy_right">
-	<%= render "share/product_position"%>
-	<div class="fdc_con">
-		<div class="fd_top">为您查找到以下轮胎产品：</div>
-			<% unless @products.first.blank? %>
-				<%=render @products %>
-			<% else %>
-			<p>无返回结果.</p>
-			<% end %>
-		<div class="fd_btn"><input type="button" onclick="window.location='/products/search'" class="back_btn" value="返回重新查找" /></div>
-	</div>
+  <%= render "share/product_position"%>
+  <div class="fdc_con">
+    <div class="fd_top">为您查找到以下轮胎产品：</div>
+    <% unless @products.first.blank? %>
+        <%=render @products %>
+    <% else %>
+        <p>无返回结果.</p>
+    <% end %>
+    <div class="fd_btn"><input type="button" onclick="window.location='/products/search'" class="back_btn" value="返回重新查找" /></div>
+  </div>
 </div>
-</div>
- 
+
 
  

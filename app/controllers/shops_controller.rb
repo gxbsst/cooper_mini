@@ -1,5 +1,5 @@
-# encoding: utf-8
-class StoresController < ApplicationController
+#encoding: utf-8
+class ShopsController < ApplicationController
 
   def index
     @title = '零售店'
@@ -110,4 +110,6 @@ class StoresController < ApplicationController
     @stores_2 = @stores_2.where([ "full_address like ?", "%#{params[:region][:full_address].gsub(/\s+/, "")}%" ]) if full_address.present?
     @stores_2
   end
+
+
 end

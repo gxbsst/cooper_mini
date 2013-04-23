@@ -71,3 +71,9 @@ group :development, :test do
 end
 gem 'refinerycms-jobs', :path => 'vendor/extensions'
 
+gem 'gmaps4rails'
+gem 'geocoder', :git => 'git://github.com/alexreisner/geocoder.git'
+gem 'fastthread', :git => 'git://github.com/zoltankiss/fastthread.git'
+
+gem 'backbone-on-rails'
+

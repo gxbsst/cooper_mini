@@ -9,7 +9,8 @@ class Api::RegionsController < ApplicationController
   def locals
     # type = params[:type]
     parent_id = params[:parent_id]
-    locals = Store.where(:provice => parent_id).group(:city)
+   # locals = Store.where(:provice => parent_id).group(:city)
+    locals = Store.city_collection_by_parent_id(parent_id)
     render :json => locals
   end
   

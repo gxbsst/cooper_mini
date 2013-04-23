@@ -91,52 +91,76 @@ namespace :app do
     
   
   ## 更新描述和图片
-  task :init_store => :environment do
+  #task :init_store => :environment do
+    #file_name = "store.csv"
+    #csv = CSV.read(Rails.root.join('lib', 'tasks', 'data', file_name))
+    #csv.each do |item|
+      ## puts item[0]
+      #item[2] =  "" if item[2].nil?
+      #item[3] = "" if item[3].nil?
+      #item[13] = "Others" if item[13].blank? || item[13] == 'CC'
+      
+      ## full_address = ""
+      
+      #shop_types = {"CPC" => "嘉车坊", "CTCC" => "替换中心",  "CSS+" => "店招店" ,  "CSS" => "招牌店",  "INDENPENDENT" => "独立授权店" , "OTHERS" => "其他" }
+     
+      #if item[13].blank?
+        #shop_type = "OTHERS"
+      #else
+        #shop_type = item[13].upcase
+      #end
+      
+      #address = item[10] == '0' ?  address = "" : item[10].to_s.force_encoding("UTF-8") 
+                   
+      #Store.create({rank: item[0].to_s.force_encoding("UTF-8"),
+                    #sale_dist: item[1].to_s.force_encoding("UTF-8"),
+                    #provice: item[2].to_s.force_encoding("UTF-8"),
+                    #city: item[3].to_s.force_encoding("UTF-8"),
+                    #dist: item[4].to_s.force_encoding("UTF-8"),
+                    #asr: item[5].to_s.force_encoding("UTF-8"),
+                    #dsr: item[6].to_s.force_encoding("UTF-8"),
+                    #telephone: item[12].to_s.force_encoding("UTF-8"),
+                    #retail_code: item[7].to_s.force_encoding("UTF-8"),
+                    #shop_name: item[8].to_s.force_encoding("UTF-8"),
+                    #address: address,
+                    #full_address: (item[2] + item[3] +  shop_types["#{item[13].upcase}"]).to_s.force_encoding("UTF-8"),
+                    #shop_type: shop_type })
+    #end
+    
+  #end
+  
+  ### 更新店地址经纬度
+  #task :update_store_tuge => :environment do 
+  #Store.all.each do |r|
+    #tuge = Geocoder.coordinates(r.address) unless r.address.blank?
+    #r.update_attributes(:longitude => tuge[0], :latitude => tuge[1]) unless tuge.blank?
+  #end
+  #end
+  #
+  task :init_stores => :environment do
     file_name = "store.csv"
     csv = CSV.read(Rails.root.join('lib', 'tasks', 'data', file_name))
     csv.each do |item|
-      # puts item[0]
-      item[2] =  "" if item[2].nil?
-      item[3] = "" if item[3].nil?
-      item[13] = "Others" if item[13].blank? || item[13] == 'CC'
-      
-      # full_address = ""
-      
-      shop_types = {"CPC" => "嘉车坊", "CTCC" => "替换中心",  "CSS+" => "店招店" ,  "CSS" => "招牌店",  "INDENPENDENT" => "独立授权店" , "OTHERS" => "其他" }
-     
-      if item[13].blank?
-        shop_type = "OTHERS"
-      else
-        shop_type = item[13].upcase
-      end
-      
-      address = item[10] == '0' ?  address = "" : item[10].to_s.force_encoding("UTF-8") 
-                   
-      Store.create({rank: item[0].to_s.force_encoding("UTF-8"),
-                    sale_dist: item[1].to_s.force_encoding("UTF-8"),
-                    provice: item[2].to_s.force_encoding("UTF-8"),
-                    city: item[3].to_s.force_encoding("UTF-8"),
-                    dist: item[4].to_s.force_encoding("UTF-8"),
-                    asr: item[5].to_s.force_encoding("UTF-8"),
-                    dsr: item[6].to_s.force_encoding("UTF-8"),
-                    telephone: item[12].to_s.force_encoding("UTF-8"),
-                    retail_code: item[7].to_s.force_encoding("UTF-8"),
-                    shop_name: item[8].to_s.force_encoding("UTF-8"),
-                    address: address,
-                    full_address: (item[2] + item[3] +  shop_types["#{item[13].upcase}"]).to_s.force_encoding("UTF-8"),
-                    shop_type: shop_type })
+
+      Shop.create({ provice: item[0],
+                     city: item[1],
+                     dist: item[2],
+                     shop_name: item[2],
+                     address: item[3],
+                     full_address: ("#{item[1]}#{item[3]}") })
     end
-    
+
   end
-  
+
+
   ## 更新店地址经纬度
-  task :update_store_tuge => :environment do 
-  Store.all.each do |r|
-    tuge = Geocoder.coordinates(r.address) unless r.address.blank?
-    r.update_attributes(:longitude => tuge[0], :latitude => tuge[1]) unless tuge.blank?
+  task :update_store_tuge => :environment do
+    Shop.all.each do |r|
+      tuge = Geocoder.coordinates(r.address) unless r.address.blank?
+      r.update_attributes(:longitude => tuge[0], :latitude => tuge[1]) unless tuge.blank?
+    end
   end
-  end
-  
+
   task :init_video => :environment do
     yaml = YAML::load(open(Rails.root.join('lib', 'tasks', 'data','video.yml')))
     yaml.each do |key, value|

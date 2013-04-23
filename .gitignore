@@ -1,3 +1,4 @@
+.idea
 cache/*
 log/*
 tmp/*
@@ -15,4 +16,3 @@ public/._index.htm_bak
 saved_items
 db/schema.rb
 log/development.log
-tmp/dragonfly/cache/meta/*

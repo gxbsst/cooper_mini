@@ -107,20 +107,28 @@ img{ border:none;}
 .find{ float:left; width:355px;}
 
 .home_con2{ overflow:hidden; margin-bottom:35px; padding-left:3px; position: relative;}
-.h_product1{ float:left; width:280px; height:127px; margin-right:25px; background: url(../images/home_pro7.gif) no-repeat; overflow:hidden;}
 .hp_left{ float:left; padding-left:25px; padding-top:24px; width:100px;}
 span.more2{ display:block; padding:53px 0px 0px 17px; background:url(../images/icon2.gif) no-repeat 2px 57px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#ee2e24; }
 span.more2 a{color:#ee2e24; }
 span.more3{ display:block; padding:13px 0px 0px 17px; background:url(../images/icon2.gif) no-repeat 2px 17px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#ee2e24; }
 span.more3 a{color:#ee2e24; }
-.hp_right{ float:right; padding-right:14px; padding-top:9px;}
+.hp_right{ float:right; padding-right:20px; padding-top:9px;}
 span.lt_lx{ display:block; padding-top:11px;}
 /*span.more3{ display:block; padding:53px 0px 0px 42px; background:url(../images/icon2.gif) no-repeat 28px 99px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#ee2e24; }
 span.more3 a{color:#ee2e24; }*/
-.h_product2{ float:left; width:295px; height:127px; margin: 0 2px 0 6px; background:url(../images/ha_pic4.gif) no-repeat; }
-.h_product3{ float:left; width:280px; height:127px; background: url(../images/home_pro9.gif) no-repeat;}
-.h_product4{ float:left; width:295px; height:127px; margin: 0 2px 0 6px; background: url(../images/home_pro8.gif) no-repeat;}
-
+.h_product1{ background: url(../images/home_pro7.gif) no-repeat 0px center;}
+.h_product1 .hp_right {
+    padding-right: 20px;
+}
+.h_product2{   background:url(../images/ha_pic4.gif) no-repeat; }
+.h_product3{  background: url(../images/home_pro9.gif) no-repeat;}
+.h_product4{   background: url(../images/home_pro8.gif) no-repeat;}
+.h_product1, .h_product2, .h_product3, .h_product4 {
+    margin: 0 3px 0 8px;
+    float:left;
+    width:295px;
+    height:127px;
+}
 .footer{ width:978px; height:38px; background:url(../images/footer_bg.gif) no-repeat; margin:0px auto; margin-bottom:70px; position:relative;}
 .back_top{	width:24px;	height:65px;	position: absolute;	left: 980px;	bottom:0px;}
 

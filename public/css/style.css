@@ -331,6 +331,13 @@ dl.pb_left7{width:297px; height:255px; border-right: 1px dashed #dfdfdf;  paddin
 dl.pb_right7{ width:295px; height:255px; padding:35px 0px 0px 45px; margin-bottom:30px;}
 dl.pb_left8{width:297px; height:325px; border-right: 1px dashed #dfdfdf; padding:35px 0px 0px 20px; margin-bottom:20px;}
 dl.pb_right8{ width:295px; height:325px;  padding:35px 0px 0px 45px; margin-bottom:20px;}
+dl.pb_left9{ width:297px; height:275px; border: 1px dashed #dfdfdf; border-top:none; border-left:none; padding:8px 0px 0px 20px;}
+dl.pb_right9{  width:295px; height:275px; border-bottom: 1px dashed #dfdfdf; padding:8px 0px 0px 45px;}
+
+dl.pb_left10{ width:297px; height:335px; border: 1px dashed #dfdfdf; border-top:none; border-left:none; padding:8px 0px 0px 20px;}
+dl.pb_right10{  width:295px; height:335px; border-bottom: 1px dashed #dfdfdf; padding:8px 0px 0px 45px;}
+
+
 
 
 .pb_bottom{ float:left; width:630px; height:33px; margin-top:30px; margin-left:5px;}
@@ -358,7 +365,7 @@ ul.pc3_list li span.py_6{ width:96px;line-height:32px; }
 ul.pc3_list li span.py_8{ width:100px;line-height:32px;}
 ul.pc3_list li span.py_9{ width:91px;line-height:32px;  background:#fff; }
 ul.pc3_list li span.py_10{ width:111px; background:#fff;}
-
+ul.pc3_list li span.wzy{ background:#fff url(../images/axt_pic11.gif) no-repeat 20px 9px; }
 
 .pc4_top{ background:#c8161d; width:640px; height:40px; overflow:hidden; margin-left:17px;}
 .pc4_top span{ display:block; float:left; line-height:40px; color:#fff; font-size:13px; text-align:center; /*border-right:1px solid #575757;*/ }
@@ -382,7 +389,10 @@ span.pt_9{ width:160px;  }
 .pc4_list2 span.cb_9{ height:197px; line-height:197px;}
 .pc4_list2 span.cb_10{ height:164px; line-height:164px;background:#f1f1f1;}
 .pc4_list2 span.cb_11{ height:98px; line-height:98px;}
-
+.pc4_list2 span.cb_12{ height:1014px; line-height:1004px; background:#f1f1f1;}
+.pc4_list2 span.cb_13{ height:712px; line-height:712px;}
+.pc4_list2 span.cb_14{ height:246px; line-height:246px; background:#f1f1f1;}
+.pc4_list2 span.cb_15{ height:32px; line-height:32px;}
 
 
 ul.pc4_list{ float:left; display:block; border-left:1px solid #ddd; border-right:1px solid #ddd; width:558px;}
@@ -390,6 +400,10 @@ ul.pc4_list li{ display:block; height:32px;  border-bottom:1px solid #ddd;  }
 ul.pc4_list li.pl_sz{ display:block; background:#f1f1f1; line-height:32px; font-size:14px; font-weight:bold; padding-left:65px; color:#e92d23; overflow:hidden; }
 ul.pc4_list li.pcl_ys{ /*background:#f6f6f6;*/background:#f1f1f1;}
 ul.pc4_list li.pcl_jg{ height:48px; }
+ul.pc4_list li.pcl_jg3{ height:68px; }
+ul.pc4_list li.pcl_jg4{ height:68px;background:#f1f1f1; }
+ul.pc4_list li.pcl_jg5{ height:48px;background:#f1f1f1; }
+
 
 .ls_sm{ float:right; width:600px; text-align:right; padding-top:10px; padding-right:10px; color:#777;}
 
@@ -397,16 +411,22 @@ ul.pc4_list li.pcl_jg{ height:48px; }
 ul.pc4_list li span{display:block; float:left; line-height:32px;  font-size:12px; text-align:center; border-right:1px solid #ddd;}
 ul.pc4_list li span.py_2{width:84px;}
 ul.pc4_list li span.py_3{width:45px; }
+ul.pc4_list li span.py_11{width:60px; }
 ul.pc4_list li span.py_4{width:36px; }
 ul.pc4_list li span.py_5{width:366px; border-right:none; padding-left:14px; padding-right:7px; overflow:hidden; text-align:left; }
+ul.pc4_list li span.py_12{width:351px; border-right:none; padding-left:14px; padding-right:7px; overflow:hidden; text-align:left; }
 ul.pc4_list li span.py_jg{ height:48px; line-height:48px;}
 ul.pc4_list li span.py_jg2{ height:38px; line-height:18px; padding-top:7px;}
+ul.pc4_list li span.py_jg3{ height:68px; line-height:68px;}
+ul.pc4_list li span.py_jg4{ height:58px; line-height:18px; padding-top:7px;}
 
 
 /*axt*/
-.ca_tby{ font-size:14px; margin-bottom:15px;}
-.ca_tsm{ line-height:20px;}
-
+.ca_tby{ font-size:14px; font-weight:bold; margin-bottom:15px;}
+.ca_tsm{ line-height:20px; padding-bottom:12px; border-bottom:1px solid #ddd;}
+.ca_tcx{ padding-top:15px; line-height:18px; overflow:hidden;}
+.ca_tcx span{ display:block; float:left; margin-right:10px;}
+.pc3_list li.wsm{ background:#fff; text-align:right; line-height:35px; background:url(../images/axt_pic11.gif) no-repeat  532px  12px; padding-right:20px; }
 
 
 /*查找轮胎*/

@@ -198,7 +198,7 @@ span.bl_con{ color:#888; line-height:18px; padding-bottom:15px; margin:0px;}
 
 .bc2_left2{ float:right; margin-right:0; width:435px; }
 .bc2_left2 span{ display:block; }
-.bc2_right2{ float:left; width:195px; margin-top:20px;}
+.bc2_right2{ float:left; width:195px; }
 .bc2_right2 span{ display:block; }
 
 
@@ -399,6 +399,9 @@ span.pt_9{ width:160px;  }
 .pc4_list2 span.cb_18{ height:180px; line-height:180px; background:#f1f1f1;}
 .pc4_list2 span.cb_19{ height:65px; line-height:65px;}
 .pc4_list2 span.cb_20{ height:167px; line-height:167px; background:#f1f1f1;}
+.pc4_list2 span.cb_21{ height:285px; line-height:285px;}
+.pc4_list2 span.cb_22{ height:48px; line-height:48px; background:#f1f1f1;}
+.pc4_list2 span.cb_23{ height:200px; line-height:200px;}
 
 
 
@@ -509,7 +512,7 @@ dl.sc_con dd.cs{ width:100px;}
 
 
 .bl_1 {
-  margin: 0 0 90px 0;
+  margin: 0 0 40px 0;
   }
 
 

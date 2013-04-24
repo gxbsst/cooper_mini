@@ -8,11 +8,17 @@
       <li class="nob">1</li>
       <li class="nob">2</li>
       <li class="nob">3</li>
+      <li class="nob">4</li>
+      <li class="nob">5</li>
+      <li class="nob">6</li>
     </ul>
     <div id="banner_list">
       <a href="/mc-440.html" target="_self"><img src="images/slide1.jpg"   /></a>
       <a href="/mc-hp.html" target="_self"><img src="images/slide2.jpg"   /></a>
       <a href="/mc-strategy.html" target="_self"><img src="images/slide3.jpg"   /></a>
+      <a href="/courser_axt.html" target="_self"><img src="images/banner_axt.jpg"   /></a>
+      <a href="/courser_ct.html" target="_self"><img src="images/banner_ct.jpg"   /></a>
+      <a href="/courser_mt.html" target="_self"><img src="images/banner_mt.jpg"   /></a>
     </div>
   </div>
 </div>
@@ -177,13 +183,18 @@
 
 	<script language="javascript" type="text/javascript" src="/js/carousel.js"></script>
 	<script type="text/javascript">
-	  $(document).ready(function(){
-		
-			var t = n = 0,
-			count;
-			count = $("#banner_list a").length;
-			$("#banner_list a:not(:first-child)").hide();
-			$("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
+        function showAuto() {
+            n = n >= (count - 1) ? 0 : ++n;
+            $("#banner li.nob").eq(n).trigger('click');
+        }
+
+        var t = n = 0,
+                count;
+        count = $("#banner_list a").length;
+        $("#banner_list a:not(:first-child)").hide();
+        $("#banner_info").html($("#banner_list a:first-child").find("img").attr('alt'));
+
+        $(document).ready(function(){
 			$("#banner_info").click(function() {
 			    window.open($("#banner_list a:first-child").attr('href'), "_blank")
 			});
@@ -204,6 +215,7 @@
 			        'color': '#fff'
 			    });
 			});
+
 			t = setInterval("showAuto()", 8000);
 			$("#banner").hover(function() {
 			    clearInterval(t)
@@ -211,10 +223,7 @@
 			    t = setInterval("showAuto()", 8000);
 			});
 
-			function showAuto() {
-			    n = n >= (count - 1) ? 0 : ++n;
-			    $("#banner li.nob").eq(n).trigger('click');
-			}
+
 			
 		
 	    $('#carousel').bxCarousel({

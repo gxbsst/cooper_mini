@@ -2,6 +2,20 @@
 require 'csv'
 
 namespace :app do
+
+  def parse_spec(spec)
+    if ((spec =~ /^(\d+)\/(\d+{2})(R\d+)/) == 0)
+      puts "#{spec}"
+      [$1, $2, $3]
+    elsif ((spec =~ /^(\d.+)(R.+)$/) == 0)
+      [$1, nil, $2]
+    elsif ((spec =~ /^(LT\d+)\/(\d+{2})(R.+)/) == 0)
+      [$1, $2, $3]
+    else
+      [nil, nil, nil]
+    end
+  end
+
   desc "TODO"
   task :init_product => :environment do
     name = []
@@ -30,40 +44,36 @@ namespace :app do
       }
       @product = Product.create(product_item)
     end
-
-
-    # (1..18).each do |v|
-    #   file_name = "#{v}.csv"
-    #   csv = CSV.read(Rails.root.join('lib', 'tasks', 'data', 'product', file_name))
-    #   ## save to database
-    #   csv.each do |i|
-    #     
-    #     i[4] =~ /(L?T?|\d{3})\/(\d+R)(.+)/i
-    #     tyre = $1
-    #     aspect_ratio = $2
-    #     diameter = $3
-    #     
-    #     @product = Product.create({:tyre => tyre, 
-    #                     :aspect_ratio => aspect_ratio, 
-    #                     :diameter => diameter,
-    #                     :name => i[0],
-    #                     :image_url => i[1],
-    #                     :description => i[2],
-    #                     :url => i[3] })
-    #        
-    #     ## 如果为空，则匹配不成功， 手动添加
-    #     name << i[4] if(@product.tyre.blank?)
-    #     puts "#{@product.id} => #{i[4]} #{tyre} = #{aspect_ratio} = #{diameter}"          
-    #   end
-    # 
-    #   open('saved_items', 'w') do |file|
-    #     name.each do |n|
-    #       file << "product_id: #{@product.id}, #{file_name}--#{name}\n"
-    #     end
-    #   end
-    #   puts "====== #{file_name} END ========"
-    # end
   end # end init_products
+
+  desc "TODO"
+  task :init_product_suv => :environment do
+
+    file_name = Rails.root.join('lib', 'tasks', 'data', "suv-car.csv")
+    csv = CSV.open(file_name, :headers => true)
+    # csv = CSV.read(Rails.root.join('lib', 'tasks', 'data', file_name))
+    csv.each do |item|
+      puts item[4]
+      if item[0].present?
+        spec = parse_spec(item[2])
+        Product.create({   name: item[0],
+                           decorative: item[0],
+                           url: item[15],
+                           image_url: item[14],
+                           position: item[7],
+                           rim: item[8],
+                           speed: item[9],
+                           sku: item[10],
+                           road: item[11],
+                           manufacture: item[12],
+                           time: item[13],
+                           tyre: spec[0],
+                           aspect_ratio: spec[1] ,
+                           diameter: spec[2]
+                       })
+      end
+    end
+  end
 
 
   ## init_brand

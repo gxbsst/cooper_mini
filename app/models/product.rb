@@ -6,10 +6,12 @@ class Product < ActiveRecord::Base
     
     
     def tyre_all_collection
-      Product.tyre_collection + [["轮胎直径", 'disable']] + Product.tyre_with_x_collection
+      #Product.tyre_collection + [["轮胎直径", 'disable']] + Product.tyre_with_x_collection
+      Product.tyre_collection + Product.tyre_with_x_collection
     end
     def name_all_collection
-      Product.name_collection + [["花纹", 'disable']] + Product.name_with_x_collection
+      Product.name_collection  + Product.name_with_x_collection
+      #Product.name_collection + [["花纹", 'disable']] + Product.name_with_x_collection
     end
   # 轮胎
     def name_collection

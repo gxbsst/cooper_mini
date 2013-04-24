@@ -116,19 +116,21 @@ span.more3 a{color:#ee2e24; }
 span.lt_lx{ display:block; padding-top:11px;}
 /*span.more3{ display:block; padding:53px 0px 0px 42px; background:url(../images/icon2.gif) no-repeat 28px 99px; font-family:Arial, Helvetica, sans-serif; font-weight:bold; color:#ee2e24; }
 span.more3 a{color:#ee2e24; }*/
-.h_product1{ background: url(../images/home_pro7.gif) no-repeat 0px center;}
+
 .h_product1 .hp_right {
-    padding-right: 20px;
+    /*padding-right: 20px;*/
 }
-.h_product2{   background:url(../images/ha_pic4.gif) no-repeat; }
-.h_product3{  background: url(../images/home_pro9.gif) no-repeat;}
-.h_product4{   background: url(../images/home_pro8.gif) no-repeat;}
 .h_product1, .h_product2, .h_product3, .h_product4 {
     margin: 0 3px 0 8px;
     float:left;
     width:295px;
     height:127px;
+    /*border: 1px solid red;*/
 }
+.h_product1{ background: url(../images/home_pro7.gif) no-repeat;}
+.h_product2{   background:url(../images/ha_pic4.gif) no-repeat; }
+.h_product3{  background: url(../images/home_pro9.gif) no-repeat;}
+.h_product4{   background: url(../images/home_pro8.gif) no-repeat;}
 .footer{ width:978px; height:38px; background:url(../images/footer_bg.gif) no-repeat; margin:0px auto; margin-bottom:70px; position:relative;}
 .back_top{	width:24px;	height:65px;	position: absolute;	left: 980px;	bottom:0px;}
 

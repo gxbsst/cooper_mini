@@ -278,6 +278,7 @@ ul.tips li { list-style: disc; line-height:24px;}
 .product_con1{ overflow:hidden; }
 .prc_con1{ width:660px; padding-left:15px; overflow:hidden; margin-bottom:50px;}
 .pc1_img{ float:left; width:260px; height:275px; border:1px solid #ebebeb; margin-right:30px;}
+.pc1_img2{ float:left; width:260px; height:295px; border:1px solid #ebebeb; margin-right:30px;}
 .pc1_text{ float:left; width:350px;}
 .pct_1{ padding:5px 0px 10px 0px;}
 .pct_2{line-height:25px; font-size:14px; }
@@ -437,9 +438,9 @@ ul.pc4_list li span.py_jg4{ height:58px; line-height:18px; padding-top:7px;}
 
 
 /*axt*/
-.ca_tby{ font-size:14px; font-weight:bold; margin-bottom:15px;}
-.ca_tsm{ line-height:20px; padding-bottom:12px; border-bottom:1px solid #ddd;}
-.ca_tcx{ padding-top:15px; line-height:18px; overflow:hidden;}
+/*.ca_tby{ font-size:14px; font-weight:bold; margin-bottom:15px;}
+.ca_tsm{ line-height:20px; padding-bottom:12px; border-bottom:1px solid #ddd;}*/
+.ca_tcx{ padding-top:5px; line-height:18px; overflow:hidden;}
 .ca_tcx span{ display:block; float:left; margin-right:10px;}
 .pc3_list li.wsm{ background:#fff; text-align:right; line-height:35px; background:url(../images/axt_pic11.gif) no-repeat  532px  12px; padding-right:20px; }
 
@@ -470,7 +471,9 @@ ul.pc4_list li span.py_jg4{ height:58px; line-height:18px; padding-top:7px;}
 dl.fl_text{ display:block; float:left; width:450px;}
 dl.fl_text dt{ display:block; font-size:20px; color:#ea2d23; font-weight:bold; margin-bottom:10px;}
 dl.fl_text dd{ display:block; margin:0px; line-height:24px; font-size:14px; overflow:hidden;}
-dl.fl_text dd a{ display:block; color:#ea2d23; padding-top:5px;}
+
+
+dl.fl_text dd a{ display:block; color:#ea2d23; padding-top:5px; }
 dl.fl_text dd  span{ display:block; float:left; margin-right:30px;}
 .fd_btn{ margin-top:30px;}
 .back_btn{ width:131px; height:34px; line-height:34px; background:url(../images/fc_pic2.gif) no-repeat 0px 0px; cursor:pointer; border:0px; vertical-align:middle; color:White; font-weight:bold; font-size:13px; margin-left:270px;}

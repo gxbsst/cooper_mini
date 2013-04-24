@@ -198,10 +198,11 @@ span.red_dq{ color:#d6281f;}
 .bc2_left{ float:left; margin-right:22px; width:202px; }
 .bc2_left span{ display:block; }
 span.bl_img{margin-bottom:18px;}
-span.bl_bt{ margin-bottom:10px;}
-span.bl_con{ color:#888; line-height:18px; padding-bottom:15px; margin:0px;}
+span.bl_logo{ text-align:center; margin-bottom:0px; padding-top:80px;}
+span.bl_bt{ margin-bottom:10px; padding-left:10px;}
+span.bl_con{ color:#888; line-height:18px; padding-bottom:15px; margin:0px; padding-left:10px;}
 
-.bl_2{ margin-top:30px;}
+/*.bl_2{ margin-top:30px;}*/
 
 
 
@@ -212,6 +213,8 @@ span.bl_con{ color:#888; line-height:18px; padding-bottom:15px; margin:0px;}
 .bc2_left2 span{ display:block; }
 .bc2_right2{ float:left; width:195px; }
 .bc2_right2 span{ display:block; }
+
+.br_hq{ float:right; padding-top:20px; padding-bottom:50px;}
 
 
 /*关于mc*/

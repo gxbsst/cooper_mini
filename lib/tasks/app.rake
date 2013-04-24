@@ -142,12 +142,13 @@ namespace :app do
     csv = CSV.read(Rails.root.join('lib', 'tasks', 'data', file_name))
     csv.each do |item|
 
-      Shop.create({ provice: item[0],
+      Shop.find_or_create_by_shop_name(item[2],
+                     provice: item[0],
                      city: item[1],
                      dist: item[2],
-                     shop_name: item[2],
+                     # shop_name: item[2],
                      address: item[3],
-                     full_address: ("#{item[1]}#{item[3]}") })
+                     full_address: ("#{item[1]}#{item[3]}") )
     end
 
   end

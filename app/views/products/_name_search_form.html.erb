@@ -1,5 +1,5 @@
 <div class="body">	 
  <span id="name">
- 	<%= select_tag 'name',options_for_select(Product.name_all_collection, :disabled => "disable"),  :prompt => "选择花纹", :class => "select", :style => "width:320px" %>
+ 	<%= raw select_tag 'name',options_for_select(sort_decorative, :disabled => "disable"),  :prompt => "选择花纹", :class => "select", :style => "width:320px" %>
  </span>
 </div>

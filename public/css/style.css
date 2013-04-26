@@ -181,10 +181,13 @@ span.more3 a{color:#ee2e24; }*/
 #leftcontent dd ul{ display:block; padding:10px 0px 20px 0px; margin-left:30px; }
 #leftcontent dd li{height:23px; line-height:23px; overflow:hidden; }
 #leftcontent dd a{ text-decoration:none; padding:0px 0px 0px 5px; overflow:hidden; display:block; color:#666;}
-#leftcontent dd .hover{ background:url(../pic/li04.jpg) no-repeat 0px 8px;color:#e92d23;}
+#leftcontent dd .hover{ color:#e92d23;}
 #leftcontent .current dt{background:url(../images/br_pic2.gif) no-repeat 20px 13px;}
 #leftcontent .current dt a{color:#e92d23;  background:url(../images/br_pic2.gif) no-repeat 20px 13px;}
 #leftcontent .current dd{ display:block;}
+#leftcontent .current dt.cc{ color:#444; background:url(../images/br_pic8.gif) no-repeat 20px 13px;}
+#leftcontent .current dt.cc a{ color:#444; background:url(../images/br_pic8.gif) no-repeat 20px 13px;}
+
 
 .zy_right{ float:left; width:680px; background:url(../images/br_pic3.gif) repeat-y; padding-top:25px; padding-left:24px; }
 .zyr_title{height:34px; border:1px solid #eaeaea; border-left:none; border-right:none; margin-bottom:20px; overflow:hidden;}
@@ -217,6 +220,29 @@ span.bl_con{ color:#888; line-height:18px; padding-bottom:15px; margin:0px; padd
 .bc2_right2 span{ display:block; }
 
 .br_hq{ float:right; padding-top:20px; padding-bottom:50px;}
+
+
+
+.brc_bottom{ padding-left:10px;}
+.bn_con1{ overflow:hidden; margin-bottom:30px;}
+.bc1_img{ float:left; margin-right:30px; }
+.bc1_text{ float:left; width:430px;}
+.brc_bottom p{ display:block; margin:0px; padding:0px; line-height:24px;text-indent:25px; overflow:hidden; }
+
+.bc2_img{ float:left; }
+.bc2_text{ float:left; width:430px;margin-right:30px; }
+
+.bc3_img{ float:left; margin-right:30px; padding-top:10px;}
+.bc3_text{ float:left; width:192px; }
+
+.bc4_img{ float:left;  padding-top:30px;}
+
+.bn_con2{ margin-bottom:30px;}
+
+
+
+
+
 
 
 /*关于mc*/
@@ -519,6 +545,8 @@ dl.fl_text dd  span{ display:block; float:left; margin-right:30px;}
 .copyright_con p{ display:block; margin:0px; padding-bottom:20px; line-height:22px;}
 .copyright_con p.sj{ padding-left:15px;}
 .copyright_con p.ntb{ padding-bottom:7px;}
+.cr_con{ padding:20px 10px;}
+
 
 /*网站地图*/
 .sitemap_con{ margin-top:25px;}

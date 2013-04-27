@@ -292,10 +292,10 @@ p.t_list{display:block; margin:0px 0px 8px 0px; padding-left:5px;  line-height:2
 #products_tips dl{ display:block; padding:30px 0px 0px 20px; }
 #products_tips dl.frist{ padding-top:20px;}
 #products_tips .current dt{}
-#products_tips .current dt strong{ background:url(../images/products_tips_close.jpg) no-repeat 4px 9px; }
+#products_tips .current dt strong{ background:url(../images/products_tips_hide.jpg) no-repeat 4px 9px; }
 #products_tips .current dd{ display:none;}
 #products_tips dt{ cursor:pointer; height:30px; line-height:28px; background:url(../images/comm_pic1.gif) no-repeat; padding:0px 0px 0px 10px;}
-#products_tips dt strong{ display:block; color:#fff; font-size:14px; padding:0px 20px 0px 22px; background:url(../images/products_tips_hide.jpg) no-repeat  4px 9px;}
+#products_tips dt strong{ display:block; color:#fff; font-size:14px; padding:0px 20px 0px 22px; background:url(../images/products_tips_close.jpg) no-repeat  4px 9px;}
 #products_tips dd{ display:block; /*display:block;*/ line-height:20px; padding:10px 15px 15px 0px; border-bottom:dotted 1px #CBCBCB; margin:0px;}
 #products_tips dd p{ line-height:24px;}
 #products_tips dd ul{ padding:10px 20px 0px 15px;}

@@ -98,7 +98,7 @@ ssh_options[:forward_agent] = true
  end
 
  task :change_tmp do
-    run("chmod -R 777 #{current_path}/tmp")
+    run("chmod -R 777 #{releases_path}/tmp")
   end
   after "deploy:finalize_update", "deploy:change_tmp"
 
